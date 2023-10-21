@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="additionals">
+      <UniqueIdentifier>{063e2be8-da44-4faf-9ef7-5ddfef20815c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="additionals\json">
+      <UniqueIdentifier>{910e8998-b5c7-479f-9925-6bb7748328bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="additionals\minhook">
+      <UniqueIdentifier>{d2dd1e5f-072f-4feb-ab23-0c1fcbbbffb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{347923f4-4e0c-41dd-aff0-6e256266838a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\hooks">
+      <UniqueIdentifier>{8ff8593a-9a6a-4425-8dc7-b3eed8d44632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\hooks\targets">
+      <UniqueIdentifier>{9957db91-96a5-4c2d-959b-e8f3e66bc959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\interfaces">
+      <UniqueIdentifier>{a2e98860-d4b6-4368-9cc6-604b32ac1a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\other">
+      <UniqueIdentifier>{3db1358b-4a04-4d66-b24c-f3f859dad96d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions">
+      <UniqueIdentifier>{a374bc99-978c-4922-be34-c0f15ebfe127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions\extra">
+      <UniqueIdentifier>{2ba83e85-9779-42fa-a3dd-810a545a7e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions\listeners">
+      <UniqueIdentifier>{cfdb2caa-ef84-4a16-9595-39d2b7ae798c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions\menu">
+      <UniqueIdentifier>{a6008b3b-470c-4e94-8477-07f90f91c675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions\visuals">
+      <UniqueIdentifier>{838dab02-dccc-45c6-a5c1-ac0aa8948b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\sdk">
+      <UniqueIdentifier>{d8210f66-bf7c-4ccb-8dcf-8c8de434778f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="additionals\imgui">
+      <UniqueIdentifier>{da5bac0f-285f-46bd-a24a-60adbdf9cf64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions\anti hit">
+      <UniqueIdentifier>{8a3975aa-d5ac-4db2-b6fc-da4da89c52e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\tools">
+      <UniqueIdentifier>{0a68debc-b570-4589-8f44-ae4f310dd434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\tools\memory">
+      <UniqueIdentifier>{e48cb2d8-6233-4b7b-a8d3-5f6ad5a86cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions\menu\menu elements">
+      <UniqueIdentifier>{6b9b2788-4b54-478e-bd0e-ac02637df51b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions\visuals\event">
+      <UniqueIdentifier>{b55220c9-04ad-4177-9daf-92209e31b060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions\skins">
+      <UniqueIdentifier>{dab3d9d4-8dc9-4590-a8ff-a470f972396a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functions\ragebot">
+      <UniqueIdentifier>{8d2ec8c3-ca47-46b6-9e56-b1f35fe7a423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\tools\connection">
+      <UniqueIdentifier>{84ef1f2f-870f-4c19-8441-2d80af9ed958}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="additionals\json\json.h">
+      <Filter>additionals\json</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\json\json-forwards.h">
+      <Filter>additionals\json</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\minhook\MinHook.h">
+      <Filter>additionals\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\app_system.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\beams.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\client.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\client_mode.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\convars.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\debug_overlay.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\engine.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\engine_trace.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\entity_list.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\event_manager.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\global_vars_base.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\input.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\input_system.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\localize.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\material_system.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\memalloc.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\model_info.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\model_render.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\panel.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\prediction.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\studio_render.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\surface.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\math.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\netvar_parser.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\render.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\other\checksum_crc.h">
+      <Filter>base\other</Filter>
+    </ClInclude>
+    <ClInclude Include="base\other\color.h">
+      <Filter>base\other</Filter>
+    </ClInclude>
+    <ClInclude Include="base\other\game_functions.h">
+      <Filter>base\other</Filter>
+    </ClInclude>
+    <ClInclude Include="base\hooks\hooks.h">
+      <Filter>base\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="base\hooks\wrapper.h">
+      <Filter>base\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\config_system.h">
+      <Filter>functions</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\config_vars.h">
+      <Filter>functions</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\anti hit\anti_aim.h">
+      <Filter>functions\anti hit</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\anti hit\exploits.h">
+      <Filter>functions\anti hit</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\anti hit\fake_lag.h">
+      <Filter>functions\anti hit</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\extra\utils.h">
+      <Filter>functions\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\extra\movement.h">
+      <Filter>functions\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\extra\world_modulation.h">
+      <Filter>functions\extra</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\listeners\listener_entity.h">
+      <Filter>functions\listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\listeners\listener_event.h">
+      <Filter>functions\listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="windows_includes.h" />
+    <ClInclude Include="base\interfaces\phys_props.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\view_render.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk\activity.h">
+      <Filter>base\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk\c_animstate.h">
+      <Filter>base\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk\c_csplayerresource.h">
+      <Filter>base\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk\c_material.h">
+      <Filter>base\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk\c_studio_model.h">
+      <Filter>base\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk\c_usercmd.h">
+      <Filter>base\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk\c_utlvector.h">
+      <Filter>base\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk\entity.h">
+      <Filter>base\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="base\sdk\studio_hdr.h">
+      <Filter>base\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\glow_object.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imconfig.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imgui.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imgui_freetype.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imgui_impl_dx9.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imgui_impl_win32.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imgui_internal.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imstb_rectpack.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imstb_textedit.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imstb_truetype.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="base\other\byte_arrays.h">
+      <Filter>base\other</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\engine_sound.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\menu\menu.h">
+      <Filter>functions\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\protect.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\bit_vector.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\address.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\memory\memory.h">
+      <Filter>base\tools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\memory\displacement.h">
+      <Filter>base\tools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\key_states.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\blur_x.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\blur_y.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\default_vs.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="base\global_context.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\imgui\imstb_wrapper.h">
+      <Filter>additionals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\esp_store.h">
+      <Filter>functions\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\esp_player.h">
+      <Filter>functions\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\local_player_visuals.h">
+      <Filter>functions\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\esp_weapon.h">
+      <Filter>functions\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\glow.h">
+      <Filter>functions\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\event\event_logger.h">
+      <Filter>functions\visuals\event</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\event\event_visuals.h">
+      <Filter>functions\visuals\event</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\chams.h">
+      <Filter>functions\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\grenade_warning.h">
+      <Filter>functions\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\skins\skins.h">
+      <Filter>functions\skins</Filter>
+    </ClInclude>
+    <ClInclude Include="base\interfaces\item_schema.h">
+      <Filter>base\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\ragebot\animfix.h">
+      <Filter>functions\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\ragebot\autowall.h">
+      <Filter>functions\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\ragebot\engine_prediction.h">
+      <Filter>functions\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\ragebot\local_animfix.h">
+      <Filter>functions\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\ragebot\rage_tools.h">
+      <Filter>functions\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\ragebot\ragebot.h">
+      <Filter>functions\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\ragebot\setup_bones_manager.h">
+      <Filter>functions\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\features.h">
+      <Filter>functions</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\visuals\visuals.h">
+      <Filter>functions\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\menu\ui_structs.h">
+      <Filter>functions\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\utils_macro.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="additionals\tinyformat.h">
+      <Filter>additionals</Filter>
+    </ClInclude>
+    <ClInclude Include="functions\menu\snow.h">
+      <Filter>functions\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="base\tools\threads.h">
+      <Filter>base\tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="additionals\json\jsoncpp.cpp">
+      <Filter>additionals\json</Filter>
+    </ClCompile>
+    <ClCompile Include="base\tools\math.cpp">
+      <Filter>base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="base\tools\netvar_parser.cpp">
+      <Filter>base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="base\tools\render.cpp">
+      <Filter>base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="base\other\checksum_crc.cpp">
+      <Filter>base\other</Filter>
+    </ClCompile>
+    <ClCompile Include="base\other\game_functions.cpp">
+      <Filter>base\other</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\hooks.cpp">
+      <Filter>base\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\client.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\client_mode.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\convars.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\engine.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\material_system.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\player_hook.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\prediction.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\studio_render.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\surface.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\vgui_panel.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\wnd_proc.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\config_system.cpp">
+      <Filter>functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\config_vars.cpp">
+      <Filter>functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\anti hit\anti_aim.cpp">
+      <Filter>functions\anti hit</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\anti hit\exploits.cpp">
+      <Filter>functions\anti hit</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\anti hit\fake_lag.cpp">
+      <Filter>functions\anti hit</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\extra\utils.cpp">
+      <Filter>functions\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\extra\movement.cpp">
+      <Filter>functions\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\extra\world_modulation.cpp">
+      <Filter>functions\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\listeners\listener_entity.cpp">
+      <Filter>functions\listeners</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\listeners\listener_event.cpp">
+      <Filter>functions\listeners</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu.cpp">
+      <Filter>functions\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\visuals.cpp">
+      <Filter>functions\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="base\hooks\targets\trace.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\view_render.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\sdk\c_animstate.cpp">
+      <Filter>base\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="base\sdk\entity.cpp">
+      <Filter>base\sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="additionals\imgui\imgui.cpp">
+      <Filter>additionals\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="additionals\imgui\imgui_demo.cpp">
+      <Filter>additionals\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="additionals\imgui\imgui_draw.cpp">
+      <Filter>additionals\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="additionals\imgui\imgui_freetype.cpp">
+      <Filter>additionals\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="additionals\imgui\imgui_impl_dx9.cpp">
+      <Filter>additionals\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="additionals\imgui\imgui_impl_win32.cpp">
+      <Filter>additionals\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="additionals\imgui\imgui_widgets.cpp">
+      <Filter>additionals\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\directx.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="base\other\byte_arrays.cpp">
+      <Filter>base\other</Filter>
+    </ClCompile>
+    <ClCompile Include="base\interfaces\engine_trace.cpp">
+      <Filter>base\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="base\tools\protect.cpp">
+      <Filter>base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="base\tools\memory\memory.cpp">
+      <Filter>base\tools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="base\tools\memory\displacement.cpp">
+      <Filter>base\tools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="base\tools\key_states.cpp">
+      <Filter>base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu elements\checkbox.cpp">
+      <Filter>functions\menu\menu elements</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu elements\combobox.cpp">
+      <Filter>functions\menu\menu elements</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu elements\slider.cpp">
+      <Filter>functions\menu\menu elements</Filter>
+    </ClCompile>
+    <ClCompile Include="base\global_context.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu elements\textbox.cpp">
+      <Filter>functions\menu\menu elements</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu elements\button.cpp">
+      <Filter>functions\menu\menu elements</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu elements\keybind.cpp">
+      <Filter>functions\menu\menu elements</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu elements\colorpicker.cpp">
+      <Filter>functions\menu\menu elements</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu_indicators.cpp">
+      <Filter>functions\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu_tabs.cpp">
+      <Filter>functions\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\esp_store.cpp">
+      <Filter>functions\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\esp_player.cpp">
+      <Filter>functions\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\local_player_visuals.cpp">
+      <Filter>functions\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\esp_weapon.cpp">
+      <Filter>functions\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\glow.cpp">
+      <Filter>functions\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\event\event_logger.cpp">
+      <Filter>functions\visuals\event</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\event\event_visuals.cpp">
+      <Filter>functions\visuals\event</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\chams.cpp">
+      <Filter>functions\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\visuals\grenade_warning.cpp">
+      <Filter>functions\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\skins\skins.cpp">
+      <Filter>functions\skins</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\ragebot\animfix.cpp">
+      <Filter>functions\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\ragebot\autowall.cpp">
+      <Filter>functions\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\ragebot\engine_prediction.cpp">
+      <Filter>functions\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\ragebot\local_animfix.cpp">
+      <Filter>functions\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\ragebot\missed_shot_handler.cpp">
+      <Filter>functions\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\ragebot\rage_tools.cpp">
+      <Filter>functions\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\ragebot\ragebot.cpp">
+      <Filter>functions\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\ragebot\setup_bones_manager.cpp">
+      <Filter>functions\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\features.cpp">
+      <Filter>functions</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\menu elements\listbox.cpp">
+      <Filter>functions\menu\menu elements</Filter>
+    </ClCompile>
+    <ClCompile Include="base\hooks\targets\netvar_proxies.cpp">
+      <Filter>base\hooks\targets</Filter>
+    </ClCompile>
+    <ClCompile Include="functions\menu\snow.cpp">
+      <Filter>functions\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="base\tools\threads.cpp">
+      <Filter>base\tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
