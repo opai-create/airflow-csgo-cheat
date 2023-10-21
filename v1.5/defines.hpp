@@ -1,0 +1,2569 @@
+#pragma once
+
+#ifdef LEGACY
+#define LEGACY_DESYNC_VFUNC(a, b) a
+#else
+#define LEGACY_DESYNC_VFUNC(a, b) b
+#endif
+
+constexpr auto EIGHT_WAY_WIDTH = 22.5f;
+constexpr auto CS_PLAYER_SPEED_RUN = 260.0f;
+constexpr auto CS_PLAYER_SPEED_VIP = 227.0f;
+constexpr auto CS_PLAYER_SPEED_SHIELD = 160.0f;
+constexpr auto CS_PLAYER_SPEED_HAS_HOSTAGE = 200.0f;
+constexpr auto CS_PLAYER_SPEED_STOPPED = 1.0f;
+constexpr auto CS_PLAYER_SPEED_OBSERVER = 900.0f;
+constexpr auto CS_PLAYER_SPEED_DUCK_MODIFIER = 0.34f;
+constexpr auto CS_PLAYER_SPEED_WALK_MODIFIER = 0.52f;
+constexpr auto CS_PLAYER_SPEED_CLIMB_MODIFIER = 0.34f;
+constexpr auto CS_PLAYER_HEAVYARMOR_FLINCH_MODIFIER = 0.5f;
+constexpr auto CS_PLAYER_DUCK_SPEED_IDEAL = 8.0f;
+
+enum send_prop_type_t
+{
+	_int = 0,
+	_float,
+	_vec,
+	_vec_xy,
+	_string,
+	_array,
+	_data_table,
+	_int_64,
+};
+
+enum flow_type_t
+{
+	FLOW_OUTGOING,
+	FLOW_INCOMING,
+	MAX_FLOWS,
+};
+
+enum fsn_stages_t : int
+{
+	FRAME_START = 0,
+	FRAME_NET_UPDATE_START = 1,
+	FRAME_NET_UPDATE_POSTDATAUPDATE_START = 2,
+	FRAME_NET_UPDATE_POSTDATAUPDATE_END = 3,
+	FRAME_NET_UPDATE_END = 4,
+	FRAME_RENDER_START = 5,
+	FRAME_RENDER_END = 6,
+};
+
+enum cmd_buttons_t : int
+{
+	IN_ATTACK = (1 << 0),
+	IN_JUMP = (1 << 1),
+	IN_DUCK = (1 << 2),
+	IN_FORWARD = (1 << 3),
+	IN_BACK = (1 << 4),
+	IN_USE = (1 << 5),
+	IN_CANCEL = (1 << 6),
+	IN_LEFT = (1 << 7),
+	IN_RIGHT = (1 << 8),
+	IN_MOVELEFT = (1 << 9),
+	IN_MOVERIGHT = (1 << 10),
+	IN_ATTACK2 = (1 << 11),
+	IN_RUN = (1 << 12),
+	IN_RELOAD = (1 << 13),
+	IN_ALT1 = (1 << 14),
+	IN_ALT2 = (1 << 15),
+	IN_SCORE = (1 << 16),
+	IN_SPEED = (1 << 17),
+	IN_WALK = (1 << 18),
+	IN_ZOOM = (1 << 19),
+	IN_WEAPON1 = (1 << 20),	// weapon defines these bits
+	IN_WEAPON2 = (1 << 21),	// weapon defines these bits
+	IN_BULLRUSH = (1 << 22),
+	IN_GRENADE1 = (1 << 23),	// grenade 1
+	IN_GRENADE2 = (1 << 24),	// grenade 2
+	IN_LOOKSPIN = (1 << 25),
+};
+
+enum custom_vfuncs_t : int
+{
+	SEND_DATAGRAM_VFUNC = LEGACY_DESYNC_VFUNC(48, 46),
+	GET_MODEL_VFUNC = LEGACY_DESYNC_VFUNC(30, 32),
+	IS_PLAYER_VFUNC = LEGACY_DESYNC_VFUNC(152, 158),
+	IS_WEAPON_VFUNC = LEGACY_DESYNC_VFUNC(160, 166),
+	GET_SEQUENCE_CYCLE_RATE_VFUNC = LEGACY_DESYNC_VFUNC(216, 222),
+	GET_LAYER_SEQUENCE_CYCLE_RATE_VFUNC = LEGACY_DESYNC_VFUNC(217, 223),
+	UPDATE_CLIENT_SIDE_ANIMATION_FUNC = LEGACY_DESYNC_VFUNC(218, 224),
+	GET_INACCURACY_FUNC = LEGACY_DESYNC_VFUNC(469, 483),
+	GET_SPREAD_FUNC = LEGACY_DESYNC_VFUNC(439, 453),
+	GET_ZOOM_FOV_VFUNC = LEGACY_DESYNC_VFUNC(442, 457),
+	GET_ZOOM_TIME_VFUNC = LEGACY_DESYNC_VFUNC(443, 458),
+	UPDATE_ACCURACY_PENALTY_FUNC = LEGACY_DESYNC_VFUNC(471, 484),
+	PHYSICS_RUN_THINK_VFUNC = LEGACY_DESYNC_VFUNC(307, 318),
+	UNK_THINK_VFUNC = LEGACY_DESYNC_VFUNC(137, 139),
+	MDL_CACHE_LOCK_VFUNC = LEGACY_DESYNC_VFUNC(32, 33),
+	MDL_CACHE_UNLOCK_VFUNC = LEGACY_DESYNC_VFUNC(33, 34),
+	UPDATE_BOUNDS_VFUNC = LEGACY_DESYNC_VFUNC(329, 340),
+	SET_SEQUENCE_VFUNC = LEGACY_DESYNC_VFUNC(213, 219),
+	UNK_POST_THINK_VFUNC = LEGACY_DESYNC_VFUNC(214, 220),
+	FACTORY_INTERNAL_ITERATOR_VFUNC = LEGACY_DESYNC_VFUNC(42, 45),
+	UPDATE_DISPATCH_LAYER_VFUNC = LEGACY_DESYNC_VFUNC(241, 247),
+};
+
+enum material_flags_t : int
+{
+	MATERIAL_VAR_DEBUG = (1 << 0),
+	MATERIAL_VAR_NO_DEBUG_OVERRIDE = (1 << 1),
+	MATERIAL_VAR_NO_DRAW = (1 << 2),
+	MATERIAL_VAR_USE_IN_FILLRATE_MODE = (1 << 3),
+	MATERIAL_VAR_VERTEXCOLOR = (1 << 4),
+	MATERIAL_VAR_VERTEXALPHA = (1 << 5),
+	MATERIAL_VAR_SELFILLUM = (1 << 6),
+	MATERIAL_VAR_ADDITIVE = (1 << 7),
+	MATERIAL_VAR_ALPHATEST = (1 << 8),
+	MATERIAL_VAR_MULTIPASS = (1 << 9),
+	MATERIAL_VAR_ZNEARER = (1 << 10),
+	MATERIAL_VAR_MODEL = (1 << 11),
+	MATERIAL_VAR_FLAT = (1 << 12),
+	MATERIAL_VAR_NOCULL = (1 << 13),
+	MATERIAL_VAR_NOFOG = (1 << 14),
+	MATERIAL_VAR_IGNOREZ = (1 << 15),
+	MATERIAL_VAR_DECAL = (1 << 16),
+	MATERIAL_VAR_ENVMAPSPHERE = (1 << 17),
+	MATERIAL_VAR_NOALPHAMOD = (1 << 18),
+	MATERIAL_VAR_ENVMAPCAMERASPACE = (1 << 19),
+	MATERIAL_VAR_BASEALPHAENVMAPMASK = (1 << 20),
+	MATERIAL_VAR_TRANSLUCENT = (1 << 21),
+	MATERIAL_VAR_NORMALMAPALPHAENVMAPMASK = (1 << 22),
+	MATERIAL_VAR_NEEDS_SOFTWARE_SKINNING = (1 << 23),
+	MATERIAL_VAR_OPAQUETEXTURE = (1 << 24),
+	MATERIAL_VAR_ENVMAPMODE = (1 << 25),
+	MATERIAL_VAR_SUPPRESS_DECALS = (1 << 26),
+	MATERIAL_VAR_HALFLAMBERT = (1 << 27),
+	MATERIAL_VAR_WIREFRAME = (1 << 28),
+	MATERIAL_VAR_ALLOWALPHATOCOVERAGE = (1 << 29),
+	MATERIAL_VAR_IGNORE_ALPHA_MODULATION = (1 << 30),
+	MATERIAL_VAR_VERTEXFOG = (1 << 31),
+};
+
+enum char_tex_decals_t : unsigned char
+{
+	CHAR_TEX_ANTLION = 'A',
+	CHAR_TEX_BLOODYFLESH = 'B',
+	CHAR_TEX_CONCRETE = 'C',
+	CHAR_TEX_DIRT = 'D',
+	CHAR_TEX_EGGSHELL = 'E',
+	CHAR_TEX_FLESH = 'F',
+	CHAR_TEX_GRATE = 'G',
+	CHAR_TEX_ALIENFLESH = 'H',
+	CHAR_TEX_CLIP = 'I',
+	CHAR_TEX_SNOW = 'K',
+	CHAR_TEX_PLASTIC = 'L',
+	CHAR_TEX_METAL = 'M',
+	CHAR_TEX_SAND = 'N',
+	CHAR_TEX_FOLIAGE = 'O',
+	CHAR_TEX_COMPUTER = 'P',
+	CHAR_TEX_REFLECTIVE = 'R',
+	CHAR_TEX_SLOSH = 'S',
+	CHAR_TEX_TILE = 'T',
+	CHAR_TEX_CARDBOARD = 'U',
+	CHAR_TEX_VENT = 'V',
+	CHAR_TEX_WOOD = 'W',
+	CHAR_TEX_GLASS = 'Y',
+	CHAR_TEX_WARPSHIELD = 'Z',
+};
+
+enum hitbgroup_t : int
+{
+	HITGROUP_GENERIC = 0,
+	HITGROUP_HEAD,
+	HITGROUP_CHEST,
+	HITGROUP_STOMACH,
+	HITGROUP_LEFTARM,
+	HITGROUP_RIGHTARM,
+	HITGROUP_LEFTLEG,
+	HITGROUP_RIGHTLEG,
+	HITGROUP_NECK,
+	HITGROUP_GEAR = 10
+};
+
+enum player_team_t : int
+{
+	TEAM_NONE = 0,
+	TEAM_SPEC = 1,
+	TEAM_TT,
+	TEAM_CT
+};
+
+enum hitboxes_t : int
+{
+	HITBOX_INVALID = -1,
+	HITBOX_HEAD,
+	HITBOX_NECK,
+#ifdef LEGACY
+	HITBOX_NECK_LOWER,
+#endif
+	HITBOX_PELVIS,
+	HITBOX_STOMACH,
+	HITBOX_THORAX,
+	HITBOX_CHEST,
+	HITBOX_UPPER_CHEST,
+	HITBOX_RIGHT_THIGH,
+	HITBOX_LEFT_THIGH,
+	HITBOX_RIGHT_CALF,
+	HITBOX_LEFT_CALF,
+	HITBOX_RIGHT_FOOT,
+	HITBOX_LEFT_FOOT,
+	HITBOX_RIGHT_HAND,
+	HITBOX_LEFT_HAND,
+	HITBOX_RIGHT_UPPER_ARM,
+	HITBOX_RIGHT_FOREARM,
+	HITBOX_LEFT_UPPER_ARM,
+	HITBOX_LEFT_FOREARM,
+	HITBOX_MAX
+};
+
+enum fieldtype_t
+{
+	FIELD_VOID = 0,
+	FIELD_FLOAT,
+	FIELD_STRING,
+	FIELD_VECTOR,
+	FIELD_QUATERNION,
+	FIELD_INTEGER,
+	FIELD_BOOLEAN,
+	FIELD_SHORT,
+	FIELD_CHARACTER,
+	FIELD_COLOR32,
+	FIELD_EMBEDDED,
+	FIELD_CUSTOM,
+	FIELD_CLASSPTR,
+	FIELD_EHANDLE,
+	FIELD_EDICT,
+	FIELD_POSITION_VECTOR,
+	FIELD_TIME,
+	FIELD_TICK,
+	FIELD_MODELNAME,
+	FIELD_SOUNDNAME,
+	FIELD_INPUT,
+	FIELD_FUNCTION,
+	FIELD_VMATRIX,
+	FIELD_VMATRIX_WORLDSPACE,
+	FIELD_MATRIX3X4_WORLDSPACE,
+	FIELD_INTERVAL,
+	FIELD_MODELINDEX,
+	FIELD_MATERIALINDEX,
+	FIELD_VECTOR2D,
+	FIELD_TYPECOUNT,
+};
+
+enum
+{
+	TD_OFFSET_NORMAL = 0,
+	TD_OFFSET_PACKED = 1,
+	TD_OFFSET_COUNT,
+};
+
+enum animstate_pose_param_idx_t
+{
+	PLAYER_POSE_PARAM_FIRST = 0,
+	PLAYER_POSE_PARAM_LEAN_YAW = PLAYER_POSE_PARAM_FIRST,
+	PLAYER_POSE_PARAM_SPEED,
+	PLAYER_POSE_PARAM_LADDER_SPEED,
+	PLAYER_POSE_PARAM_LADDER_YAW,
+	PLAYER_POSE_PARAM_MOVE_YAW,
+	PLAYER_POSE_PARAM_RUN,
+	PLAYER_POSE_PARAM_BODY_YAW,
+	PLAYER_POSE_PARAM_BODY_PITCH,
+	PLAYER_POSE_PARAM_DEATH_YAW,
+	PLAYER_POSE_PARAM_STAND,
+	PLAYER_POSE_PARAM_JUMP_FALL,
+	PLAYER_POSE_PARAM_AIM_BLEND_STAND_IDLE,
+	PLAYER_POSE_PARAM_AIM_BLEND_CROUCH_IDLE,
+	PLAYER_POSE_PARAM_STRAFE_DIR,
+	PLAYER_POSE_PARAM_AIM_BLEND_STAND_WALK,
+	PLAYER_POSE_PARAM_AIM_BLEND_STAND_RUN,
+	PLAYER_POSE_PARAM_AIM_BLEND_CROUCH_WALK,
+	PLAYER_POSE_PARAM_MOVE_BLEND_WALK,
+	PLAYER_POSE_PARAM_MOVE_BLEND_RUN,
+	PLAYER_POSE_PARAM_MOVE_BLEND_CROUCH_WALK,
+	PLAYER_POSE_PARAM_COUNT,
+};
+
+enum animstate_layer_t
+{
+	ANIMATION_LAYER_AIMMATRIX = 0,
+	ANIMATION_LAYER_WEAPON_ACTION,
+	ANIMATION_LAYER_WEAPON_ACTION_RECROUCH,
+	ANIMATION_LAYER_ADJUST,
+	ANIMATION_LAYER_MOVEMENT_JUMP_OR_FALL,
+	ANIMATION_LAYER_MOVEMENT_LAND_OR_CLIMB,
+	ANIMATION_LAYER_MOVEMENT_MOVE,
+	ANIMATION_LAYER_MOVEMENT_STRAFECHANGE,
+	ANIMATION_LAYER_WHOLE_BODY,
+	ANIMATION_LAYER_FLASHED,
+	ANIMATION_LAYER_FLINCH,
+	ANIMATION_LAYER_ALIVELOOP,
+	ANIMATION_LAYER_LEAN,
+	ANIMATION_LAYER_COUNT,
+};
+
+enum animtag_indices_t
+{
+	ANIMTAG_INVALID = -1,
+	ANIMTAG_UNINITIALIZED = 0,
+	ANIMTAG_STARTCYCLE_N,
+	ANIMTAG_STARTCYCLE_NE,
+	ANIMTAG_STARTCYCLE_E,
+	ANIMTAG_STARTCYCLE_SE,
+	ANIMTAG_STARTCYCLE_S,
+	ANIMTAG_STARTCYCLE_SW,
+	ANIMTAG_STARTCYCLE_W,
+	ANIMTAG_STARTCYCLE_NW,
+	ANIMTAG_AIMLIMIT_YAWMIN_IDLE,
+	ANIMTAG_AIMLIMIT_YAWMAX_IDLE,
+	ANIMTAG_AIMLIMIT_YAWMIN_WALK,
+	ANIMTAG_AIMLIMIT_YAWMAX_WALK,
+	ANIMTAG_AIMLIMIT_YAWMIN_RUN,
+	ANIMTAG_AIMLIMIT_YAWMAX_RUN,
+	ANIMTAG_AIMLIMIT_YAWMIN_CROUCHIDLE,
+	ANIMTAG_AIMLIMIT_YAWMAX_CROUCHIDLE,
+	ANIMTAG_AIMLIMIT_YAWMIN_CROUCHWALK,
+	ANIMTAG_AIMLIMIT_YAWMAX_CROUCHWALK,
+	ANIMTAG_AIMLIMIT_PITCHMIN_IDLE,
+	ANIMTAG_AIMLIMIT_PITCHMAX_IDLE,
+	ANIMTAG_AIMLIMIT_PITCHMIN_WALKRUN,
+	ANIMTAG_AIMLIMIT_PITCHMAX_WALKRUN,
+	ANIMTAG_AIMLIMIT_PITCHMIN_CROUCH,
+	ANIMTAG_AIMLIMIT_PITCHMAX_CROUCH,
+	ANIMTAG_AIMLIMIT_PITCHMIN_CROUCHWALK,
+	ANIMTAG_AIMLIMIT_PITCHMAX_CROUCHWALK,
+	ANIMTAG_WEAPON_POSTLAYER,
+	ANIMTAG_FLASHBANG_PASSABLE,
+	ANIMTAG_COUNT
+};
+
+enum bone_mask_t
+{
+	BONE_USED_MASK = 0X000FFF00,
+	BONE_USED_BY_ANYTHING = 0X000FFF00,
+	BONE_USED_BY_HITBOX = 0X00000100,
+	BONE_USED_BY_ATTACHMENT = 0X00000200,
+	BONE_USED_BY_VERTEX_MASK = 0X0003FC00,
+	BONE_USED_BY_VERTEX_LOD0 = 0X00000400,
+	BONE_USED_BY_VERTEX_LOD1 = 0X00000800,
+	BONE_USED_BY_VERTEX_LOD2 = 0X00001000,
+	BONE_USED_BY_VERTEX_LOD3 = 0X00002000,
+	BONE_USED_BY_VERTEX_LOD4 = 0X00004000,
+	BONE_USED_BY_VERTEX_LOD5 = 0X00008000,
+	BONE_USED_BY_VERTEX_LOD6 = 0X00010000,
+	BONE_USED_BY_VERTEX_LOD7 = 0X00020000,
+	BONE_USED_BY_BONE_MERGE = 0X00040000,
+	BONE_ALWAYS_SETUP = 0X00080000,
+};
+
+enum player_flags_t : unsigned int
+{
+	FL_ONGROUND = (1 << 0),
+	FL_DUCKING = (1 << 1),
+	FL_WATERJUMP = (1 << 3),
+	FL_ONTRAIN = (1 << 4),
+	FL_INRAIN = (1 << 5),
+	FL_FROZEN = (1 << 6),
+	FL_ATCONTROLS = (1 << 7),
+	FL_CLIENT = (1 << 8),
+	FL_FAKECLIENT = (1 << 9),
+	FL_INWATER = (1 << 10),
+	FL_FLY = (1 << 11),
+	FL_SWIM = (1 << 12),
+	FL_CONVEYOR = (1 << 13),
+	FL_NPC = (1 << 14),
+	FL_GODMODE = (1 << 15),
+	FL_NOTARGET = (1 << 16),
+	FL_AIMTARGET = (1 << 17),
+	FL_PARTIALGROUND = (1 << 18),
+	FL_STATICPROP = (1 << 19),
+	FL_GRAPHED = (1 << 20),
+	FL_GRENADE = (1 << 21),
+	FL_STEPMOVEMENT = (1 << 22),
+	FL_DONTTOUCH = (1 << 23),
+	FL_BASEVELOCITY = (1 << 24),
+	FL_WORLDBRUSH = (1 << 25),
+	FL_OBJECT = (1 << 26),
+	FL_KILLME = (1 << 27),
+	FL_ONFIRE = (1 << 28),
+	FL_DISSOLVING = (1 << 29),
+	FL_TRANSRAGDOLL = (1 << 30),
+};
+
+enum move_type_t : int
+{
+	MOVETYPE_NONE = 0,
+	MOVETYPE_ISOMETRIC,
+	MOVETYPE_WALK,
+	MOVETYPE_STEP,
+	MOVETYPE_FLY,
+	MOVETYPE_FLYGRAVITY,
+	MOVETYPE_VPHYSICS,
+	MOVETYPE_PUSH,
+	MOVETYPE_NOCLIP,
+	MOVETYPE_LADDER,
+	MOVETYPE_OBSERVER,
+	MOVETYPE_CUSTOM,
+	MOVETYPE_LAST = MOVETYPE_CUSTOM,
+	MOVETYPE_MAX_BITS = 4
+};
+
+enum weapon_type_t : int
+{
+	WEAPONTYPE_KNIFE = 0,
+	WEAPONTYPE_PISTOL = 1,
+	WEAPONTYPE_SUBMACHINEGUN = 2,
+	WEAPONTYPE_RIFLE = 3,
+	WEAPONTYPE_SHOTGUN = 4,
+	WEAPONTYPE_SNIPER = 5,
+	WEAPONTYPE_MACHINEGUN = 6,
+	WEAPONTYPE_C4 = 7,
+	WEAPONTYPE_PLACEHOLDER = 8,
+	WEAPONTYPE_GRENADE = 9,
+	WEAPONTYPE_HEALTHSHOT = 11,
+	WEAPONTYPE_FISTS = 12,
+	WEAPONTYPE_BREACHCHARGE = 13,
+	WEAPONTYPE_BUMPMINE = 14,
+	WEAPONTYPE_TABLET = 15,
+	WEAPONTYPE_MELEE = 16
+};
+
+enum item_defenition_index_t : short
+{
+	WEAPON_NONE = 0,
+	WEAPON_DEAGLE = 1,
+	WEAPON_ELITE = 2,
+	WEAPON_FIVESEVEN = 3,
+	WEAPON_GLOCK = 4,
+	WEAPON_AK47 = 7,
+	WEAPON_AUG = 8,
+	WEAPON_AWP = 9,
+	WEAPON_FAMAS = 10,
+	WEAPON_G3SG1 = 11,
+	WEAPON_GALILAR = 13,
+	WEAPON_M249 = 14,
+	WEAPON_M4A1 = 16,
+	WEAPON_MAC10 = 17,
+	WEAPON_P90 = 19,
+	WEAPON_ZONE_REPULSOR = 20,
+	WEAPON_MP5SD = 23,
+	WEAPON_UMP45 = 24,
+	WEAPON_XM1014 = 25,
+	WEAPON_BIZON = 26,
+	WEAPON_MAG7 = 27,
+	WEAPON_NEGEV = 28,
+	WEAPON_SAWEDOFF = 29,
+	WEAPON_TEC9 = 30,
+	WEAPON_TASER = 31,
+	WEAPON_HKP2000 = 32,
+	WEAPON_MP7 = 33,
+	WEAPON_MP9 = 34,
+	WEAPON_NOVA = 35,
+	WEAPON_P250 = 36,
+	WEAPON_SHIELD = 37,
+	WEAPON_SCAR20 = 38,
+	WEAPON_SG556 = 39,
+	WEAPON_SSG08 = 40,
+	WEAPON_KNIFE_GG = 41,
+	WEAPON_KNIFE = 42,
+	WEAPON_FLASHBANG = 43,
+	WEAPON_HEGRENADE = 44,
+	WEAPON_SMOKEGRENADE = 45,
+	WEAPON_MOLOTOV = 46,
+	WEAPON_DECOY = 47,
+	WEAPON_INCGRENADE = 48,
+	WEAPON_C4 = 49,
+	WEAPON_HEALTHSHOT = 57,
+	WEAPON_KNIFE_T = 59,
+	WEAPON_M4A1_SILENCER = 60,
+	WEAPON_USP_SILENCER = 61,
+	WEAPON_CZ75A = 63,
+	WEAPON_REVOLVER = 64,
+	WEAPON_TAGRENADE = 68,
+	WEAPON_FISTS = 69,
+	WEAPON_BREACHCHARGE = 70,
+	WEAPON_TABLET = 72,
+	WEAPON_MELEE = 74,
+	WEAPON_AXE = 75,
+	WEAPON_HAMMER = 76,
+	WEAPON_SPANNER = 78,
+	WEAPON_KNIFE_GHOST = 80,
+	WEAPON_FIREBOMB = 81,
+	WEAPON_DIVERSION = 82,
+	WEAPON_FRAG_GRENADE = 83,
+	WEAPON_SNOWBALL = 84,
+	WEAPON_BUMPMINE = 85,
+	WEAPON_KNIFE_BAYONET = 500,
+	WEAPON_KNIFE_CSS = 503,
+	WEAPON_KNIFE_FLIP = 505,
+	WEAPON_KNIFE_GUT = 506,
+	WEAPON_KNIFE_KARAMBIT = 507,
+	WEAPON_KNIFE_M9_BAYONET = 508,
+	WEAPON_KNIFE_TACTICAL = 509,
+	WEAPON_KNIFE_FALCHION = 512,
+	WEAPON_KNIFE_SURVIVAL_BOWIE = 514,
+	WEAPON_KNIFE_BUTTERFLY = 515,
+	WEAPON_KNIFE_PUSH = 516,
+	WEAPON_KNIFE_CORD = 517,
+	WEAPON_KNIFE_CANIS = 518,
+	WEAPON_KNIFE_URSUS = 519,
+	WEAPON_KNIFE_GYPSY_JACKKNIFE = 520,
+	WEAPON_KNIFE_OUTDOOR = 521,
+	WEAPON_KNIFE_STILETTO = 522,
+	WEAPON_KNIFE_WIDOWMAKER = 523,
+	WEAPON_KNIFE_SKELETON = 525,
+	GLOVE_STUDDED_BROKENFANG = 4725,
+	GLOVE_STUDDED_BLOODHOUND = 5027,
+	GLOVE_T = 5028,
+	GLOVE_CT = 5029,
+	GLOVE_SPORTY = 5030,
+	GLOVE_SLICK = 5031,
+	GLOVE_LEATHER_HANDWRAPS = 5032,
+	GLOVE_MOTORCYCLE = 5033,
+	GLOVE_SPECIALIST = 5034,
+	GLOVE_STUDDED_HYDRA = 5035,
+};
+
+#ifdef LEGACY
+enum class_id_t : int
+{
+	CAI_BaseNPC,
+	CAK47,
+	CBaseAnimating,
+	CBaseAnimatingOverlay,
+	CBaseAttributableItem,
+	CBaseButton,
+	CBaseCombatCharacter,
+	CBaseCombatWeapon,
+	CBaseCSGrenade,
+	CBaseCSGrenadeProjectile,
+	CBaseDoor,
+	CBaseEntity,
+	CBaseFlex,
+	CBaseGrenade,
+	CBaseParticleEntity,
+	CBasePlayer,
+	CBasePropDoor,
+	CBaseTeamObjectiveResource,
+	CBaseTempEntity,
+	CBaseToggle,
+	CBaseTrigger,
+	CBaseViewModel,
+	CBaseVPhysicsTrigger,
+	CBaseWeaponWorldModel,
+	CBeam,
+	CBeamSpotlight,
+	CBoneFollower,
+	CBreakableProp,
+	CBreakableSurface,
+	CC4,
+	CCascadeLight,
+	CChicken,
+	CColorCorrection,
+	CColorCorrectionVolume,
+	CCSGameRulesProxy,
+	CCSPlayer,
+	CCSPlayerResource,
+	CCSRagdoll,
+	CCSTeam,
+	CDEagle,
+	CDecoyGrenade,
+	CDecoyProjectile,
+	CDynamicLight,
+	CDynamicProp,
+	CEconEntity,
+	CEconWearable,
+	CEmbers,
+	CEntityDissolve,
+	CEntityFlame,
+	CEntityFreezing,
+	CEntityParticleTrail,
+	CEnvAmbientLight,
+	CEnvDetailController,
+	CEnvDOFController,
+	CEnvParticleScript,
+	CEnvProjectedTexture,
+	CEnvQuadraticBeam,
+	CEnvScreenEffect,
+	CEnvScreenOverlay,
+	CEnvTonemapController,
+	CEnvWind,
+	CFEPlayerDecal,
+	CFireCrackerBlast,
+	CFireSmoke,
+	CFireTrail,
+	CFish,
+	CFlashbang,
+	CFogController,
+	CFootstepControl,
+	CFunc_Dust,
+	CFunc_LOD,
+	CFuncAreaPortalWindow,
+	CFuncBrush,
+	CFuncConveyor,
+	CFuncLadder,
+	CFuncMonitor,
+	CFuncMoveLinear,
+	CFuncOccluder,
+	CFuncReflectiveGlass,
+	CFuncRotating,
+	CFuncSmokeVolume,
+	CFuncTrackTrain,
+	CGameRulesProxy,
+	CHandleTest,
+	CHEGrenade,
+	CHostage,
+	CHostageCarriableProp,
+	CIncendiaryGrenade,
+	CInferno,
+	CInfoLadderDismount,
+	CInfoOverlayAccessor,
+	CItem_Healthshot,
+	CItemDogtags,
+	CKnife,
+	CKnifeGG,
+	CLightGlow,
+	CMaterialModifyControl,
+	CMolotovGrenade,
+	CMolotovProjectile,
+	CMovieDisplay,
+	CParticleFire,
+	CParticlePerformanceMonitor,
+	CParticleSystem,
+	CPhysBox,
+	CPhysBoxMultiplayer,
+	CPhysicsProp,
+	CPhysicsPropMultiplayer,
+	CPhysMagnet,
+	CPlantedC4,
+	CPlasma,
+	CPlayerResource,
+	CPointCamera,
+	CPointCommentaryNode,
+	CPointWorldText,
+	CPoseController,
+	CPostProcessController,
+	CPrecipitation,
+	CPrecipitationBlocker,
+	CPredictedViewModel,
+	CProp_Hallucination,
+	CPropDoorRotating,
+	CPropJeep,
+	CPropVehicleDriveable,
+	CRagdollManager,
+	CRagdollProp,
+	CRagdollPropAttached,
+	CRopeKeyframe,
+	CSCAR17,
+	CSceneEntity,
+	CSensorGrenade,
+	CSensorGrenadeProjectile,
+	CShadowControl,
+	CSlideshowDisplay,
+	CSmokeGrenade,
+	CSmokeGrenadeProjectile,
+	CSmokeStack,
+	CSpatialEntity,
+	CSpotlightEnd,
+	CSprite,
+	CSpriteOriented,
+	CSpriteTrail,
+	CStatueProp,
+	CSteamJet,
+	CSun,
+	CSunlightShadowControl,
+	CTeam,
+	CTeamplayRoundBasedRulesProxy,
+	CTEArmorRicochet,
+	CTEBaseBeam,
+	CTEBeamEntPoint,
+	CTEBeamEnts,
+	CTEBeamFollow,
+	CTEBeamLaser,
+	CTEBeamPoints,
+	CTEBeamRing,
+	CTEBeamRingPoint,
+	CTEBeamSpline,
+	CTEBloodSprite,
+	CTEBloodStream,
+	CTEBreakModel,
+	CTEBSPDecal,
+	CTEBubbles,
+	CTEBubbleTrail,
+	CTEClientProjectile,
+	CTEDecal,
+	CTEDust,
+	CTEDynamicLight,
+	CTEEffectDispatch,
+	CTEEnergySplash,
+	CTEExplosion,
+	CTEFireBullets,
+	CTEFizz,
+	CTEFootprintDecal,
+	CTEFoundryHelpers,
+	CTEGaussExplosion,
+	CTEGlowSprite,
+	CTEImpact,
+	CTEKillPlayerAttachments,
+	CTELargeFunnel,
+	CTEMetalSparks,
+	CTEMuzzleFlash,
+	CTEParticleSystem,
+	CTEPhysicsProp,
+	CTEPlantBomb,
+	CTEPlayerAnimEvent,
+	CTEPlayerDecal,
+	CTEProjectedDecal,
+	CTERadioIcon,
+	CTEShatterSurface,
+	CTEShowLine,
+	CTesla,
+	CTESmoke,
+	CTESparks,
+	CTESprite,
+	CTESpriteSpray,
+	CTest_ProxyToggle_Networkable,
+	CTestTraceline,
+	CTEWorldDecal,
+	CTriggerPlayerMovement,
+	CTriggerSoundOperator,
+	CVGuiScreen,
+	CVoteController,
+	CWaterBullet,
+	CWaterLODControl,
+	CWeaponAug,
+	CWeaponAWP,
+	CWeaponBaseItem,
+	CWeaponBizon,
+	CWeaponCSBase,
+	CWeaponCSBaseGun,
+	CWeaponCycler,
+	CWeaponElite,
+	CWeaponFamas,
+	CWeaponFiveSeven,
+	CWeaponG3SG1,
+	CWeaponGalil,
+	CWeaponGalilAR,
+	CWeaponGlock,
+	CWeaponHKP2000,
+	CWeaponM249,
+	CWeaponM3,
+	CWeaponM4A1,
+	CWeaponMAC10,
+	CWeaponMag7,
+	CWeaponMP5Navy,
+	CWeaponMP7,
+	CWeaponMP9,
+	CWeaponNegev,
+	CWeaponNOVA,
+	CWeaponP228,
+	CWeaponP250,
+	CWeaponP90,
+	CWeaponSawedoff,
+	CWeaponSCAR20,
+	CWeaponScout,
+	CWeaponSG550,
+	CWeaponSG552,
+	CWeaponSG556,
+	CWeaponSSG08,
+	CWeaponTaser,
+	CWeaponTec9,
+	CWeaponTMP,
+	CWeaponUMP45,
+	CWeaponUSP,
+	CWeaponXM1014,
+	CWorld,
+	CWorldVguiText,
+	DustTrail,
+	MovieExplosion,
+	ParticleSmokeGrenade,
+	RocketTrail,
+	SmokeTrail,
+	SporeExplosion,
+	SporeTrail,
+};
+#else
+enum class_id_t : int
+{
+	CAI_BaseNPC,
+	CAK47,
+	CBaseAnimating,
+	CBaseAnimatingOverlay,
+	CBaseAttributableItem,
+	CBaseButton,
+	CBaseCombatCharacter,
+	CBaseCombatWeapon,
+	CBaseCSGrenade,
+	CBaseCSGrenadeProjectile,
+	CBaseDoor,
+	CBaseEntity,
+	CBaseFlex,
+	CBaseGrenade,
+	CBaseParticleEntity,
+	CBasePlayer,
+	CBasePropDoor,
+	CBaseTeamObjectiveResource,
+	CBaseTempEntity,
+	CBaseToggle,
+	CBaseTrigger,
+	CBaseViewModel,
+	CBaseVPhysicsTrigger,
+	CBaseWeaponWorldModel,
+	CBeam,
+	CBeamSpotlight,
+	CBoneFollower,
+	CBRC4Target,
+	CBreachCharge,
+	CBreachChargeProjectile,
+	CBreakableProp,
+	CBreakableSurface,
+	CBumpMine,
+	CBumpMineProjectile,
+	CC4,
+	CCascadeLight,
+	CChicken,
+	CColorCorrection,
+	CColorCorrectionVolume,
+	CCSGameRulesProxy,
+	CCSPlayer,
+	CCSPlayerResource,
+	CCSRagdoll,
+	CCSTeam,
+	CDangerZone,
+	CDangerZoneController,
+	CDEagle,
+	CDecoyGrenade,
+	CDecoyProjectile,
+	CDrone,
+	CDronegun,
+	CDynamicLight,
+	CDynamicProp,
+	CEconEntity,
+	CEconWearable,
+	CEmbers,
+	CEntityDissolve,
+	CEntityFlame,
+	CEntityFreezing,
+	CEntityParticleTrail,
+	CEnvAmbientLight,
+	CEnvDetailController,
+	CEnvDOFController,
+	CEnvGasCanister,
+	CEnvParticleScript,
+	CEnvProjectedTexture,
+	CEnvQuadraticBeam,
+	CEnvScreenEffect,
+	CEnvScreenOverlay,
+	CEnvTonemapController,
+	CEnvWind,
+	CFEPlayerDecal,
+	CFireCrackerBlast,
+	CFireSmoke,
+	CFireTrail,
+	CFish,
+	CFists,
+	CFlashbang,
+	CFogController,
+	CFootstepControl,
+	CFunc_Dust,
+	CFunc_LOD,
+	CFuncAreaPortalWindow,
+	CFuncBrush,
+	CFuncConveyor,
+	CFuncLadder,
+	CFuncMonitor,
+	CFuncMoveLinear,
+	CFuncOccluder,
+	CFuncReflectiveGlass,
+	CFuncRotating,
+	CFuncSmokeVolume,
+	CFuncTrackTrain,
+	CGameRulesProxy,
+	CGrassBurn,
+	CHandleTest,
+	CHEGrenade,
+	CHostage,
+	CHostageCarriableProp,
+	CIncendiaryGrenade,
+	CInferno,
+	CInfoLadderDismount,
+	CInfoMapRegion,
+	CInfoOverlayAccessor,
+	CItem_Healthshot,
+	CItemCash,
+	CItemDogtags,
+	CKnife,
+	CKnifeGG,
+	CLightGlow,
+	CMapVetoPickController,
+	CMaterialModifyControl,
+	CMelee,
+	CMolotovGrenade,
+	CMolotovProjectile,
+	CMovieDisplay,
+	CParadropChopper,
+	CParticleFire,
+	CParticlePerformanceMonitor,
+	CParticleSystem,
+	CPhysBox,
+	CPhysBoxMultiplayer,
+	CPhysicsProp,
+	CPhysicsPropMultiplayer,
+	CPhysMagnet,
+	CPhysPropAmmoBox,
+	CPhysPropLootCrate,
+	CPhysPropRadarJammer,
+	CPhysPropWeaponUpgrade,
+	CPlantedC4,
+	CPlasma,
+	CPlayerPing,
+	CPlayerResource,
+	CPointCamera,
+	CPointCommentaryNode,
+	CPointWorldText,
+	CPoseController,
+	CPostProcessController,
+	CPrecipitation,
+	CPrecipitationBlocker,
+	CPredictedViewModel,
+	CProp_Hallucination,
+	CPropCounter,
+	CPropDoorRotating,
+	CPropJeep,
+	CPropVehicleDriveable,
+	CRagdollManager,
+	CRagdollProp,
+	CRagdollPropAttached,
+	CRopeKeyframe,
+	CSCAR17,
+	CSceneEntity,
+	CSensorGrenade,
+	CSensorGrenadeProjectile,
+	CShadowControl,
+	CSlideshowDisplay,
+	CSmokeGrenade,
+	CSmokeGrenadeProjectile,
+	CSmokeStack,
+	CSnowball,
+	CSnowballPile,
+	CSnowballProjectile,
+	CSpatialEntity,
+	CSpotlightEnd,
+	CSprite,
+	CSpriteOriented,
+	CSpriteTrail,
+	CStatueProp,
+	CSteamJet,
+	CSun,
+	CSunlightShadowControl,
+	CSurvivalSpawnChopper,
+	CTablet,
+	CTeam,
+	CTeamplayRoundBasedRulesProxy,
+	CTEArmorRicochet,
+	CTEBaseBeam,
+	CTEBeamEntPoint,
+	CTEBeamEnts,
+	CTEBeamFollow,
+	CTEBeamLaser,
+	CTEBeamPoints,
+	CTEBeamRing,
+	CTEBeamRingPoint,
+	CTEBeamSpline,
+	CTEBloodSprite,
+	CTEBloodStream,
+	CTEBreakModel,
+	CTEBSPDecal,
+	CTEBubbles,
+	CTEBubbleTrail,
+	CTEClientProjectile,
+	CTEDecal,
+	CTEDust,
+	CTEDynamicLight,
+	CTEEffectDispatch,
+	CTEEnergySplash,
+	CTEExplosion,
+	CTEFireBullets,
+	CTEFizz,
+	CTEFootprintDecal,
+	CTEFoundryHelpers,
+	CTEGaussExplosion,
+	CTEGlowSprite,
+	CTEImpact,
+	CTEKillPlayerAttachments,
+	CTELargeFunnel,
+	CTEMetalSparks,
+	CTEMuzzleFlash,
+	CTEParticleSystem,
+	CTEPhysicsProp,
+	CTEPlantBomb,
+	CTEPlayerAnimEvent,
+	CTEPlayerDecal,
+	CTEProjectedDecal,
+	CTERadioIcon,
+	CTEShatterSurface,
+	CTEShowLine,
+	CTesla,
+	CTESmoke,
+	CTESparks,
+	CTESprite,
+	CTESpriteSpray,
+	CTest_ProxyToggle_Networkable,
+	CTestTraceline,
+	CTEWorldDecal,
+	CTriggerPlayerMovement,
+	CTriggerSoundOperator,
+	CVGuiScreen,
+	CVoteController,
+	CWaterBullet,
+	CWaterLODControl,
+	CWeaponAug,
+	CWeaponAWP,
+	CWeaponBaseItem,
+	CWeaponBizon,
+	CWeaponCSBase,
+	CWeaponCSBaseGun,
+	CWeaponCycler,
+	CWeaponElite,
+	CWeaponFamas,
+	CWeaponFiveSeven,
+	CWeaponG3SG1,
+	CWeaponGalil,
+	CWeaponGalilAR,
+	CWeaponGlock,
+	CWeaponHKP2000,
+	CWeaponM249,
+	CWeaponM3,
+	CWeaponM4A1,
+	CWeaponMAC10,
+	CWeaponMag7,
+	CWeaponMP5Navy,
+	CWeaponMP7,
+	CWeaponMP9,
+	CWeaponNegev,
+	CWeaponNOVA,
+	CWeaponP228,
+	CWeaponP250,
+	CWeaponP90,
+	CWeaponSawedoff,
+	CWeaponSCAR20,
+	CWeaponScout,
+	CWeaponSG550,
+	CWeaponSG552,
+	CWeaponSG556,
+	CWeaponShield,
+	CWeaponSSG08,
+	CWeaponTaser,
+	CWeaponTec9,
+	CWeaponTMP,
+	CWeaponUMP45,
+	CWeaponUSP,
+	CWeaponXM1014,
+	CWeaponZoneRepulsor,
+	CWorld,
+	CWorldVguiText,
+	DustTrail,
+	MovieExplosion,
+	ParticleSmokeGrenade,
+	RocketTrail,
+	SmokeTrail,
+	SporeExplosion,
+	SporeTrail,
+};
+#endif
+
+enum disp_surf_flags_t : unsigned int
+{
+	DISPSURF_FLAG_SURFACE = (1 << 0),
+	DISPSURF_FLAG_WALKABLE = (1 << 1),
+	DISPSURF_FLAG_BUILDABLE = (1 << 2),
+	DISPSURF_FLAG_SURFPROP1 = (1 << 3),
+	DISPSURF_FLAG_SURFPROP2 = (1 << 4),
+};
+
+enum contents_t : unsigned int
+{
+	CONTENTS_EMPTY = 0,
+	CONTENTS_SOLID = 0x1,
+	CONTENTS_WINDOW = 0x2,
+	CONTENTS_AUX = 0x4,
+	CONTENTS_GRATE = 0x8,
+	CONTENTS_SLIME = 0x10,
+	CONTENTS_WATER = 0x20,
+	CONTENTS_BLOCKLOS = 0x40,
+	CONTENTS_OPAQUE = 0x80,
+	LAST_VISIBLE_CONTENTS = CONTENTS_OPAQUE,
+	ALL_VISIBLE_CONTENTS = (LAST_VISIBLE_CONTENTS | (LAST_VISIBLE_CONTENTS - 1)),
+	CONTENTS_TESTFOGVOLUME = 0x100,
+	CONTENTS_UNUSED = 0x200,
+	CONTENTS_BLOCKLIGHT = 0x400,
+	CONTENTS_TEAM1 = 0x800,
+	CONTENTS_TEAM2 = 0x1000,
+	CONTENTS_IGNORE_NODRAW_OPAQUE = 0x2000,
+	CONTENTS_MOVEABLE = 0x4000,
+	CONTENTS_AREAPORTAL = 0x8000,
+	CONTENTS_PLAYERCLIP = 0x10000,
+	CONTENTS_MONSTERCLIP = 0x20000,
+	CONTENTS_CURRENT_0 = 0x40000,
+	CONTENTS_CURRENT_90 = 0x80000,
+	CONTENTS_CURRENT_180 = 0x100000,
+	CONTENTS_CURRENT_270 = 0x200000,
+	CONTENTS_CURRENT_UP = 0x400000,
+	CONTENTS_CURRENT_DOWN = 0x800000,
+	CONTENTS_ORIGIN = 0x1000000,
+	CONTENTS_MONSTER = 0x2000000,
+	CONTENTS_DEBRIS = 0x4000000,
+	CONTENTS_DETAIL = 0x8000000,
+	CONTENTS_TRANSLUCENT = 0x10000000,
+	CONTENTS_LADDER = 0x20000000,
+	CONTENTS_HITBOX = 0x40000000,
+};
+
+enum surf_t : unsigned int
+{
+	SURF_LIGHT = 0x0001,
+	SURF_SKY2D = 0x0002,
+	SURF_SKY = 0x0004,
+	SURF_WARP = 0x0008,
+	SURF_TRANS = 0x0010,
+	SURF_NOPORTAL = 0x0020,
+	SURF_TRIGGER = 0x0040,
+	SURF_NODRAW = 0x0080,
+	SURF_HINT = 0x0100,
+	SURF_SKIP = 0x0200,
+	SURF_NOLIGHT = 0x0400,
+	SURF_BUMPLIGHT = 0x0800,
+	SURF_NOSHADOWS = 0x1000,
+	SURF_NODECALS = 0x2000,
+	SURF_NOPAINT = SURF_NODECALS,
+	SURF_NOCHOP = 0x4000,
+	SURF_HITBOX = 0x8000,
+};
+
+enum masks_t : unsigned int
+{
+	MASK_ALL = (0xFFFFFFFF),
+	MASK_SOLID = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_WINDOW | CONTENTS_MONSTER | CONTENTS_GRATE),
+	MASK_PLAYERSOLID = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_PLAYERCLIP | CONTENTS_WINDOW | CONTENTS_MONSTER | CONTENTS_GRATE),
+	MASK_NPCSOLID = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_MONSTERCLIP | CONTENTS_WINDOW | CONTENTS_MONSTER | CONTENTS_GRATE),
+	MASK_NPCFLUID = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_MONSTERCLIP | CONTENTS_WINDOW | CONTENTS_MONSTER),
+	MASK_WATER = (CONTENTS_WATER | CONTENTS_MOVEABLE | CONTENTS_SLIME),
+	MASK_OPAQUE = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_OPAQUE),
+	MASK_OPAQUE_AND_NPCS = (MASK_OPAQUE | CONTENTS_MONSTER),
+	MASK_BLOCKLOS = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_BLOCKLOS),
+	MASK_BLOCKLOS_AND_NPCS = (MASK_BLOCKLOS | CONTENTS_MONSTER),
+	MASK_VISIBLE = (MASK_OPAQUE | CONTENTS_IGNORE_NODRAW_OPAQUE),
+	MASK_VISIBLE_AND_NPCS = (MASK_OPAQUE_AND_NPCS | CONTENTS_IGNORE_NODRAW_OPAQUE),
+	MASK_SHOT = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_MONSTER | CONTENTS_WINDOW | CONTENTS_DEBRIS | CONTENTS_HITBOX),
+	MASK_SHOT_BRUSHONLY = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_WINDOW | CONTENTS_DEBRIS),
+	MASK_SHOT_HULL = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_MONSTER | CONTENTS_WINDOW | CONTENTS_DEBRIS | CONTENTS_GRATE),
+	MASK_SHOT_PORTAL = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_WINDOW | CONTENTS_MONSTER),
+	MASK_SOLID_BRUSHONLY = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_WINDOW | CONTENTS_GRATE),
+	MASK_PLAYERSOLID_BRUSHONLY = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_WINDOW | CONTENTS_PLAYERCLIP | CONTENTS_GRATE),
+	MASK_NPCSOLID_BRUSHONLY = (CONTENTS_SOLID | CONTENTS_MOVEABLE | CONTENTS_WINDOW | CONTENTS_MONSTERCLIP | CONTENTS_GRATE),
+	MASK_NPCWORLDSTATIC = (CONTENTS_SOLID | CONTENTS_WINDOW | CONTENTS_MONSTERCLIP | CONTENTS_GRATE),
+	MASK_NPCWORLDSTATIC_FLUID = (CONTENTS_SOLID | CONTENTS_WINDOW | CONTENTS_MONSTERCLIP),
+	MASK_SPLITAREAPORTAL = (CONTENTS_WATER | CONTENTS_SLIME),
+	MASK_CURRENT = (CONTENTS_CURRENT_0 | CONTENTS_CURRENT_90 | CONTENTS_CURRENT_180 | CONTENTS_CURRENT_270 | CONTENTS_CURRENT_UP | CONTENTS_CURRENT_DOWN),
+	MASK_DEADSOLID = (CONTENTS_SOLID | CONTENTS_PLAYERCLIP | CONTENTS_WINDOW | CONTENTS_GRATE),
+	MASK_SHOT_PLAYER = 0x4600400bu,
+};
+
+enum trace_type_t : int
+{
+	TRACE_EVERYTHING = 0,
+	TRACE_WORLD_ONLY,
+	TRACE_ENTITIES_ONLY,
+	TRACE_EVERYTHING_FILTER_PROPS,
+};
+
+enum activity_t
+{
+	ACT_INVALID = -1,			// So we have something more succint to check for than '-1'
+	ACT_RESET = 0,				// Set m_Activity to this invalid value to force a reset to m_IdealActivity
+	ACT_IDLE,
+	ACT_TRANSITION,
+	ACT_COVER,					// FIXME: obsolete? redundant with ACT_COVER_LOW?
+	ACT_COVER_MED,				// FIXME: unsupported?
+	ACT_COVER_LOW,				// FIXME: rename ACT_IDLE_CROUCH?
+	ACT_WALK,
+	ACT_WALK_AIM,
+	ACT_WALK_CROUCH,
+	ACT_WALK_CROUCH_AIM,
+	ACT_RUN,
+	ACT_RUN_AIM,
+	ACT_RUN_CROUCH,
+	ACT_RUN_CROUCH_AIM,
+	ACT_RUN_PROTECTED,
+	ACT_SCRIPT_CUSTOM_MOVE,
+	ACT_RANGE_ATTACK1,
+	ACT_RANGE_ATTACK2,
+	ACT_RANGE_ATTACK1_LOW,		// FIXME: not used yet, crouched versions of the range attack
+	ACT_RANGE_ATTACK2_LOW,		// FIXME: not used yet, crouched versions of the range attack
+	ACT_DIESIMPLE,
+	ACT_DIEBACKWARD,
+	ACT_DIEFORWARD,
+	ACT_DIEVIOLENT,
+	ACT_DIERAGDOLL,
+	ACT_FLY,				// Fly (and flap if appropriate)
+	ACT_HOVER,
+	ACT_GLIDE,
+	ACT_SWIM,
+	ACT_JUMP,
+	ACT_HOP,				// vertical jump
+	ACT_LEAP,				// long forward jump
+	ACT_LAND,
+	ACT_CLIMB_UP,
+	ACT_CLIMB_DOWN,
+	ACT_CLIMB_DISMOUNT,
+	ACT_SHIPLADDER_UP,
+	ACT_SHIPLADDER_DOWN,
+	ACT_STRAFE_LEFT,
+	ACT_STRAFE_RIGHT,
+	ACT_ROLL_LEFT,			// tuck and roll, left
+	ACT_ROLL_RIGHT,			// tuck and roll, right
+	ACT_TURN_LEFT,			// turn quickly left (stationary)
+	ACT_TURN_RIGHT,			// turn quickly right (stationary)
+	ACT_CROUCH,				// FIXME: obsolete? only used be soldier (the act of crouching down from a standing position)
+	ACT_CROUCHIDLE,			// FIXME: obsolete? only used be soldier (holding body in crouched position (loops))
+	ACT_STAND,				// FIXME: obsolete? should be transition (the act of standing from a crouched position)
+	ACT_USE,
+	ACT_ALIEN_BURROW_IDLE,
+	ACT_ALIEN_BURROW_OUT,
+
+	ACT_SIGNAL1,
+	ACT_SIGNAL2,
+	ACT_SIGNAL3,
+
+	ACT_SIGNAL_ADVANCE,		// Squad handsignals, specific.
+	ACT_SIGNAL_FORWARD,
+	ACT_SIGNAL_GROUP,
+	ACT_SIGNAL_HALT,
+	ACT_SIGNAL_LEFT,
+	ACT_SIGNAL_RIGHT,
+	ACT_SIGNAL_TAKECOVER,
+
+	ACT_LOOKBACK_RIGHT,		// look back over shoulder without turning around.
+	ACT_LOOKBACK_LEFT,
+	ACT_COWER,				// FIXME: unused, should be more extreme version of crouching
+	ACT_SMALL_FLINCH,		// FIXME: needed? shouldn't flinching be down with overlays?
+	ACT_BIG_FLINCH,
+	ACT_MELEE_ATTACK1,
+	ACT_MELEE_ATTACK2,
+	ACT_RELOAD,
+	ACT_RELOAD_START,
+	ACT_RELOAD_FINISH,
+	ACT_RELOAD_LOW,
+	ACT_ARM,				// pull out gun, for instance
+	ACT_DISARM,				// reholster gun
+	ACT_DROP_WEAPON,
+	ACT_DROP_WEAPON_SHOTGUN,
+	ACT_PICKUP_GROUND,		// pick up something in front of you on the ground
+	ACT_PICKUP_RACK,		// pick up something from a rack or shelf in front of you.
+	ACT_IDLE_ANGRY,			// FIXME: being used as an combat ready idle?  alternate idle animation in which the monster is clearly agitated. (loop)
+
+	ACT_IDLE_RELAXED,
+	ACT_IDLE_STIMULATED,
+	ACT_IDLE_AGITATED,
+	ACT_IDLE_STEALTH,
+	ACT_IDLE_HURT,
+
+	ACT_WALK_RELAXED,
+	ACT_WALK_STIMULATED,
+	ACT_WALK_AGITATED,
+	ACT_WALK_STEALTH,
+
+	ACT_RUN_RELAXED,
+	ACT_RUN_STIMULATED,
+	ACT_RUN_AGITATED,
+	ACT_RUN_STEALTH,
+
+	ACT_IDLE_AIM_RELAXED,
+	ACT_IDLE_AIM_STIMULATED,
+	ACT_IDLE_AIM_AGITATED,
+	ACT_IDLE_AIM_STEALTH,
+
+	ACT_WALK_AIM_RELAXED,
+	ACT_WALK_AIM_STIMULATED,
+	ACT_WALK_AIM_AGITATED,
+	ACT_WALK_AIM_STEALTH,
+
+	ACT_RUN_AIM_RELAXED,
+	ACT_RUN_AIM_STIMULATED,
+	ACT_RUN_AIM_AGITATED,
+	ACT_RUN_AIM_STEALTH,
+
+	ACT_CROUCHIDLE_STIMULATED,
+	ACT_CROUCHIDLE_AIM_STIMULATED,
+	ACT_CROUCHIDLE_AGITATED,
+
+	ACT_WALK_HURT,			// limp  (loop)
+	ACT_RUN_HURT,			// limp  (loop)
+	ACT_SPECIAL_ATTACK1,	// very monster specific special attacks.
+	ACT_SPECIAL_ATTACK2,
+	ACT_COMBAT_IDLE,		// FIXME: unused?  agitated idle.
+	ACT_WALK_SCARED,
+	ACT_RUN_SCARED,
+	ACT_VICTORY_DANCE,		// killed a player, do a victory dance.
+	ACT_DIE_HEADSHOT,		// die, hit in head. 
+	ACT_DIE_CHESTSHOT,		// die, hit in chest
+	ACT_DIE_GUTSHOT,		// die, hit in gut
+	ACT_DIE_BACKSHOT,		// die, hit in back
+	ACT_FLINCH_HEAD,
+	ACT_FLINCH_CHEST,
+	ACT_FLINCH_STOMACH,
+	ACT_FLINCH_LEFTARM,
+	ACT_FLINCH_RIGHTARM,
+	ACT_FLINCH_LEFTLEG,
+	ACT_FLINCH_RIGHTLEG,
+	ACT_FLINCH_PHYSICS,
+	ACT_FLINCH_HEAD_BACK,
+	ACT_FLINCH_HEAD_LEFT,
+	ACT_FLINCH_HEAD_RIGHT,
+	ACT_FLINCH_CHEST_BACK,
+	ACT_FLINCH_STOMACH_BACK,
+	ACT_FLINCH_CROUCH_FRONT,
+	ACT_FLINCH_CROUCH_BACK,
+	ACT_FLINCH_CROUCH_LEFT,
+	ACT_FLINCH_CROUCH_RIGHT,
+
+	ACT_IDLE_ON_FIRE,		// ON FIRE animations
+	ACT_WALK_ON_FIRE,
+	ACT_RUN_ON_FIRE,
+
+	ACT_RAPPEL_LOOP,		// Rappel down a rope!
+
+	ACT_180_LEFT,			// 180 degree left turn
+	ACT_180_RIGHT,
+
+	ACT_90_LEFT,			// 90 degree turns
+	ACT_90_RIGHT,
+
+	ACT_STEP_LEFT,			// Single steps
+	ACT_STEP_RIGHT,
+	ACT_STEP_BACK,
+	ACT_STEP_FORE,
+
+	ACT_GESTURE_RANGE_ATTACK1,
+	ACT_GESTURE_RANGE_ATTACK2,
+	ACT_GESTURE_MELEE_ATTACK1,
+	ACT_GESTURE_MELEE_ATTACK2,
+	ACT_GESTURE_RANGE_ATTACK1_LOW,	// FIXME: not used yet, crouched versions of the range attack
+	ACT_GESTURE_RANGE_ATTACK2_LOW,	// FIXME: not used yet, crouched versions of the range attack
+
+	ACT_MELEE_ATTACK_SWING_GESTURE,
+
+	ACT_GESTURE_SMALL_FLINCH,
+	ACT_GESTURE_BIG_FLINCH,
+	ACT_GESTURE_FLINCH_BLAST,			// Startled by an explosion
+	ACT_GESTURE_FLINCH_BLAST_SHOTGUN,
+	ACT_GESTURE_FLINCH_BLAST_DAMAGED,	// Damaged by an explosion
+	ACT_GESTURE_FLINCH_BLAST_DAMAGED_SHOTGUN,
+	ACT_GESTURE_FLINCH_HEAD,
+	ACT_GESTURE_FLINCH_CHEST,
+	ACT_GESTURE_FLINCH_STOMACH,
+	ACT_GESTURE_FLINCH_LEFTARM,
+	ACT_GESTURE_FLINCH_RIGHTARM,
+	ACT_GESTURE_FLINCH_LEFTLEG,
+	ACT_GESTURE_FLINCH_RIGHTLEG,
+
+	ACT_GESTURE_TURN_LEFT,
+	ACT_GESTURE_TURN_RIGHT,
+	ACT_GESTURE_TURN_LEFT45,
+	ACT_GESTURE_TURN_RIGHT45,
+	ACT_GESTURE_TURN_LEFT90,
+	ACT_GESTURE_TURN_RIGHT90,
+	ACT_GESTURE_TURN_LEFT45_FLAT,
+	ACT_GESTURE_TURN_RIGHT45_FLAT,
+	ACT_GESTURE_TURN_LEFT90_FLAT,
+	ACT_GESTURE_TURN_RIGHT90_FLAT,
+
+	// HALF-LIFE 1 compatability stuff goes here. Temporary!
+	ACT_BARNACLE_HIT,		// barnacle tongue hits a monster
+	ACT_BARNACLE_PULL,		// barnacle is lifting the monster ( loop )
+	ACT_BARNACLE_CHOMP,		// barnacle latches on to the monster
+	ACT_BARNACLE_CHEW,		// barnacle is holding the monster in its mouth ( loop )
+
+	// Sometimes, you just want to set an NPC's sequence to a sequence that doesn't actually
+	// have an activity. The AI will reset the NPC's sequence to whatever its IDEAL activity
+	// is, though. So if you set ideal activity to DO_NOT_DISTURB, the AI will not interfere
+	// with the NPC's current sequence. (SJB)
+	ACT_DO_NOT_DISTURB,
+
+	ACT_SPECIFIC_SEQUENCE,
+
+	// viewmodel (weapon) activities
+	// FIXME: move these to the specific viewmodels, no need to make global
+	ACT_VM_DRAW,
+	ACT_VM_HOLSTER,
+	ACT_VM_IDLE,
+	ACT_VM_FIDGET,
+	ACT_VM_PULLBACK,
+	ACT_VM_PULLBACK_HIGH,
+	ACT_VM_PULLBACK_LOW,
+	ACT_VM_THROW,
+	ACT_VM_PULLPIN,
+	ACT_VM_PRIMARYATTACK,		// fire
+	ACT_VM_SECONDARYATTACK,		// alt. fire
+	ACT_VM_RELOAD,
+	ACT_VM_DRYFIRE,				// fire with no ammo loaded.
+	ACT_VM_HITLEFT,				// bludgeon, swing to left - hit (primary attk)
+	ACT_VM_HITLEFT2,			// bludgeon, swing to left - hit (secondary attk)
+	ACT_VM_HITRIGHT,			// bludgeon, swing to right - hit (primary attk)
+	ACT_VM_HITRIGHT2,			// bludgeon, swing to right - hit (secondary attk)
+	ACT_VM_HITCENTER,			// bludgeon, swing center - hit (primary attk)
+	ACT_VM_HITCENTER2,			// bludgeon, swing center - hit (secondary attk)
+	ACT_VM_MISSLEFT,			// bludgeon, swing to left - miss (primary attk)
+	ACT_VM_MISSLEFT2,			// bludgeon, swing to left - miss (secondary attk)
+	ACT_VM_MISSRIGHT,			// bludgeon, swing to right - miss (primary attk)
+	ACT_VM_MISSRIGHT2,			// bludgeon, swing to right - miss (secondary attk)
+	ACT_VM_MISSCENTER,			// bludgeon, swing center - miss (primary attk)
+	ACT_VM_MISSCENTER2,			// bludgeon, swing center - miss (secondary attk)
+	ACT_VM_HAULBACK,			// bludgeon, haul the weapon back for a hard strike (secondary attk)
+	ACT_VM_SWINGHARD,			// bludgeon, release the hard strike (secondary attk)
+	ACT_VM_SWINGMISS,
+	ACT_VM_SWINGHIT,
+	ACT_VM_IDLE_TO_LOWERED,
+	ACT_VM_IDLE_LOWERED,
+	ACT_VM_LOWERED_TO_IDLE,
+	ACT_VM_RECOIL1,
+	ACT_VM_RECOIL2,
+	ACT_VM_RECOIL3,
+	ACT_VM_PICKUP,
+	ACT_VM_RELEASE,
+
+	ACT_VM_ATTACH_SILENCER,
+	ACT_VM_DETACH_SILENCER,
+
+	ACT_VM_EMPTY_FIRE,			// fire last round in magazine
+	ACT_VM_EMPTY_RELOAD,        // Reload from an Empty state
+	ACT_VM_EMPTY_DRAW,			// Deploy an Empty weapon
+	ACT_VM_EMPTY_IDLE,			// Idle in an Empty state
+
+	//===========================
+	// HL2 Specific Activities
+	//===========================
+		// SLAM	Specialty Activities
+	ACT_SLAM_STICKWALL_IDLE,
+	ACT_SLAM_STICKWALL_ND_IDLE,
+	ACT_SLAM_STICKWALL_ATTACH,
+	ACT_SLAM_STICKWALL_ATTACH2,
+	ACT_SLAM_STICKWALL_ND_ATTACH,
+	ACT_SLAM_STICKWALL_ND_ATTACH2,
+	ACT_SLAM_STICKWALL_DETONATE,
+	ACT_SLAM_STICKWALL_DETONATOR_HOLSTER,
+	ACT_SLAM_STICKWALL_DRAW,
+	ACT_SLAM_STICKWALL_ND_DRAW,
+	ACT_SLAM_STICKWALL_TO_THROW,
+	ACT_SLAM_STICKWALL_TO_THROW_ND,
+	ACT_SLAM_STICKWALL_TO_TRIPMINE_ND,
+	ACT_SLAM_THROW_IDLE,
+	ACT_SLAM_THROW_ND_IDLE,
+	ACT_SLAM_THROW_THROW,
+	ACT_SLAM_THROW_THROW2,
+	ACT_SLAM_THROW_THROW_ND,
+	ACT_SLAM_THROW_THROW_ND2,
+	ACT_SLAM_THROW_DRAW,
+	ACT_SLAM_THROW_ND_DRAW,
+	ACT_SLAM_THROW_TO_STICKWALL,
+	ACT_SLAM_THROW_TO_STICKWALL_ND,
+	ACT_SLAM_THROW_DETONATE,
+	ACT_SLAM_THROW_DETONATOR_HOLSTER,
+	ACT_SLAM_THROW_TO_TRIPMINE_ND,
+	ACT_SLAM_TRIPMINE_IDLE,
+	ACT_SLAM_TRIPMINE_DRAW,
+	ACT_SLAM_TRIPMINE_ATTACH,
+	ACT_SLAM_TRIPMINE_ATTACH2,
+	ACT_SLAM_TRIPMINE_TO_STICKWALL_ND,
+	ACT_SLAM_TRIPMINE_TO_THROW_ND,
+	ACT_SLAM_DETONATOR_IDLE,
+	ACT_SLAM_DETONATOR_DRAW,
+	ACT_SLAM_DETONATOR_DETONATE,
+	ACT_SLAM_DETONATOR_HOLSTER,
+	ACT_SLAM_DETONATOR_STICKWALL_DRAW,
+	ACT_SLAM_DETONATOR_THROW_DRAW,
+
+	// Shotgun Specialty Activities
+	ACT_SHOTGUN_RELOAD_START,
+	ACT_SHOTGUN_RELOAD_FINISH,
+	ACT_SHOTGUN_PUMP,
+
+	// SMG2 special activities
+	ACT_SMG2_IDLE2,
+	ACT_SMG2_FIRE2,
+	ACT_SMG2_DRAW2,
+	ACT_SMG2_RELOAD2,
+	ACT_SMG2_DRYFIRE2,
+	ACT_SMG2_TOAUTO,
+	ACT_SMG2_TOBURST,
+
+	// Physcannon special activities
+	ACT_PHYSCANNON_UPGRADE,
+
+	// weapon override activities
+	ACT_RANGE_ATTACK_AR1,
+	ACT_RANGE_ATTACK_AR2,
+	ACT_RANGE_ATTACK_AR2_LOW,
+	ACT_RANGE_ATTACK_AR2_GRENADE,
+	ACT_RANGE_ATTACK_HMG1,
+	ACT_RANGE_ATTACK_ML,
+	ACT_RANGE_ATTACK_SMG1,
+	ACT_RANGE_ATTACK_SMG1_LOW,
+	ACT_RANGE_ATTACK_SMG2,
+	ACT_RANGE_ATTACK_SHOTGUN,
+	ACT_RANGE_ATTACK_SHOTGUN_LOW,
+	ACT_RANGE_ATTACK_PISTOL,
+	ACT_RANGE_ATTACK_PISTOL_LOW,
+	ACT_RANGE_ATTACK_SLAM,
+	ACT_RANGE_ATTACK_TRIPWIRE,
+	ACT_RANGE_ATTACK_THROW,
+	ACT_RANGE_ATTACK_SNIPER_RIFLE,
+	ACT_RANGE_ATTACK_RPG,
+	ACT_MELEE_ATTACK_SWING,
+
+	ACT_RANGE_AIM_LOW,
+	ACT_RANGE_AIM_SMG1_LOW,
+	ACT_RANGE_AIM_PISTOL_LOW,
+	ACT_RANGE_AIM_AR2_LOW,
+
+	ACT_COVER_PISTOL_LOW,
+	ACT_COVER_SMG1_LOW,
+
+	// weapon override activities
+	ACT_GESTURE_RANGE_ATTACK_AR1,
+	ACT_GESTURE_RANGE_ATTACK_AR2,
+	ACT_GESTURE_RANGE_ATTACK_AR2_GRENADE,
+	ACT_GESTURE_RANGE_ATTACK_HMG1,
+	ACT_GESTURE_RANGE_ATTACK_ML,
+	ACT_GESTURE_RANGE_ATTACK_SMG1,
+	ACT_GESTURE_RANGE_ATTACK_SMG1_LOW,
+	ACT_GESTURE_RANGE_ATTACK_SMG2,
+	ACT_GESTURE_RANGE_ATTACK_SHOTGUN,
+	ACT_GESTURE_RANGE_ATTACK_PISTOL,
+	ACT_GESTURE_RANGE_ATTACK_PISTOL_LOW,
+	ACT_GESTURE_RANGE_ATTACK_SLAM,
+	ACT_GESTURE_RANGE_ATTACK_TRIPWIRE,
+	ACT_GESTURE_RANGE_ATTACK_THROW,
+	ACT_GESTURE_RANGE_ATTACK_SNIPER_RIFLE,
+	ACT_GESTURE_MELEE_ATTACK_SWING,
+
+	ACT_IDLE_RIFLE,
+	ACT_IDLE_SMG1,
+	ACT_IDLE_ANGRY_SMG1,
+	ACT_IDLE_PISTOL,
+	ACT_IDLE_ANGRY_PISTOL,
+	ACT_IDLE_ANGRY_SHOTGUN,
+	ACT_IDLE_STEALTH_PISTOL,
+
+	ACT_IDLE_PACKAGE,
+	ACT_WALK_PACKAGE,
+	ACT_IDLE_SUITCASE,
+	ACT_WALK_SUITCASE,
+
+	ACT_IDLE_SMG1_RELAXED,
+	ACT_IDLE_SMG1_STIMULATED,
+	ACT_WALK_RIFLE_RELAXED,
+	ACT_RUN_RIFLE_RELAXED,
+	ACT_WALK_RIFLE_STIMULATED,
+	ACT_RUN_RIFLE_STIMULATED,
+
+	ACT_IDLE_AIM_RIFLE_STIMULATED,
+	ACT_WALK_AIM_RIFLE_STIMULATED,
+	ACT_RUN_AIM_RIFLE_STIMULATED,
+
+	ACT_IDLE_SHOTGUN_RELAXED,
+	ACT_IDLE_SHOTGUN_STIMULATED,
+	ACT_IDLE_SHOTGUN_AGITATED,
+
+	// Policing activities
+	ACT_WALK_ANGRY,
+	ACT_POLICE_HARASS1,
+	ACT_POLICE_HARASS2,
+
+	// Manned guns
+	ACT_IDLE_MANNEDGUN,
+
+	// Melee weapon
+	ACT_IDLE_MELEE,
+	ACT_IDLE_ANGRY_MELEE,
+
+	// RPG activities
+	ACT_IDLE_RPG_RELAXED,
+	ACT_IDLE_RPG,
+	ACT_IDLE_ANGRY_RPG,
+	ACT_COVER_LOW_RPG,
+	ACT_WALK_RPG,
+	ACT_RUN_RPG,
+	ACT_WALK_CROUCH_RPG,
+	ACT_RUN_CROUCH_RPG,
+	ACT_WALK_RPG_RELAXED,
+	ACT_RUN_RPG_RELAXED,
+
+	ACT_WALK_RIFLE,
+	ACT_WALK_AIM_RIFLE,
+	ACT_WALK_CROUCH_RIFLE,
+	ACT_WALK_CROUCH_AIM_RIFLE,
+	ACT_RUN_RIFLE,
+	ACT_RUN_AIM_RIFLE,
+	ACT_RUN_CROUCH_RIFLE,
+	ACT_RUN_CROUCH_AIM_RIFLE,
+	ACT_RUN_STEALTH_PISTOL,
+
+	ACT_WALK_AIM_SHOTGUN,
+	ACT_RUN_AIM_SHOTGUN,
+
+	ACT_WALK_PISTOL,
+	ACT_RUN_PISTOL,
+	ACT_WALK_AIM_PISTOL,
+	ACT_RUN_AIM_PISTOL,
+	ACT_WALK_STEALTH_PISTOL,
+	ACT_WALK_AIM_STEALTH_PISTOL,
+	ACT_RUN_AIM_STEALTH_PISTOL,
+
+	// Reloads
+	ACT_RELOAD_PISTOL,
+	ACT_RELOAD_PISTOL_LOW,
+	ACT_RELOAD_SMG1,
+	ACT_RELOAD_SMG1_LOW,
+	ACT_RELOAD_SHOTGUN,
+	ACT_RELOAD_SHOTGUN_LOW,
+
+	ACT_GESTURE_RELOAD,
+	ACT_GESTURE_RELOAD_PISTOL,
+	ACT_GESTURE_RELOAD_SMG1,
+	ACT_GESTURE_RELOAD_SHOTGUN,
+
+	// Busy animations
+	ACT_BUSY_LEAN_LEFT,
+	ACT_BUSY_LEAN_LEFT_ENTRY,
+	ACT_BUSY_LEAN_LEFT_EXIT,
+	ACT_BUSY_LEAN_BACK,
+	ACT_BUSY_LEAN_BACK_ENTRY,
+	ACT_BUSY_LEAN_BACK_EXIT,
+	ACT_BUSY_SIT_GROUND,
+	ACT_BUSY_SIT_GROUND_ENTRY,
+	ACT_BUSY_SIT_GROUND_EXIT,
+	ACT_BUSY_SIT_CHAIR,
+	ACT_BUSY_SIT_CHAIR_ENTRY,
+	ACT_BUSY_SIT_CHAIR_EXIT,
+	ACT_BUSY_STAND,
+	ACT_BUSY_QUEUE,
+
+	// Dodge animations
+	ACT_DUCK_DODGE,
+
+	// For NPCs being lifted/eaten by barnacles:
+	// being swallowed by a barnacle
+	ACT_DIE_BARNACLE_SWALLOW,
+	// being lifted by a barnacle
+	ACT_GESTURE_BARNACLE_STRANGLE,
+
+	ACT_PHYSCANNON_DETACH,	// An activity to be played if we're picking this up with the physcannon
+	ACT_PHYSCANNON_ANIMATE, // An activity to be played by an object being picked up with the physcannon, but has different behavior to DETACH
+	ACT_PHYSCANNON_ANIMATE_PRE,	// An activity to be played by an object being picked up with the physcannon, before playing the ACT_PHYSCANNON_ANIMATE
+	ACT_PHYSCANNON_ANIMATE_POST,// An activity to be played by an object being picked up with the physcannon, after playing the ACT_PHYSCANNON_ANIMATE
+
+	ACT_DIE_FRONTSIDE,
+	ACT_DIE_RIGHTSIDE,
+	ACT_DIE_BACKSIDE,
+	ACT_DIE_LEFTSIDE,
+
+	ACT_DIE_CROUCH_FRONTSIDE,
+	ACT_DIE_CROUCH_RIGHTSIDE,
+	ACT_DIE_CROUCH_BACKSIDE,
+	ACT_DIE_CROUCH_LEFTSIDE,
+
+	ACT_OPEN_DOOR,
+
+	// Dynamic interactions
+	ACT_DI_ALYX_ZOMBIE_MELEE,
+	ACT_DI_ALYX_ZOMBIE_TORSO_MELEE,
+	ACT_DI_ALYX_HEADCRAB_MELEE,
+	ACT_DI_ALYX_ANTLION,
+
+	ACT_DI_ALYX_ZOMBIE_SHOTGUN64,
+	ACT_DI_ALYX_ZOMBIE_SHOTGUN26,
+
+	ACT_READINESS_RELAXED_TO_STIMULATED,
+	ACT_READINESS_RELAXED_TO_STIMULATED_WALK,
+	ACT_READINESS_AGITATED_TO_STIMULATED,
+	ACT_READINESS_STIMULATED_TO_RELAXED,
+
+	ACT_READINESS_PISTOL_RELAXED_TO_STIMULATED,
+	ACT_READINESS_PISTOL_RELAXED_TO_STIMULATED_WALK,
+	ACT_READINESS_PISTOL_AGITATED_TO_STIMULATED,
+	ACT_READINESS_PISTOL_STIMULATED_TO_RELAXED,
+
+	ACT_IDLE_CARRY,
+	ACT_WALK_CARRY,
+
+	//===========================
+	// TF2 Specific Activities
+	//===========================
+	ACT_STARTDYING,
+	ACT_DYINGLOOP,
+	ACT_DYINGTODEAD,
+
+	ACT_RIDE_MANNED_GUN,
+
+	// All viewmodels
+	ACT_VM_SPRINT_ENTER,
+	ACT_VM_SPRINT_IDLE,
+	ACT_VM_SPRINT_LEAVE,
+
+	// Looping weapon firing
+	ACT_FIRE_START,
+	ACT_FIRE_LOOP,
+	ACT_FIRE_END,
+
+	ACT_CROUCHING_GRENADEIDLE,
+	ACT_CROUCHING_GRENADEREADY,
+	ACT_CROUCHING_PRIMARYATTACK,
+	ACT_OVERLAY_GRENADEIDLE,
+	ACT_OVERLAY_GRENADEREADY,
+	ACT_OVERLAY_PRIMARYATTACK,
+	ACT_OVERLAY_SHIELD_UP,
+	ACT_OVERLAY_SHIELD_DOWN,
+	ACT_OVERLAY_SHIELD_UP_IDLE,
+	ACT_OVERLAY_SHIELD_ATTACK,
+	ACT_OVERLAY_SHIELD_KNOCKBACK,
+	ACT_SHIELD_UP,
+	ACT_SHIELD_DOWN,
+	ACT_SHIELD_UP_IDLE,
+	ACT_SHIELD_ATTACK,
+	ACT_SHIELD_KNOCKBACK,
+	ACT_CROUCHING_SHIELD_UP,
+	ACT_CROUCHING_SHIELD_DOWN,
+	ACT_CROUCHING_SHIELD_UP_IDLE,
+	ACT_CROUCHING_SHIELD_ATTACK,
+	ACT_CROUCHING_SHIELD_KNOCKBACK,
+
+	// turning in place
+	ACT_TURNRIGHT45,
+	ACT_TURNLEFT45,
+
+	ACT_TURN,
+
+	ACT_OBJ_ASSEMBLING,
+	ACT_OBJ_DISMANTLING,
+	ACT_OBJ_STARTUP,
+	ACT_OBJ_RUNNING,
+	ACT_OBJ_IDLE,
+	ACT_OBJ_PLACING,
+	ACT_OBJ_DETERIORATING,
+	ACT_OBJ_UPGRADING,
+
+	// Deploy
+	ACT_DEPLOY,
+	ACT_DEPLOY_IDLE,
+	ACT_UNDEPLOY,
+
+	// Crossbow
+	ACT_CROSSBOW_DRAW_UNLOADED,
+
+	// Gauss
+	ACT_GAUSS_SPINUP,
+	ACT_GAUSS_SPINCYCLE,
+
+	//===========================
+	// CSPort Specific Activities
+	//===========================
+
+	ACT_VM_PRIMARYATTACK_SILENCED,		// fire
+	ACT_VM_RELOAD_SILENCED,
+	ACT_VM_DRYFIRE_SILENCED,				// fire with no ammo loaded.
+	ACT_VM_IDLE_SILENCED,
+	ACT_VM_DRAW_SILENCED,
+	ACT_VM_IDLE_EMPTY_LEFT,
+	ACT_VM_DRYFIRE_LEFT,
+
+	// new for CS2
+	ACT_VM_IS_DRAW,
+	ACT_VM_IS_HOLSTER,
+	ACT_VM_IS_IDLE,
+	ACT_VM_IS_PRIMARYATTACK,
+
+	ACT_PLAYER_IDLE_FIRE,
+	ACT_PLAYER_CROUCH_FIRE,
+	ACT_PLAYER_CROUCH_WALK_FIRE,
+	ACT_PLAYER_WALK_FIRE,
+	ACT_PLAYER_RUN_FIRE,
+
+	ACT_IDLETORUN,
+	ACT_RUNTOIDLE,
+
+	ACT_VM_DRAW_DEPLOYED,
+
+	ACT_HL2MP_IDLE_MELEE,
+	ACT_HL2MP_RUN_MELEE,
+	ACT_HL2MP_IDLE_CROUCH_MELEE,
+	ACT_HL2MP_WALK_CROUCH_MELEE,
+	ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE,
+	ACT_HL2MP_GESTURE_RELOAD_MELEE,
+	ACT_HL2MP_JUMP_MELEE,
+
+	// Portal!
+	ACT_VM_FIZZLE,
+
+	// Multiplayer
+	ACT_MP_STAND_IDLE,
+	ACT_MP_CROUCH_IDLE,
+	ACT_MP_CROUCH_DEPLOYED_IDLE,
+	ACT_MP_CROUCH_DEPLOYED,
+	ACT_MP_DEPLOYED_IDLE,
+	ACT_MP_RUN,
+	ACT_MP_WALK,
+	ACT_MP_AIRWALK,
+	ACT_MP_CROUCHWALK,
+	ACT_MP_SPRINT,
+	ACT_MP_JUMP,
+	ACT_MP_JUMP_START,
+	ACT_MP_JUMP_FLOAT,
+	ACT_MP_JUMP_LAND,
+	ACT_MP_JUMP_IMPACT_N,
+	ACT_MP_JUMP_IMPACT_E,
+	ACT_MP_JUMP_IMPACT_W,
+	ACT_MP_JUMP_IMPACT_S,
+	ACT_MP_JUMP_IMPACT_TOP,
+	ACT_MP_DOUBLEJUMP,
+	ACT_MP_SWIM,
+	ACT_MP_DEPLOYED,
+	ACT_MP_SWIM_DEPLOYED,
+	ACT_MP_VCD,
+
+	ACT_MP_ATTACK_STAND_PRIMARYFIRE,
+	ACT_MP_ATTACK_STAND_PRIMARYFIRE_DEPLOYED,
+	ACT_MP_ATTACK_STAND_SECONDARYFIRE,
+	ACT_MP_ATTACK_STAND_GRENADE,
+	ACT_MP_ATTACK_CROUCH_PRIMARYFIRE,
+	ACT_MP_ATTACK_CROUCH_PRIMARYFIRE_DEPLOYED,
+	ACT_MP_ATTACK_CROUCH_SECONDARYFIRE,
+	ACT_MP_ATTACK_CROUCH_GRENADE,
+	ACT_MP_ATTACK_SWIM_PRIMARYFIRE,
+	ACT_MP_ATTACK_SWIM_SECONDARYFIRE,
+	ACT_MP_ATTACK_SWIM_GRENADE,
+	ACT_MP_ATTACK_AIRWALK_PRIMARYFIRE,
+	ACT_MP_ATTACK_AIRWALK_SECONDARYFIRE,
+	ACT_MP_ATTACK_AIRWALK_GRENADE,
+	ACT_MP_RELOAD_STAND,
+	ACT_MP_RELOAD_STAND_LOOP,
+	ACT_MP_RELOAD_STAND_END,
+	ACT_MP_RELOAD_CROUCH,
+	ACT_MP_RELOAD_CROUCH_LOOP,
+	ACT_MP_RELOAD_CROUCH_END,
+	ACT_MP_RELOAD_SWIM,
+	ACT_MP_RELOAD_SWIM_LOOP,
+	ACT_MP_RELOAD_SWIM_END,
+	ACT_MP_RELOAD_AIRWALK,
+	ACT_MP_RELOAD_AIRWALK_LOOP,
+	ACT_MP_RELOAD_AIRWALK_END,
+	ACT_MP_ATTACK_STAND_PREFIRE,
+	ACT_MP_ATTACK_STAND_POSTFIRE,
+	ACT_MP_ATTACK_STAND_STARTFIRE,
+	ACT_MP_ATTACK_CROUCH_PREFIRE,
+	ACT_MP_ATTACK_CROUCH_POSTFIRE,
+	ACT_MP_ATTACK_SWIM_PREFIRE,
+	ACT_MP_ATTACK_SWIM_POSTFIRE,
+
+	// Multiplayer - Primary
+	ACT_MP_STAND_PRIMARY,
+	ACT_MP_CROUCH_PRIMARY,
+	ACT_MP_RUN_PRIMARY,
+	ACT_MP_WALK_PRIMARY,
+	ACT_MP_AIRWALK_PRIMARY,
+	ACT_MP_CROUCHWALK_PRIMARY,
+	ACT_MP_JUMP_PRIMARY,
+	ACT_MP_JUMP_START_PRIMARY,
+	ACT_MP_JUMP_FLOAT_PRIMARY,
+	ACT_MP_JUMP_LAND_PRIMARY,
+	ACT_MP_SWIM_PRIMARY,
+	ACT_MP_DEPLOYED_PRIMARY,
+	ACT_MP_SWIM_DEPLOYED_PRIMARY,
+
+	ACT_MP_ATTACK_STAND_PRIMARY,		// RUN, WALK
+	ACT_MP_ATTACK_STAND_PRIMARY_DEPLOYED,
+	ACT_MP_ATTACK_CROUCH_PRIMARY,		// CROUCHWALK
+	ACT_MP_ATTACK_CROUCH_PRIMARY_DEPLOYED,
+	ACT_MP_ATTACK_SWIM_PRIMARY,
+	ACT_MP_ATTACK_AIRWALK_PRIMARY,
+
+	ACT_MP_RELOAD_STAND_PRIMARY,		// RUN, WALK
+	ACT_MP_RELOAD_STAND_PRIMARY_LOOP,
+	ACT_MP_RELOAD_STAND_PRIMARY_END,
+	ACT_MP_RELOAD_CROUCH_PRIMARY,		// CROUCHWALK
+	ACT_MP_RELOAD_CROUCH_PRIMARY_LOOP,
+	ACT_MP_RELOAD_CROUCH_PRIMARY_END,
+	ACT_MP_RELOAD_SWIM_PRIMARY,
+	ACT_MP_RELOAD_SWIM_PRIMARY_LOOP,
+	ACT_MP_RELOAD_SWIM_PRIMARY_END,
+	ACT_MP_RELOAD_AIRWALK_PRIMARY,
+	ACT_MP_RELOAD_AIRWALK_PRIMARY_LOOP,
+	ACT_MP_RELOAD_AIRWALK_PRIMARY_END,
+
+	ACT_MP_ATTACK_STAND_GRENADE_PRIMARY,		// RUN, WALK
+	ACT_MP_ATTACK_CROUCH_GRENADE_PRIMARY,		// CROUCHWALK
+	ACT_MP_ATTACK_SWIM_GRENADE_PRIMARY,
+	ACT_MP_ATTACK_AIRWALK_GRENADE_PRIMARY,
+
+
+	// Secondary
+	ACT_MP_STAND_SECONDARY,
+	ACT_MP_CROUCH_SECONDARY,
+	ACT_MP_RUN_SECONDARY,
+	ACT_MP_WALK_SECONDARY,
+	ACT_MP_AIRWALK_SECONDARY,
+	ACT_MP_CROUCHWALK_SECONDARY,
+	ACT_MP_JUMP_SECONDARY,
+	ACT_MP_JUMP_START_SECONDARY,
+	ACT_MP_JUMP_FLOAT_SECONDARY,
+	ACT_MP_JUMP_LAND_SECONDARY,
+	ACT_MP_SWIM_SECONDARY,
+
+	ACT_MP_ATTACK_STAND_SECONDARY,		// RUN, WALK
+	ACT_MP_ATTACK_CROUCH_SECONDARY,		// CROUCHWALK
+	ACT_MP_ATTACK_SWIM_SECONDARY,
+	ACT_MP_ATTACK_AIRWALK_SECONDARY,
+
+	ACT_MP_RELOAD_STAND_SECONDARY,		// RUN, WALK
+	ACT_MP_RELOAD_STAND_SECONDARY_LOOP,
+	ACT_MP_RELOAD_STAND_SECONDARY_END,
+	ACT_MP_RELOAD_CROUCH_SECONDARY,		// CROUCHWALK
+	ACT_MP_RELOAD_CROUCH_SECONDARY_LOOP,
+	ACT_MP_RELOAD_CROUCH_SECONDARY_END,
+	ACT_MP_RELOAD_SWIM_SECONDARY,
+	ACT_MP_RELOAD_SWIM_SECONDARY_LOOP,
+	ACT_MP_RELOAD_SWIM_SECONDARY_END,
+	ACT_MP_RELOAD_AIRWALK_SECONDARY,
+	ACT_MP_RELOAD_AIRWALK_SECONDARY_LOOP,
+	ACT_MP_RELOAD_AIRWALK_SECONDARY_END,
+
+	ACT_MP_ATTACK_STAND_GRENADE_SECONDARY,		// RUN, WALK
+	ACT_MP_ATTACK_CROUCH_GRENADE_SECONDARY,		// CROUCHWALK
+	ACT_MP_ATTACK_SWIM_GRENADE_SECONDARY,
+	ACT_MP_ATTACK_AIRWALK_GRENADE_SECONDARY,
+
+	// Melee
+	ACT_MP_STAND_MELEE,
+	ACT_MP_CROUCH_MELEE,
+	ACT_MP_RUN_MELEE,
+	ACT_MP_WALK_MELEE,
+	ACT_MP_AIRWALK_MELEE,
+	ACT_MP_CROUCHWALK_MELEE,
+	ACT_MP_JUMP_MELEE,
+	ACT_MP_JUMP_START_MELEE,
+	ACT_MP_JUMP_FLOAT_MELEE,
+	ACT_MP_JUMP_LAND_MELEE,
+	ACT_MP_SWIM_MELEE,
+
+	ACT_MP_ATTACK_STAND_MELEE,		// RUN, WALK
+	ACT_MP_ATTACK_STAND_MELEE_SECONDARY,
+	ACT_MP_ATTACK_CROUCH_MELEE,		// CROUCHWALK
+	ACT_MP_ATTACK_CROUCH_MELEE_SECONDARY,
+	ACT_MP_ATTACK_SWIM_MELEE,
+	ACT_MP_ATTACK_AIRWALK_MELEE,
+
+	ACT_MP_ATTACK_STAND_GRENADE_MELEE,		// RUN, WALK
+	ACT_MP_ATTACK_CROUCH_GRENADE_MELEE,		// CROUCHWALK
+	ACT_MP_ATTACK_SWIM_GRENADE_MELEE,
+	ACT_MP_ATTACK_AIRWALK_GRENADE_MELEE,
+
+	// Item1
+	ACT_MP_STAND_ITEM1,
+	ACT_MP_CROUCH_ITEM1,
+	ACT_MP_RUN_ITEM1,
+	ACT_MP_WALK_ITEM1,
+	ACT_MP_AIRWALK_ITEM1,
+	ACT_MP_CROUCHWALK_ITEM1,
+	ACT_MP_JUMP_ITEM1,
+	ACT_MP_JUMP_START_ITEM1,
+	ACT_MP_JUMP_FLOAT_ITEM1,
+	ACT_MP_JUMP_LAND_ITEM1,
+	ACT_MP_SWIM_ITEM1,
+
+	ACT_MP_ATTACK_STAND_ITEM1,		// RUN, WALK
+	ACT_MP_ATTACK_STAND_ITEM1_SECONDARY,
+	ACT_MP_ATTACK_CROUCH_ITEM1,		// CROUCHWALK
+	ACT_MP_ATTACK_CROUCH_ITEM1_SECONDARY,
+	ACT_MP_ATTACK_SWIM_ITEM1,
+	ACT_MP_ATTACK_AIRWALK_ITEM1,
+
+	// Item2
+	ACT_MP_STAND_ITEM2,
+	ACT_MP_CROUCH_ITEM2,
+	ACT_MP_RUN_ITEM2,
+	ACT_MP_WALK_ITEM2,
+	ACT_MP_AIRWALK_ITEM2,
+	ACT_MP_CROUCHWALK_ITEM2,
+	ACT_MP_JUMP_ITEM2,
+	ACT_MP_JUMP_START_ITEM2,
+	ACT_MP_JUMP_FLOAT_ITEM2,
+	ACT_MP_JUMP_LAND_ITEM2,
+	ACT_MP_SWIM_ITEM2,
+
+	ACT_MP_ATTACK_STAND_ITEM2,		// RUN, WALK
+	ACT_MP_ATTACK_STAND_ITEM2_SECONDARY,
+	ACT_MP_ATTACK_CROUCH_ITEM2,		// CROUCHWALK
+	ACT_MP_ATTACK_CROUCH_ITEM2_SECONDARY,
+	ACT_MP_ATTACK_SWIM_ITEM2,
+	ACT_MP_ATTACK_AIRWALK_ITEM2,
+
+	// Flinches
+	ACT_MP_GESTURE_FLINCH,
+	ACT_MP_GESTURE_FLINCH_PRIMARY,
+	ACT_MP_GESTURE_FLINCH_SECONDARY,
+	ACT_MP_GESTURE_FLINCH_MELEE,
+	ACT_MP_GESTURE_FLINCH_ITEM1,
+	ACT_MP_GESTURE_FLINCH_ITEM2,
+
+	ACT_MP_GESTURE_FLINCH_HEAD,
+	ACT_MP_GESTURE_FLINCH_CHEST,
+	ACT_MP_GESTURE_FLINCH_STOMACH,
+	ACT_MP_GESTURE_FLINCH_LEFTARM,
+	ACT_MP_GESTURE_FLINCH_RIGHTARM,
+	ACT_MP_GESTURE_FLINCH_LEFTLEG,
+	ACT_MP_GESTURE_FLINCH_RIGHTLEG,
+
+	// Team Fortress specific - medic heal, medic infect, etc.....
+	ACT_MP_GRENADE1_DRAW,
+	ACT_MP_GRENADE1_IDLE,
+	ACT_MP_GRENADE1_ATTACK,
+	ACT_MP_GRENADE2_DRAW,
+	ACT_MP_GRENADE2_IDLE,
+	ACT_MP_GRENADE2_ATTACK,
+
+	ACT_MP_PRIMARY_GRENADE1_DRAW,
+	ACT_MP_PRIMARY_GRENADE1_IDLE,
+	ACT_MP_PRIMARY_GRENADE1_ATTACK,
+	ACT_MP_PRIMARY_GRENADE2_DRAW,
+	ACT_MP_PRIMARY_GRENADE2_IDLE,
+	ACT_MP_PRIMARY_GRENADE2_ATTACK,
+
+	ACT_MP_SECONDARY_GRENADE1_DRAW,
+	ACT_MP_SECONDARY_GRENADE1_IDLE,
+	ACT_MP_SECONDARY_GRENADE1_ATTACK,
+	ACT_MP_SECONDARY_GRENADE2_DRAW,
+	ACT_MP_SECONDARY_GRENADE2_IDLE,
+	ACT_MP_SECONDARY_GRENADE2_ATTACK,
+
+	ACT_MP_MELEE_GRENADE1_DRAW,
+	ACT_MP_MELEE_GRENADE1_IDLE,
+	ACT_MP_MELEE_GRENADE1_ATTACK,
+	ACT_MP_MELEE_GRENADE2_DRAW,
+	ACT_MP_MELEE_GRENADE2_IDLE,
+	ACT_MP_MELEE_GRENADE2_ATTACK,
+
+	ACT_MP_ITEM1_GRENADE1_DRAW,
+	ACT_MP_ITEM1_GRENADE1_IDLE,
+	ACT_MP_ITEM1_GRENADE1_ATTACK,
+	ACT_MP_ITEM1_GRENADE2_DRAW,
+	ACT_MP_ITEM1_GRENADE2_IDLE,
+	ACT_MP_ITEM1_GRENADE2_ATTACK,
+
+	ACT_MP_ITEM2_GRENADE1_DRAW,
+	ACT_MP_ITEM2_GRENADE1_IDLE,
+	ACT_MP_ITEM2_GRENADE1_ATTACK,
+	ACT_MP_ITEM2_GRENADE2_DRAW,
+	ACT_MP_ITEM2_GRENADE2_IDLE,
+	ACT_MP_ITEM2_GRENADE2_ATTACK,
+
+	// Building
+	ACT_MP_STAND_BUILDING,
+	ACT_MP_CROUCH_BUILDING,
+	ACT_MP_RUN_BUILDING,
+	ACT_MP_WALK_BUILDING,
+	ACT_MP_AIRWALK_BUILDING,
+	ACT_MP_CROUCHWALK_BUILDING,
+	ACT_MP_JUMP_BUILDING,
+	ACT_MP_JUMP_START_BUILDING,
+	ACT_MP_JUMP_FLOAT_BUILDING,
+	ACT_MP_JUMP_LAND_BUILDING,
+	ACT_MP_SWIM_BUILDING,
+
+	ACT_MP_ATTACK_STAND_BUILDING,		// RUN, WALK
+	ACT_MP_ATTACK_CROUCH_BUILDING,		// CROUCHWALK
+	ACT_MP_ATTACK_SWIM_BUILDING,
+	ACT_MP_ATTACK_AIRWALK_BUILDING,
+
+	ACT_MP_ATTACK_STAND_GRENADE_BUILDING,		// RUN, WALK
+	ACT_MP_ATTACK_CROUCH_GRENADE_BUILDING,		// CROUCHWALK
+	ACT_MP_ATTACK_SWIM_GRENADE_BUILDING,
+	ACT_MP_ATTACK_AIRWALK_GRENADE_BUILDING,
+
+	ACT_MP_STAND_PDA,
+	ACT_MP_CROUCH_PDA,
+	ACT_MP_RUN_PDA,
+	ACT_MP_WALK_PDA,
+	ACT_MP_AIRWALK_PDA,
+	ACT_MP_CROUCHWALK_PDA,
+	ACT_MP_JUMP_PDA,
+	ACT_MP_JUMP_START_PDA,
+	ACT_MP_JUMP_FLOAT_PDA,
+	ACT_MP_JUMP_LAND_PDA,
+	ACT_MP_SWIM_PDA,
+
+	ACT_MP_ATTACK_STAND_PDA,
+	ACT_MP_ATTACK_SWIM_PDA,
+
+	ACT_MP_GESTURE_VC_HANDMOUTH,
+	ACT_MP_GESTURE_VC_FINGERPOINT,
+	ACT_MP_GESTURE_VC_FISTPUMP,
+	ACT_MP_GESTURE_VC_THUMBSUP,
+	ACT_MP_GESTURE_VC_NODYES,
+	ACT_MP_GESTURE_VC_NODNO,
+
+	ACT_MP_GESTURE_VC_HANDMOUTH_PRIMARY,
+	ACT_MP_GESTURE_VC_FINGERPOINT_PRIMARY,
+	ACT_MP_GESTURE_VC_FISTPUMP_PRIMARY,
+	ACT_MP_GESTURE_VC_THUMBSUP_PRIMARY,
+	ACT_MP_GESTURE_VC_NODYES_PRIMARY,
+	ACT_MP_GESTURE_VC_NODNO_PRIMARY,
+
+	ACT_MP_GESTURE_VC_HANDMOUTH_SECONDARY,
+	ACT_MP_GESTURE_VC_FINGERPOINT_SECONDARY,
+	ACT_MP_GESTURE_VC_FISTPUMP_SECONDARY,
+	ACT_MP_GESTURE_VC_THUMBSUP_SECONDARY,
+	ACT_MP_GESTURE_VC_NODYES_SECONDARY,
+	ACT_MP_GESTURE_VC_NODNO_SECONDARY,
+
+	ACT_MP_GESTURE_VC_HANDMOUTH_MELEE,
+	ACT_MP_GESTURE_VC_FINGERPOINT_MELEE,
+	ACT_MP_GESTURE_VC_FISTPUMP_MELEE,
+	ACT_MP_GESTURE_VC_THUMBSUP_MELEE,
+	ACT_MP_GESTURE_VC_NODYES_MELEE,
+	ACT_MP_GESTURE_VC_NODNO_MELEE,
+
+	ACT_MP_GESTURE_VC_HANDMOUTH_ITEM1,
+	ACT_MP_GESTURE_VC_FINGERPOINT_ITEM1,
+	ACT_MP_GESTURE_VC_FISTPUMP_ITEM1,
+	ACT_MP_GESTURE_VC_THUMBSUP_ITEM1,
+	ACT_MP_GESTURE_VC_NODYES_ITEM1,
+	ACT_MP_GESTURE_VC_NODNO_ITEM1,
+
+	ACT_MP_GESTURE_VC_HANDMOUTH_ITEM2,
+	ACT_MP_GESTURE_VC_FINGERPOINT_ITEM2,
+	ACT_MP_GESTURE_VC_FISTPUMP_ITEM2,
+	ACT_MP_GESTURE_VC_THUMBSUP_ITEM2,
+	ACT_MP_GESTURE_VC_NODYES_ITEM2,
+	ACT_MP_GESTURE_VC_NODNO_ITEM2,
+
+	ACT_MP_GESTURE_VC_HANDMOUTH_BUILDING,
+	ACT_MP_GESTURE_VC_FINGERPOINT_BUILDING,
+	ACT_MP_GESTURE_VC_FISTPUMP_BUILDING,
+	ACT_MP_GESTURE_VC_THUMBSUP_BUILDING,
+	ACT_MP_GESTURE_VC_NODYES_BUILDING,
+	ACT_MP_GESTURE_VC_NODNO_BUILDING,
+
+	ACT_MP_GESTURE_VC_HANDMOUTH_PDA,
+	ACT_MP_GESTURE_VC_FINGERPOINT_PDA,
+	ACT_MP_GESTURE_VC_FISTPUMP_PDA,
+	ACT_MP_GESTURE_VC_THUMBSUP_PDA,
+	ACT_MP_GESTURE_VC_NODYES_PDA,
+	ACT_MP_GESTURE_VC_NODNO_PDA,
+
+
+	ACT_VM_UNUSABLE,
+	ACT_VM_UNUSABLE_TO_USABLE,
+	ACT_VM_USABLE_TO_UNUSABLE,
+
+	// Specific viewmodel activities for weapon roles
+	ACT_PRIMARY_VM_DRAW,
+	ACT_PRIMARY_VM_HOLSTER,
+	ACT_PRIMARY_VM_IDLE,
+	ACT_PRIMARY_VM_PULLBACK,
+	ACT_PRIMARY_VM_PRIMARYATTACK,
+	ACT_PRIMARY_VM_SECONDARYATTACK,
+	ACT_PRIMARY_VM_RELOAD,
+	ACT_PRIMARY_VM_DRYFIRE,
+	ACT_PRIMARY_VM_IDLE_TO_LOWERED,
+	ACT_PRIMARY_VM_IDLE_LOWERED,
+	ACT_PRIMARY_VM_LOWERED_TO_IDLE,
+
+	ACT_SECONDARY_VM_DRAW,
+	ACT_SECONDARY_VM_HOLSTER,
+	ACT_SECONDARY_VM_IDLE,
+	ACT_SECONDARY_VM_PULLBACK,
+	ACT_SECONDARY_VM_PRIMARYATTACK,
+	ACT_SECONDARY_VM_SECONDARYATTACK,
+	ACT_SECONDARY_VM_RELOAD,
+	ACT_SECONDARY_VM_DRYFIRE,
+	ACT_SECONDARY_VM_IDLE_TO_LOWERED,
+	ACT_SECONDARY_VM_IDLE_LOWERED,
+	ACT_SECONDARY_VM_LOWERED_TO_IDLE,
+
+	ACT_MELEE_VM_DRAW,
+	ACT_MELEE_VM_HOLSTER,
+	ACT_MELEE_VM_IDLE,
+	ACT_MELEE_VM_PULLBACK,
+	ACT_MELEE_VM_PRIMARYATTACK,
+	ACT_MELEE_VM_SECONDARYATTACK,
+	ACT_MELEE_VM_RELOAD,
+	ACT_MELEE_VM_DRYFIRE,
+	ACT_MELEE_VM_IDLE_TO_LOWERED,
+	ACT_MELEE_VM_IDLE_LOWERED,
+	ACT_MELEE_VM_LOWERED_TO_IDLE,
+
+	ACT_PDA_VM_DRAW,
+	ACT_PDA_VM_HOLSTER,
+	ACT_PDA_VM_IDLE,
+	ACT_PDA_VM_PULLBACK,
+	ACT_PDA_VM_PRIMARYATTACK,
+	ACT_PDA_VM_SECONDARYATTACK,
+	ACT_PDA_VM_RELOAD,
+	ACT_PDA_VM_DRYFIRE,
+	ACT_PDA_VM_IDLE_TO_LOWERED,
+	ACT_PDA_VM_IDLE_LOWERED,
+	ACT_PDA_VM_LOWERED_TO_IDLE,
+
+	ACT_ITEM1_VM_DRAW,
+	ACT_ITEM1_VM_HOLSTER,
+	ACT_ITEM1_VM_IDLE,
+	ACT_ITEM1_VM_PULLBACK,
+	ACT_ITEM1_VM_PRIMARYATTACK,
+	ACT_ITEM1_VM_SECONDARYATTACK,
+	ACT_ITEM1_VM_RELOAD,
+	ACT_ITEM1_VM_DRYFIRE,
+	ACT_ITEM1_VM_IDLE_TO_LOWERED,
+	ACT_ITEM1_VM_IDLE_LOWERED,
+	ACT_ITEM1_VM_LOWERED_TO_IDLE,
+
+	ACT_ITEM2_VM_DRAW,
+	ACT_ITEM2_VM_HOLSTER,
+	ACT_ITEM2_VM_IDLE,
+	ACT_ITEM2_VM_PULLBACK,
+	ACT_ITEM2_VM_PRIMARYATTACK,
+	ACT_ITEM2_VM_SECONDARYATTACK,
+	ACT_ITEM2_VM_RELOAD,
+	ACT_ITEM2_VM_DRYFIRE,
+	ACT_ITEM2_VM_IDLE_TO_LOWERED,
+	ACT_ITEM2_VM_IDLE_LOWERED,
+	ACT_ITEM2_VM_LOWERED_TO_IDLE,
+
+	// Infested activities
+	ACT_RELOAD_SUCCEED,
+	ACT_RELOAD_FAIL,
+	// Autogun
+	ACT_WALK_AIM_AUTOGUN,
+	ACT_RUN_AIM_AUTOGUN,
+	ACT_IDLE_AUTOGUN,
+	ACT_IDLE_AIM_AUTOGUN,
+	ACT_RELOAD_AUTOGUN,
+	ACT_CROUCH_IDLE_AUTOGUN,
+	ACT_RANGE_ATTACK_AUTOGUN,
+	ACT_JUMP_AUTOGUN,
+	// Pistol
+	ACT_IDLE_AIM_PISTOL,
+	// PDW
+	ACT_WALK_AIM_DUAL,
+	ACT_RUN_AIM_DUAL,
+	ACT_IDLE_DUAL,
+	ACT_IDLE_AIM_DUAL,
+	ACT_RELOAD_DUAL,
+	ACT_CROUCH_IDLE_DUAL,
+	ACT_RANGE_ATTACK_DUAL,
+	ACT_JUMP_DUAL,
+	// Shotgun
+	ACT_IDLE_SHOTGUN,
+	ACT_IDLE_AIM_SHOTGUN,
+	ACT_CROUCH_IDLE_SHOTGUN,
+	ACT_JUMP_SHOTGUN,
+	// Rifle
+	ACT_IDLE_AIM_RIFLE,
+	ACT_RELOAD_RIFLE,
+	ACT_CROUCH_IDLE_RIFLE,
+	ACT_RANGE_ATTACK_RIFLE,
+	ACT_JUMP_RIFLE,
+
+	// Infested General AI
+	ACT_SLEEP,
+	ACT_WAKE,
+
+	// Shield Bug
+	ACT_FLICK_LEFT,
+	ACT_FLICK_LEFT_MIDDLE,
+	ACT_FLICK_RIGHT_MIDDLE,
+	ACT_FLICK_RIGHT,
+	ACT_SPINAROUND,
+
+	// Mortar Bug
+	ACT_PREP_TO_FIRE,
+	ACT_FIRE,
+	ACT_FIRE_RECOVER,
+
+	// Shaman
+	ACT_SPRAY,
+
+	// Boomer
+	ACT_PREP_EXPLODE,
+	ACT_EXPLODE,
+
+	///******************
+	///DOTA ANIMATIONS
+	///******************
+
+	ACT_DOTA_IDLE,
+	ACT_DOTA_RUN,
+	ACT_DOTA_ATTACK,
+	ACT_DOTA_ATTACK_EVENT,
+	ACT_DOTA_DIE,
+	ACT_DOTA_FLINCH,
+	ACT_DOTA_DISABLED,
+	ACT_DOTA_CAST_ABILITY_1,
+	ACT_DOTA_CAST_ABILITY_2,
+	ACT_DOTA_CAST_ABILITY_3,
+	ACT_DOTA_CAST_ABILITY_4,
+	ACT_DOTA_OVERRIDE_ABILITY_1,
+	ACT_DOTA_OVERRIDE_ABILITY_2,
+	ACT_DOTA_OVERRIDE_ABILITY_3,
+	ACT_DOTA_OVERRIDE_ABILITY_4,
+	ACT_DOTA_CHANNEL_ABILITY_1,
+	ACT_DOTA_CHANNEL_ABILITY_2,
+	ACT_DOTA_CHANNEL_ABILITY_3,
+	ACT_DOTA_CHANNEL_ABILITY_4,
+	ACT_DOTA_CHANNEL_END_ABILITY_1,
+	ACT_DOTA_CHANNEL_END_ABILITY_2,
+	ACT_DOTA_CHANNEL_END_ABILITY_3,
+	ACT_DOTA_CHANNEL_END_ABILITY_4,
+
+
+	// Portal2
+	ACT_MP_RUN_SPEEDPAINT,  // running on speed paint
+	ACT_MP_LONG_FALL, // falling a LONG way
+	ACT_MP_TRACTORBEAM_FLOAT, // floating in a tractor beam
+	ACT_MP_DEATH_CRUSH,
+
+	ACT_MP_RUN_SPEEDPAINT_PRIMARY, // player with portalgun running on speed paint
+	ACT_MP_DROWNING_PRIMARY, // drowning while holding portalgun
+	ACT_MP_LONG_FALL_PRIMARY, // falling a LONG way while holding portalgun
+	ACT_MP_TRACTORBEAM_FLOAT_PRIMARY, // floating in a tractor beam while holding portalgun 
+	ACT_MP_DEATH_CRUSH_PRIMARY,
+
+
+	// csgo death anims that don't require direction (direction is pose-param driven for more granularity)
+	ACT_DIE_STAND,
+	ACT_DIE_STAND_HEADSHOT,
+	ACT_DIE_CROUCH,
+	ACT_DIE_CROUCH_HEADSHOT,
+
+	// CSGO action activities
+	ACT_CSGO_NULL,
+	ACT_CSGO_DEFUSE,
+	ACT_CSGO_DEFUSE_WITH_KIT,
+	ACT_CSGO_FLASHBANG_REACTION,
+	ACT_CSGO_FIRE_PRIMARY,
+	ACT_CSGO_FIRE_PRIMARY_OPT_1,
+	ACT_CSGO_FIRE_PRIMARY_OPT_2,
+	ACT_CSGO_FIRE_SECONDARY,
+	ACT_CSGO_FIRE_SECONDARY_OPT_1,
+	ACT_CSGO_FIRE_SECONDARY_OPT_2,
+	ACT_CSGO_RELOAD,
+	ACT_CSGO_RELOAD_START,
+	ACT_CSGO_RELOAD_LOOP,
+	ACT_CSGO_RELOAD_END,
+	ACT_CSGO_OPERATE,
+	ACT_CSGO_DEPLOY,
+	ACT_CSGO_CATCH,
+	ACT_CSGO_SILENCER_DETACH,
+	ACT_CSGO_SILENCER_ATTACH,
+	ACT_CSGO_TWITCH,
+	ACT_CSGO_TWITCH_BUYZONE,
+	ACT_CSGO_PLANT_BOMB,
+	ACT_CSGO_IDLE_TURN_BALANCEADJUST,
+	ACT_CSGO_IDLE_ADJUST_STOPPEDMOVING,
+	ACT_CSGO_ALIVE_LOOP,
+	ACT_CSGO_FLINCH,
+	ACT_CSGO_FLINCH_HEAD,
+	ACT_CSGO_FLINCH_MOLOTOV,
+	ACT_CSGO_JUMP,
+	ACT_CSGO_FALL,
+	ACT_CSGO_CLIMB_LADDER,
+	ACT_CSGO_LAND_LIGHT,
+	ACT_CSGO_LAND_HEAVY,
+	ACT_CSGO_EXIT_LADDER_TOP,
+	ACT_CSGO_EXIT_LADDER_BOTTOM,
+
+	LAST_SHARED_ACTIVITY,
+};
+
+enum collision_group_t
+{
+	COLLISION_GROUP_NONE,
+	COLLISION_GROUP_DEBRIS,				// Collides with nothing but world and static stuff
+	COLLISION_GROUP_DEBRIS_TRIGGER,		// Same as debris, but hits triggers
+	COLLISION_GROUP_INTERACTIVE_DEB,	// RIS, // Collides with everything except other interactive debris or debris
+	COLLISION_GROUP_INTERACTIVE,		// Collides with everything except interactive debris or debris
+	COLLISION_GROUP_PLAYER,
+	COLLISION_GROUP_BREAKABLE_GLASS,
+	COLLISION_GROUP_VEHICLE,
+	COLLISION_GROUP_PLAYER_MOVEMENT,	// For HL2, same as Collision_Group_Player
+	COLLISION_GROUP_NPC,				// Generic NPC group
+	COLLISION_GROUP_IN_VEHICLE,			// for any entity inside a vehicle
+	COLLISION_GROUP_WEAPON,				// for any weapons that need collision detection
+	COLLISION_GROUP_VEHICLE_CLIP,		// vehicle clip brush to restrict vehicle movement
+	COLLISION_GROUP_PROJECTILE,			// Projectiles!
+	COLLISION_GROUP_DOOR_BLOCKER,		// Blocks entities not permitted to get near moving doors
+	COLLISION_GROUP_PASSABLE_DOOR,		// Doors that the player shouldn't collide with
+	COLLISION_GROUP_DISSOLVING,			// Things that are dissolving are in this group
+	COLLISION_GROUP_PUSHAWAY,			// Nonsolid on client and server, pushaway in player code
+	COLLISION_GROUP_NPC_ACTOR,			// Used so NPCs in scripts ignore the player.
+	LAST_SHARED_COLLISION_GROUP
+};
+
+enum entity_flags_t
+{
+	EFL_KILLME = (1 << 0),
+	EFL_DORMANT = (1 << 1),
+	EFL_NOCLIP_ACTIVE = (1 << 2),
+	EFL_SETTING_UP_BONES = (1 << 3),
+	EFL_KEEP_ON_RECREATE_ENTITIES = (1 << 4),
+
+	EFL_DIRTY_SHADOWUPDATE = (1 << 5),
+	EFL_NOTIFY = (1 << 6),
+
+	EFL_FORCE_CHECK_TRANSMIT = (1 << 7),
+
+	EFL_BOT_FROZEN = (1 << 8),
+	EFL_SERVER_ONLY = (1 << 9),
+	EFL_NO_AUTO_EDICT_ATTACH = (1 << 10),
+
+	EFL_DIRTY_ABSTRANSFORM = (1 << 11),
+	EFL_DIRTY_ABSVELOCITY = (1 << 12),
+	EFL_DIRTY_ABSANGVELOCITY = (1 << 13),
+	EFL_DIRTY_SURROUNDING_COLLISION_BOUNDS = (1 << 14),
+	EFL_DIRTY_SPATIAL_PARTITION = (1 << 15),
+	EFL_HAS_PLAYER_CHILD = (1 << 16),
+
+	EFL_IN_SKYBOX = (1 << 17),
+
+	EFL_USE_PARTITION_WHEN_NOT_SOLID = (1 << 18),
+	EFL_TOUCHING_FLUID = (1 << 19),
+
+	EFL_IS_BEING_LIFTED_BY_BARNACLE = (1 << 20),
+	EFL_NO_ROTORWASH_PUSH = (1 << 21),
+	EFL_NO_THINK_FUNCTION = (1 << 22),
+	EFL_NO_GAME_PHYSICS_SIMULATION = (1 << 23),
+
+	EFL_CHECK_UNTOUCH = (1 << 24),
+	EFL_DONTBLOCKLOS = (1 << 25),
+	EFL_DONTWALKON = (1 << 26),
+	EFL_NO_DISSOLVE = (1 << 27),
+	EFL_NO_MEGAPHYSCANNON_RAGDOLL = (1 << 28),
+	EFL_NO_WATER_VELOCITY_CHANGE = (1 << 29),
+	EFL_NO_PHYSCANNON_INTERACTION = (1 << 30),
+	EFL_NO_DAMAGE_FORCES = (1 << 31),
+};
+
+enum game_effects_t
+{
+	EF_BONEMERGE = 0x001,
+	EF_BRIGHTLIGHT = 0x002,
+	EF_DIMLIGHT = 0x004,
+	EF_NOINTERP = 0x008,
+	EF_NOSHADOW = 0x010,
+	EF_NODRAW = 0x020,
+	EF_NORECEIVESHADOW = 0x040,
+	EF_BONEMERGE_FASTCULL = 0x080,
+	EF_ITEM_BLINK = 0x100,
+	EF_PARENT_ANIMATES = 0x200,
+	EF_MARKED_FOR_FAST_REFLECTION = 0x400,
+	EF_NOSHADOWDEPTH = 0x800,
+	EF_SHADOWDEPTH_NOCACHE = 0x1000,
+	EF_NOFLASHLIGHT = 0x2000,
+	EF_NOCSM = 0x4000,
+	EF_MAX_BITS = 15
+};
+
+enum interpolation_latch_t
+{
+	LATCH_ANIMATION_VAR = (1 << 0),
+	LATCH_SIMULATION_VAR = (1 << 1),
+
+	EXCLUDE_AUTO_LATCH = (1 << 2),
+	EXCLUDE_AUTO_INTERPOLATE = (1 << 3),
+
+	INTERPOLATE_LINEAR_ONLY = (1 << 4),
+	INTERPOLATE_OMIT_UPDATE_LAST_NETWORKED = (1 << 5),
+};
+
+enum signonstate_t
+{
+	SIGNONSTATE_NONE = 0,
+	SIGNONSTATE_CHALLENGE = 1,
+	SIGNONSTATE_CONNECTED = 2,
+	SIGNONSTATE_NEW = 3,
+	SIGNONSTATE_PRESPAWN = 4,
+	SIGNONSTATE_SPAWN = 5,
+	SIGNONSTATE_FULL = 6,
+	SIGNONSTATE_CHANGELEVEL = 7,
+};
+
+enum observer_mode_t
+{
+	OBS_MODE_NONE = 0,
+	OBS_MODE_DEATHCAM,
+	OBS_MODE_FREEZECAM,
+	OBS_MODE_FIXED,
+	OBS_MODE_IN_EYE,
+	OBS_MODE_CHASE,
+	OBS_MODE_ROAMING,
+
+	NUM_OBSERVER_MODES,
+};
+
+enum player_anim_event_t
+{
+	PLAYERANIMEVENT_FIRE_GUN_PRIMARY = 0,
+	PLAYERANIMEVENT_FIRE_GUN_PRIMARY_OPT,
+	PLAYERANIMEVENT_FIRE_GUN_PRIMARY_SPECIAL1,
+	PLAYERANIMEVENT_FIRE_GUN_PRIMARY_OPT_SPECIAL1,
+	PLAYERANIMEVENT_FIRE_GUN_SECONDARY,
+	PLAYERANIMEVENT_FIRE_GUN_SECONDARY_SPECIAL1,
+	PLAYERANIMEVENT_GRENADE_PULL_PIN,
+	PLAYERANIMEVENT_THROW_GRENADE,
+	PLAYERANIMEVENT_JUMP,
+	PLAYERANIMEVENT_RELOAD,
+	PLAYERANIMEVENT_RELOAD_START,
+	PLAYERANIMEVENT_RELOAD_LOOP,
+	PLAYERANIMEVENT_RELOAD_END,
+	PLAYERANIMEVENT_CLEAR_FIRING,
+	PLAYERANIMEVENT_DEPLOY,
+	PLAYERANIMEVENT_SILENCER_ATTACH,
+	PLAYERANIMEVENT_SILENCER_DETACH,
+	PLAYERANIMEVENT_THROW_GRENADE_UNDERHAND,
+	PLAYERANIMEVENT_CATCH_WEAPON,
+	PLAYERANIMEVENT_COUNT
+};
+
+enum beam_types_t
+{
+	BEAM_NORMAL = 0,
+	BEAM_DISK = 2,
+	BEAM_CYLINDER,
+	BEAM_FOLLOW,
+	BEAM_RING,
+	BEAM_SPLINE,
+	BEAM_RING_POINT,
+	BEAM_LASER,
+	BEAM_TESLA,
+};
+
+enum beam_flags_t
+{
+	BEAM_START_ENTITY = 0X00000001,
+	BEAM_END_ENTITY = 0X00000002,
+	BEAM_FADE_IN = 0X00000004,
+	BEAM_FADE_OUT = 0X00000008,
+	BEAM_SINE_NO_ISE = 0X00000010,
+	BEAM_SOLID = 0X00000020,
+	BEAM_SHADE_IN = 0X00000040,
+	BEAM_SHADE_OUT = 0X00000080,
+	BEAM_ONLY_NO_IS_ONCE = 0X00000100,
+	BEAM_NOTILE = 0X00000200,
+	BEAM_USE_HITBOXES = 0X00000400,
+	BEAM_START_VISIBLE = 0X00000800,
+	BEAM_END_VISIBLE = 0X00001000,
+	BEAM_IS_ACTIVE = 0X00002000,
+	BEAM_FOREVER = 0X00004000,
+	BEAM_HALOBEAM = 0X00008000,
+	BEAM_REVERSED = 0X00010000,
+	NUM_BEAM_FLAGS = 17
+};

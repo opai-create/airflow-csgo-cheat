@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Alpha|Win32">
+      <Configuration>Alpha</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Beta|Win32">
+      <Configuration>Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Legacy Beta|Win32">
+      <Configuration>Legacy Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Legacy Debug|Win32">
+      <Configuration>Legacy Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Legacy Live|Win32">
+      <Configuration>Legacy Live</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Live|Win32">
+      <Configuration>Live</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5f68854c-01eb-435b-913e-139078cf39a0}</ProjectGuid>
+    <RootNamespace>SDK</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <ProjectName>opaihook</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Live|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Alpha|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Live|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Live|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Alpha|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Live|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs;$(SolutionDir)\Libs\PolyHook;$(SolutionDir)\Libs\PolyHook\zydis\include;$(SolutionDir)\Libs\PolyHook\zydis\dependencies\zycore\include;$(SolutionDir)\Libs\PolyHook\build32\zydis;$(SolutionDir)\Libs\PolyHook\build32\zydis\dependencies\zycore;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs\PolyHook\build32\Debug;$(SolutionDir)\Libs\PolyHook\build32\zydis\Debug;$(LibraryPath)</LibraryPath>
+    <TargetName>csgo_debug</TargetName>
+    <OutDir>$(SolutionDir)\Bins\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Debug|Win32'">
+    <IncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs;$(SolutionDir)\Libs\PolyHook;$(SolutionDir)\Libs\PolyHook\zydis\include;$(SolutionDir)\Libs\PolyHook\zydis\dependencies\zycore\include;$(SolutionDir)\Libs\PolyHook\build32\zydis;$(SolutionDir)\Libs\PolyHook\build32\zydis\dependencies\zycore;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs\PolyHook\build32\Debug;$(SolutionDir)\Libs\PolyHook\build32\zydis\Debug;$(LibraryPath)</LibraryPath>
+    <TargetName>csgo-legacy_debug</TargetName>
+    <OutDir>$(SolutionDir)\Bins\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Live|Win32'">
+    <IncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs;$(SolutionDir)\Libs\PolyHook;$(SolutionDir)\Libs\PolyHook\zydis\include;$(SolutionDir)\Libs\PolyHook\zydis\dependencies\zycore\include;$(SolutionDir)\Libs\PolyHook\build32\zydis;$(SolutionDir)\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\Utils\Code Virtualizer\Include\C;E:\Coding\Libs\shared\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs\PolyHook\build32\Release;$(SolutionDir)\Libs\PolyHook\build32\zydis\Release;E:\Coding\Libs\shared\lib\release;D:\Utils\Code Virtualizer\Lib\x86_x64\COFF;$(LibraryPath)</LibraryPath>
+    <TargetName>csgo-release</TargetName>
+    <OutDir>$(SolutionDir)\Bins\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <IncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs;$(SolutionDir)\Libs\PolyHook;$(SolutionDir)\Libs\PolyHook\zydis\include;$(SolutionDir)\Libs\PolyHook\zydis\dependencies\zycore\include;$(SolutionDir)\Libs\PolyHook\build32\zydis;$(SolutionDir)\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\Utils\Code Virtualizer\Include\C;E:\Coding\Libs\shared\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs\PolyHook\build32\Release;$(SolutionDir)\Libs\PolyHook\build32\zydis\Release;E:\Coding\Libs\shared\lib\release;D:\Utils\Code Virtualizer\Lib\x86_x64\COFF;$(LibraryPath)</LibraryPath>
+    <TargetName>csgo-release_beta</TargetName>
+    <OutDir>$(SolutionDir)\Bins\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Alpha|Win32'">
+    <IncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs;$(SolutionDir)\Libs\PolyHook;$(SolutionDir)\Libs\PolyHook\zydis\include;$(SolutionDir)\Libs\PolyHook\zydis\dependencies\zycore\include;$(SolutionDir)\Libs\PolyHook\build32\zydis;$(SolutionDir)\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\Utils\Code Virtualizer\Include\C;E:\Coding\Libs\shared\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs\PolyHook\build32\Release;$(SolutionDir)\Libs\PolyHook\build32\zydis\Release;E:\Coding\Libs\shared\lib\release;D:\Utils\Code Virtualizer\Lib\x86_x64\COFF;$(LibraryPath)</LibraryPath>
+    <TargetName>csgo-release_alpha</TargetName>
+    <OutDir>$(SolutionDir)\Bins\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Live|Win32'">
+    <IncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs;$(SolutionDir)\Libs\PolyHook;$(SolutionDir)\Libs\PolyHook\zydis\include;$(SolutionDir)\Libs\PolyHook\zydis\dependencies\zycore\include;$(SolutionDir)\Libs\PolyHook\build32\zydis;$(SolutionDir)\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\Utils\Code Virtualizer\Include\C;E:\Coding\Libs\shared\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs\PolyHook\build32\Release;$(SolutionDir)\Libs\PolyHook\build32\zydis\Release;E:\Coding\Libs\shared\lib\release;D:\Utils\Code Virtualizer\Lib\x86_x64\COFF;$(LibraryPath)</LibraryPath>
+    <TargetName>csgo-legacy</TargetName>
+    <OutDir>$(SolutionDir)\Bins\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Beta|Win32'">
+    <IncludePath>$(DXSDK_Dir)\Include;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs;$(SolutionDir)\Libs\PolyHook;$(SolutionDir)\Libs\PolyHook\zydis\include;$(SolutionDir)\Libs\PolyHook\zydis\dependencies\zycore\include;$(SolutionDir)\Libs\PolyHook\build32\zydis;$(SolutionDir)\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\Utils\Code Virtualizer\Include\C;E:\Coding\Libs\shared\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_Dir)\Lib\x86;$(SolutionDir)\Libs\Freetype;$(SolutionDir)\Libs\PolyHook\build32\Release;$(SolutionDir)\Libs\PolyHook\build32\zydis\Release;E:\Coding\Libs\shared\lib\release;D:\Utils\Code Virtualizer\Lib\x86_x64\COFF;$(LibraryPath)</LibraryPath>
+    <TargetName>csgo-legacy_beta</TargetName>
+    <OutDir>$(SolutionDir)\Bins\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;WIN32;NDEBUG;SDK_EXPORTS;_WINDOWS;_USRDLL;IMGUI_USE_BGRA_PACKED_COLOR;IMGUI_DEFINE_MATH_OPERATORS;_CRT_SECURE_NO_WARNINGS;EVO_CLIENT_XOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>globals.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>freetype_debug.lib;PolyHook_2.lib;zydis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>LEGACY;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;WIN32;_DEBUG;SDK_EXPORTS;_WINDOWS;_USRDLL;IMGUI_USE_BGRA_PACKED_COLOR;IMGUI_DEFINE_MATH_OPERATORS;_CRT_SECURE_NO_WARNINGS;EVO_CLIENT_XOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>globals.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/Zc:threadSafeInit- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>freetype_debug.lib;PolyHook_2.lib;zydis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Live|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;WIN32;NDEBUG;SDK_EXPORTS;_WINDOWS;_USRDLL;IMGUI_USE_BGRA_PACKED_COLOR;IMGUI_DEFINE_MATH_OPERATORS;_CRT_SECURE_NO_WARNINGS;EVO_CLIENT_XOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>globals.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/Zc:threadSafeInit-  /EHsc- %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>freetype_release.lib;PolyHook_2.lib;zydis.lib;crypto-46.lib;shared.lib;ssl-48.lib;tls-20.lib;zlibstatic.lib;ws2_32.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>BETA;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;WIN32;NDEBUG;SDK_EXPORTS;_WINDOWS;_USRDLL;IMGUI_USE_BGRA_PACKED_COLOR;IMGUI_DEFINE_MATH_OPERATORS;_CRT_SECURE_NO_WARNINGS;EVO_CLIENT_XOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>globals.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/Zc:threadSafeInit-  /EHsc- %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>freetype_release.lib;PolyHook_2.lib;zydis.lib;crypto-46.lib;shared.lib;ssl-48.lib;tls-20.lib;zlibstatic.lib;ws2_32.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Alpha|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>ALPHA;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;WIN32;NDEBUG;SDK_EXPORTS;_WINDOWS;_USRDLL;IMGUI_USE_BGRA_PACKED_COLOR;IMGUI_DEFINE_MATH_OPERATORS;_CRT_SECURE_NO_WARNINGS;EVO_CLIENT_XOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>globals.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/Zc:threadSafeInit-  /EHsc- %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>freetype_release.lib;PolyHook_2.lib;zydis.lib;crypto-46.lib;shared.lib;ssl-48.lib;tls-20.lib;zlibstatic.lib;ws2_32.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Live|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>LEGACY;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;WIN32;NDEBUG;SDK_EXPORTS;_WINDOWS;_USRDLL;IMGUI_USE_BGRA_PACKED_COLOR;IMGUI_DEFINE_MATH_OPERATORS;_CRT_SECURE_NO_WARNINGS;EVO_CLIENT_XOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>globals.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/Zc:threadSafeInit-  /EHsc- %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>freetype_release.lib;PolyHook_2.lib;zydis.lib;crypto-46.lib;shared.lib;ssl-48.lib;tls-20.lib;zlibstatic.lib;ws2_32.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Legacy Beta|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>LEGACY;_USE_MATH_DEFINES;NOMINMAX;WIN32_LEAN_AND_MEAN;WIN32;NDEBUG;SDK_EXPORTS;_WINDOWS;_USRDLL;IMGUI_USE_BGRA_PACKED_COLOR;IMGUI_DEFINE_MATH_OPERATORS;_CRT_SECURE_NO_WARNINGS;EVO_CLIENT_XOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>globals.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/Zc:threadSafeInit-  /EHsc- %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>false</ExceptionHandling>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>freetype_release.lib;PolyHook_2.lib;zydis.lib;crypto-46.lib;shared.lib;ssl-48.lib;tls-20.lib;zlibstatic.lib;ws2_32.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="animations.cpp" />
+    <ClCompile Include="anti_aim.cpp" />
+    <ClCompile Include="bullet_tracers.cpp" />
+    <ClCompile Include="buy_bot.cpp" />
+    <ClCompile Include="bytesarray.cpp" />
+    <ClCompile Include="chams.cpp" />
+    <ClCompile Include="checksum_crc32.cpp" />
+    <ClCompile Include="clantag.cpp" />
+    <ClCompile Include="cmd_shift.cpp" />
+    <ClCompile Include="convars.cpp" />
+    <ClCompile Include="detour_hooks.cpp" />
+    <ClCompile Include="engine_prediction.cpp" />
+    <ClCompile Include="entities.cpp" />
+    <ClCompile Include="esp.cpp" />
+    <ClCompile Include="esp_object_render.cpp" />
+    <ClCompile Include="eventlistener.cpp" />
+    <ClCompile Include="event_logs.cpp" />
+    <ClCompile Include="exploits.cpp" />
+    <ClCompile Include="fake_lag.cpp" />
+    <ClCompile Include="features.cpp" />
+    <ClCompile Include="fov_and_view.cpp" />
+    <ClCompile Include="game_movement.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="glow.cpp" />
+    <ClCompile Include="grenade_prediction.cpp" />
+    <ClCompile Include="hooks.cpp" />
+    <ClCompile Include="hud_hacks.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_freetype.cpp" />
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="interfaces.cpp" />
+    <ClCompile Include="Json\jsoncpp.cpp" />
+    <ClCompile Include="key_states.cpp" />
+    <ClCompile Include="lagcomp.cpp" />
+    <ClCompile Include="legacy ui\config_system.cpp" />
+    <ClCompile Include="legacy ui\config_vars.cpp" />
+    <ClCompile Include="legacy ui\legacy_str.cpp" />
+    <ClCompile Include="legacy ui\menu\menu elements\button.cpp" />
+    <ClCompile Include="legacy ui\menu\menu elements\checkbox.cpp" />
+    <ClCompile Include="legacy ui\menu\menu elements\colorpicker.cpp" />
+    <ClCompile Include="legacy ui\menu\menu elements\combobox.cpp" />
+    <ClCompile Include="legacy ui\menu\menu elements\keybind.cpp" />
+    <ClCompile Include="legacy ui\menu\menu elements\listbox.cpp" />
+    <ClCompile Include="legacy ui\menu\menu elements\slider.cpp" />
+    <ClCompile Include="legacy ui\menu\menu elements\textbox.cpp" />
+    <ClCompile Include="legacy ui\menu\menu.cpp" />
+    <ClCompile Include="legacy ui\menu\menu_indicators.cpp" />
+    <ClCompile Include="legacy ui\menu\menu_tabs.cpp" />
+    <ClCompile Include="legacy ui\menu\snow.cpp" />
+    <ClCompile Include="main_utils.cpp" />
+    <ClCompile Include="math.cpp" />
+    <ClCompile Include="md5_pseudo_random.cpp" />
+    <ClCompile Include="memory.cpp" />
+    <ClCompile Include="misc_structs.cpp" />
+    <ClCompile Include="modules.cpp" />
+    <ClCompile Include="movement.cpp" />
+    <ClCompile Include="netvars.cpp" />
+    <ClCompile Include="offsets.cpp" />
+    <ClCompile Include="entlistener.cpp" />
+    <ClCompile Include="penetration.cpp" />
+    <ClCompile Include="post_processing.cpp" />
+    <ClCompile Include="predfix.cpp" />
+    <ClCompile Include="ragebot.cpp" />
+    <ClCompile Include="remove_projectiles.cpp" />
+    <ClCompile Include="render.cpp" />
+    <ClCompile Include="resolver.cpp" />
+    <ClCompile Include="sdk_misc.cpp" />
+    <ClCompile Include="server_bones.cpp" />
+    <ClCompile Include="skins.cpp" />
+    <ClCompile Include="spoofers.cpp" />
+    <ClCompile Include="structs.cpp" />
+    <ClCompile Include="thirdperson.cpp" />
+    <ClCompile Include="threaded_animstate.cpp" />
+    <ClCompile Include="threads.cpp" />
+    <ClCompile Include="vgui_panel.cpp" />
+    <ClCompile Include="vmt_hooks.cpp" />
+    <ClCompile Include="world_modulation.cpp" />
+    <ClCompile Include="xorpointer.cpp" />
+    <ClCompile Include="xorstr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="animations.hpp" />
+    <ClInclude Include="anti_aim.hpp" />
+    <ClInclude Include="bit_vector.hpp" />
+    <ClInclude Include="bullet_tracers.hpp" />
+    <ClInclude Include="buy_bot.hpp" />
+    <ClInclude Include="bytesarray.hpp" />
+    <ClInclude Include="chams.hpp" />
+    <ClInclude Include="checksum_crc32.hpp" />
+    <ClInclude Include="clantag.hpp" />
+    <ClInclude Include="clip_ray_to_hitbox.hpp" />
+    <ClInclude Include="cmd_shift.hpp" />
+    <ClInclude Include="color.hpp" />
+    <ClInclude Include="defines.hpp" />
+    <ClInclude Include="detour_hooks.hpp" />
+    <ClInclude Include="engine_prediction.hpp" />
+    <ClInclude Include="entities.hpp" />
+    <ClInclude Include="esp.hpp" />
+    <ClInclude Include="esp_object_render.hpp" />
+    <ClInclude Include="eventlistener.hpp" />
+    <ClInclude Include="event_logs.hpp" />
+    <ClInclude Include="exploits.hpp" />
+    <ClInclude Include="fake_lag.hpp" />
+    <ClInclude Include="features.hpp" />
+    <ClInclude Include="fov_and_view.hpp" />
+    <ClInclude Include="game_movement.hpp" />
+    <ClInclude Include="globals.hpp" />
+    <ClInclude Include="glow.hpp" />
+    <ClInclude Include="grenade_prediction.hpp" />
+    <ClInclude Include="hacks.hpp" />
+    <ClInclude Include="hash.hpp" />
+    <ClInclude Include="hooker_interface.hpp" />
+    <ClInclude Include="hooks.hpp" />
+    <ClInclude Include="hud_hacks.hpp" />
+    <ClInclude Include="ik_solver.hpp" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_freetype.h" />
+    <ClInclude Include="imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="imgui\shader_blur_x.h" />
+    <ClInclude Include="imgui\shader_blur_y.h" />
+    <ClInclude Include="interfaces.hpp" />
+    <ClInclude Include="Json\json-forwards.h" />
+    <ClInclude Include="Json\json.h" />
+    <ClInclude Include="key_states.hpp" />
+    <ClInclude Include="lagcomp.hpp" />
+    <ClInclude Include="legacy ui\config_system.h" />
+    <ClInclude Include="legacy ui\config_vars.h" />
+    <ClInclude Include="legacy ui\legacy_str.h" />
+    <ClInclude Include="legacy ui\menu\menu.h" />
+    <ClInclude Include="legacy ui\menu\snow.h" />
+    <ClInclude Include="legacy ui\menu\ui_structs.h" />
+    <ClInclude Include="main_utils.hpp" />
+    <ClInclude Include="math.hpp" />
+    <ClInclude Include="memory.hpp" />
+    <ClInclude Include="hooker.hpp" />
+    <ClInclude Include="misc_structs.hpp" />
+    <ClInclude Include="movement.hpp" />
+    <ClInclude Include="md5_pseudo_random.hpp" />
+    <ClInclude Include="netvars.hpp" />
+    <ClInclude Include="offsets.hpp" />
+    <ClInclude Include="entlistener.hpp" />
+    <ClInclude Include="penetration.hpp" />
+    <ClInclude Include="post_processing.hpp" />
+    <ClInclude Include="predfix.hpp" />
+    <ClInclude Include="ragebot.hpp" />
+    <ClInclude Include="remove_projectiles.hpp" />
+    <ClInclude Include="render.hpp" />
+    <ClInclude Include="resolver.hpp" />
+    <ClInclude Include="sdk_misc.hpp" />
+    <ClInclude Include="seeds.hpp" />
+    <ClInclude Include="imgui\shader_default_vs.h" />
+    <ClInclude Include="server_bones.hpp" />
+    <ClInclude Include="skins.hpp" />
+    <ClInclude Include="spoofers.hpp" />
+    <ClInclude Include="structs.hpp" />
+    <ClInclude Include="thirdpesron.hpp" />
+    <ClInclude Include="threaded_animstate.hpp" />
+    <ClInclude Include="threads.hpp" />
+    <ClInclude Include="vgui_panel.hpp" />
+    <ClInclude Include="vmt_hooks.hpp" />
+    <ClInclude Include="xorint.hpp" />
+    <ClInclude Include="xorpointer.hpp" />
+    <ClInclude Include="xorstr.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="world_modulation.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="memory.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="xorstr.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="math.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="xorpointer.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_freetype.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="vmt_hooks.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="detour_hooks.cpp">
+      <Filter>hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="modules.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="entities.cpp">
+      <Filter>sdk\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="interfaces.cpp">
+      <Filter>sdk\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="checksum_crc32.cpp">
+      <Filter>sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="netvars.cpp">
+      <Filter>sdk\offsets</Filter>
+    </ClCompile>
+    <ClCompile Include="offsets.cpp">
+      <Filter>sdk\offsets</Filter>
+    </ClCompile>
+    <ClCompile Include="structs.cpp">
+      <Filter>sdk\structs</Filter>
+    </ClCompile>
+    <ClCompile Include="misc_structs.cpp">
+      <Filter>sdk\structs</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk_misc.cpp">
+      <Filter>sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="entlistener.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="convars.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="vgui_panel.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\config_vars.cpp">
+      <Filter>legacy ui</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\config_system.cpp">
+      <Filter>legacy ui</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu.cpp">
+      <Filter>legacy ui\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu_indicators.cpp">
+      <Filter>legacy ui\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu_tabs.cpp">
+      <Filter>legacy ui\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\snow.cpp">
+      <Filter>legacy ui\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu elements\button.cpp">
+      <Filter>legacy ui\menu\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu elements\checkbox.cpp">
+      <Filter>legacy ui\menu\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu elements\colorpicker.cpp">
+      <Filter>legacy ui\menu\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu elements\combobox.cpp">
+      <Filter>legacy ui\menu\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu elements\keybind.cpp">
+      <Filter>legacy ui\menu\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu elements\listbox.cpp">
+      <Filter>legacy ui\menu\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu elements\slider.cpp">
+      <Filter>legacy ui\menu\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\menu\menu elements\textbox.cpp">
+      <Filter>legacy ui\menu\elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Json\jsoncpp.cpp">
+      <Filter>Json</Filter>
+    </ClCompile>
+    <ClCompile Include="main_utils.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="eventlistener.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="key_states.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="fov_and_view.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdperson.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet_tracers.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="buy_bot.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="clantag.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="event_logs.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="hud_hacks.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="movement.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="spoofers.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="skins.cpp">
+      <Filter>features\skins</Filter>
+    </ClCompile>
+    <ClCompile Include="post_processing.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="remove_projectiles.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="world_modulation.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="esp.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="esp_object_render.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="grenade_prediction.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="penetration.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="threads.cpp">
+      <Filter>sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="glow.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="chams.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="engine_prediction.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="md5_pseudo_random.cpp">
+      <Filter>sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="predfix.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="game_movement.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="animations.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="lagcomp.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="server_bones.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ragebot.cpp">
+      <Filter>features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="threaded_animstate.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="anti_aim.cpp">
+      <Filter>features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="fake_lag.cpp">
+      <Filter>features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="exploits.cpp">
+      <Filter>features\ragebot</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_shift.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="resolver.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="features.cpp">
+      <Filter>features</Filter>
+    </ClCompile>
+    <ClCompile Include="bytesarray.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="legacy ui\legacy_str.cpp">
+      <Filter>legacy ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="globals.hpp" />
+    <ClInclude Include="memory.hpp">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.hpp">
+      <Filter>hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="detour_hooks.hpp">
+      <Filter>hooks\hooker</Filter>
+    </ClInclude>
+    <ClInclude Include="hooker_interface.hpp">
+      <Filter>hooks\hooker</Filter>
+    </ClInclude>
+    <ClInclude Include="hooker.hpp">
+      <Filter>hooks\hooker</Filter>
+    </ClInclude>
+    <ClInclude Include="vmt_hooks.hpp">
+      <Filter>hooks\hooker</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="math.hpp">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="xorpointer.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="hash.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="hacks.hpp" />
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_freetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx9.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="render.hpp">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="color.hpp">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="entities.hpp">
+      <Filter>sdk\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="interfaces.hpp">
+      <Filter>sdk\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="checksum_crc32.hpp">
+      <Filter>sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="netvars.hpp">
+      <Filter>sdk\offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="offsets.hpp">
+      <Filter>sdk\offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.hpp">
+      <Filter>sdk\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="misc_structs.hpp">
+      <Filter>sdk\structs</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk_misc.hpp">
+      <Filter>sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="entlistener.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="vgui_panel.hpp">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="xorint.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="seeds.hpp">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\shader_default_vs.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="legacy ui\config_system.h">
+      <Filter>legacy ui</Filter>
+    </ClInclude>
+    <ClInclude Include="legacy ui\config_vars.h">
+      <Filter>legacy ui</Filter>
+    </ClInclude>
+    <ClInclude Include="legacy ui\menu\menu.h">
+      <Filter>legacy ui\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="legacy ui\menu\snow.h">
+      <Filter>legacy ui\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="legacy ui\menu\ui_structs.h">
+      <Filter>legacy ui\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json-forwards.h">
+      <Filter>Json</Filter>
+    </ClInclude>
+    <ClInclude Include="main_utils.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="eventlistener.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="key_states.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="fov_and_view.hpp">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdpesron.hpp">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet_tracers.hpp">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="buy_bot.hpp">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="clantag.hpp">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="event_logs.hpp">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="hud_hacks.hpp">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="movement.hpp">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="spoofers.hpp">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="skins.hpp">
+      <Filter>features\skins</Filter>
+    </ClInclude>
+    <ClInclude Include="post_processing.hpp">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="remove_projectiles.hpp">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="esp.hpp">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="esp_object_render.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="grenade_prediction.hpp">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="penetration.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="threads.hpp">
+      <Filter>sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="glow.hpp">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="chams.hpp">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="engine_prediction.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="md5_pseudo_random.hpp">
+      <Filter>sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="predfix.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="game_movement.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="animations.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="lagcomp.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="server_bones.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ik_solver.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ragebot.hpp">
+      <Filter>features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="threaded_animstate.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="anti_aim.hpp">
+      <Filter>features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="fake_lag.hpp">
+      <Filter>features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="exploits.hpp">
+      <Filter>features\ragebot</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_shift.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="resolver.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="features.hpp">
+      <Filter>features</Filter>
+    </ClInclude>
+    <ClInclude Include="clip_ray_to_hitbox.hpp">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="bytesarray.hpp">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="bit_vector.hpp">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="legacy ui\legacy_str.h">
+      <Filter>legacy ui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\shader_blur_x.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\shader_blur_y.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="other">
+      <UniqueIdentifier>{33f738a1-9bc1-45ef-b42b-1fbccfc8a830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks">
+      <UniqueIdentifier>{48cbfbdd-135a-48d1-bcd9-3cec8ddf1b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hooks\hooker">
+      <UniqueIdentifier>{25c3e46c-9198-4475-b4b3-9042f5e2a076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{a7193b6d-819e-4462-b897-c281ea96c245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\interfaces">
+      <UniqueIdentifier>{134f6041-3cbf-4983-a98f-6cf01f3fa4c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="security">
+      <UniqueIdentifier>{30ee35b4-562e-4056-92a5-1ad6e743b1b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\structs">
+      <UniqueIdentifier>{bb3d724e-e82d-4968-8512-4308792f81ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\offsets">
+      <UniqueIdentifier>{c6bc993c-83b3-4133-976a-37642f3aa88c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\entities">
+      <UniqueIdentifier>{7ae30f8f-21f2-4105-aa28-ebc719797e79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\misc">
+      <UniqueIdentifier>{abac80f2-951c-454f-954c-aa8c3be50089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{fcced9a2-44a1-4e9a-9037-7b38b100502f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{13c9920f-7405-4584-b16c-7d581ba048e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helpers">
+      <UniqueIdentifier>{f3fc95ae-45ee-475e-80f1-d3cfb812eab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="legacy ui">
+      <UniqueIdentifier>{43ad8386-5d43-460e-8af9-e48458a91714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="legacy ui\menu">
+      <UniqueIdentifier>{ddce1515-434b-4a5d-94cf-ae17a83b8482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="legacy ui\menu\elements">
+      <UniqueIdentifier>{c09c273f-b193-4c6a-865e-fbdfb32ec3e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Json">
+      <UniqueIdentifier>{0452a25f-9ca5-45ad-a305-400e86ccd612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{63067a09-ffa2-4053-8ee5-0cea2f58c762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\misc">
+      <UniqueIdentifier>{48c246ca-fd23-4f03-8b4c-6cbbe44e605d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\visuals">
+      <UniqueIdentifier>{f759f3ef-d9af-49a5-97cc-cd700115f6ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\skins">
+      <UniqueIdentifier>{0b2a7ce3-c79f-42f6-8ec5-29fe2b15f047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\ragebot">
+      <UniqueIdentifier>{23de7d15-ef64-4fa6-8a65-fbc714f11b44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="world_modulation.hpp">
+      <Filter>features\visuals</Filter>
+    </None>
+  </ItemGroup>
+</Project>

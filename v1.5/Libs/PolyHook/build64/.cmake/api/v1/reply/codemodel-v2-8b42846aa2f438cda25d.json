@@ -1,0 +1,228 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d98b29ad39b7da8b8986.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "asmtk",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-asmtk-Debug-19c6142b1b7cb12482d5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "asmtk",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"build" : "zydis/dependencies/zycore",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-zydis.dependencies.zycore-Debug-cc905236db0a555bfd4f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "zydis/dependencies/zycore",
+					"targetIndexes" : 
+					[
+						1,
+						5
+					]
+				},
+				{
+					"build" : "zydis",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-zydis-Debug-fb47489a165a8d7f5ddd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "zydis",
+					"targetIndexes" : 
+					[
+						2,
+						6
+					]
+				},
+				{
+					"build" : "zydis/zycore",
+					"jsonFile" : "directory-zydis.zycore-Debug-8767d3d3f67d33b4e6b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "zydis/dependencies/zycore"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "PolyHook_2",
+					"targetIndexes" : 
+					[
+						0,
+						3,
+						4,
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Zycore",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3,
+						4
+					],
+					"name" : "Zydis",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-bbfd6cc21cf06aa1728d.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ALL_BUILD::@851623237c9f40d7dba4",
+					"jsonFile" : "target-ALL_BUILD-Debug-186a7fc5ef53d899abe0.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ALL_BUILD::@2a67baf740bd4b22dbb9",
+					"jsonFile" : "target-ALL_BUILD-Debug-1a634de9565216c7b889.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PolyHook_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PolyHook_2-Debug-c69194844e3884863777.json",
+					"name" : "PolyHook_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-a594dbff3531fc2e0372.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Zycore::@851623237c9f40d7dba4",
+					"jsonFile" : "target-Zycore-Debug-6afd04a9fbf546742193.json",
+					"name" : "Zycore",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Zydis::@2a67baf740bd4b22dbb9",
+					"jsonFile" : "target-Zydis-Debug-b8429b2a8f90fa1ec28a.json",
+					"name" : "Zydis",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "asmjit::@4a2050beb1875c0e9666",
+					"jsonFile" : "target-asmjit-Debug-b46d5782ae70c663b62e.json",
+					"name" : "asmjit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "asmtk::@4a2050beb1875c0e9666",
+					"jsonFile" : "target-asmtk-Debug-41e511be5b598fd42536.json",
+					"name" : "asmtk",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64",
+		"source" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
