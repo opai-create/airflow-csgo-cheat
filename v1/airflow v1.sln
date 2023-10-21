@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "airflow V1", "Airflow\Airflow.vcxproj", "{476F7059-9BB6-4637-9A9D-303ED01D3EDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{476F7059-9BB6-4637-9A9D-303ED01D3EDD}.Debug|x86.ActiveCfg = Debug|Win32
+		{476F7059-9BB6-4637-9A9D-303ED01D3EDD}.Debug|x86.Build.0 = Debug|Win32
+		{476F7059-9BB6-4637-9A9D-303ED01D3EDD}.Release|x86.ActiveCfg = Release|Win32
+		{476F7059-9BB6-4637-9A9D-303ED01D3EDD}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {668541E3-001F-49E5-852A-BD6FFF2E48F0}
+	EndGlobalSection
+EndGlobal
