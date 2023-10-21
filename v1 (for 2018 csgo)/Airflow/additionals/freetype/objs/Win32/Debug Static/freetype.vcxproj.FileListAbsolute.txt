@@ -1,0 +1,1 @@
+D:\C++\csgo-solution\Airflow\additionals\freetype\objs\Win32\Debug Static\freetype.lib
