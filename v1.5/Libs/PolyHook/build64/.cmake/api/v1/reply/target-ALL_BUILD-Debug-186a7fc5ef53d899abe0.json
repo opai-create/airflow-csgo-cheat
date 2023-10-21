@@ -1,0 +1,36 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"zydis/dependencies/zycore/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Zycore::@851623237c9f40d7dba4"
+		}
+	],
+	"id" : "ALL_BUILD::@851623237c9f40d7dba4",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "zydis/dependencies/zycore",
+		"source" : "zydis/dependencies/zycore"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

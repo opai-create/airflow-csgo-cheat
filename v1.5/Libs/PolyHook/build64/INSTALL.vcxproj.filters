@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build64\CMakeFiles\58faa8bfe186eeed73d63964a3c21b17\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0B6340FA-79B0-3900-8F73-7AF5F684C800}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

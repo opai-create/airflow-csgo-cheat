@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmparser.cpp">
+      <Filter>src\asmtk</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtokenizer.cpp">
+      <Filter>src\asmtk</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtk.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmparser.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtokenizer.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\elfdefs.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\globals.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\parserutils.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\strtod.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{8E3E87A7-4365-3A40-907B-CF58D421E12F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\asmtk">
+      <UniqueIdentifier>{07519DDC-98F4-363D-ADA0-5D6E04B4B30E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
