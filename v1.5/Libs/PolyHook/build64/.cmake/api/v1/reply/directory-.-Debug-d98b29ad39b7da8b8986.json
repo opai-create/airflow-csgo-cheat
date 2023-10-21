@@ -1,0 +1,219 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 190,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 230,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 264,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 308,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 329,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 349,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 385,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 392,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 399,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/polyhook2",
+			"paths" : 
+			[
+				"polyhook2/Enums.hpp",
+				"polyhook2/IHook.hpp",
+				"polyhook2/Instruction.hpp",
+				"polyhook2/Misc.hpp",
+				"polyhook2/UID.hpp",
+				"polyhook2/ErrorLog.hpp",
+				"polyhook2/MemProtector.hpp",
+				"polyhook2/MemAccessor.hpp",
+				"polyhook2/FBAllocator.hpp",
+				"polyhook2/RangeAllocator.hpp",
+				"polyhook2/Tests/TestEffectTracker.hpp",
+				"polyhook2/Tests/StackCanary.hpp",
+				"polyhook2/EventDispatcher.hpp",
+				"polyhook2/PolyHookOs.hpp",
+				"polyhook2/PolyHookOsIncludes.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/polyhook2",
+			"paths" : 
+			[
+				"polyhook2/ZydisDisassembler.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/polyhook2/Detour",
+			"paths" : 
+			[
+				"polyhook2/Detour/ADetour.hpp",
+				"polyhook2/Detour/NatDetour.hpp",
+				"polyhook2/Detour/x64Detour.hpp",
+				"polyhook2/Detour/x86Detour.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/polyhook2/Detour",
+			"paths" : 
+			[
+				"polyhook2/Detour/ILCallback.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/polyhook2/Exceptions",
+			"paths" : 
+			[
+				"polyhook2/Exceptions/AVehHook.hpp",
+				"polyhook2/Exceptions/BreakPointHook.hpp",
+				"polyhook2/Exceptions/HWBreakPointHook.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "include/polyhook2/PE",
+			"paths" : 
+			[
+				"polyhook2/PE/EatHook.hpp",
+				"polyhook2/PE/IatHook.hpp",
+				"polyhook2/PE/PEB.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "include/polyhook2/Virtuals",
+			"paths" : 
+			[
+				"polyhook2/Virtuals/VTableSwapHook.hpp",
+				"polyhook2/Virtuals/VFuncSwapHook.hpp"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/PolyHook_2",
+			"paths" : 
+			[
+				"build64/PolyHook_2-config.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Debug/PolyHook_2.lib"
+			],
+			"targetId" : "PolyHook_2::@6890427a1f51a3e7e1df",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "lib/PolyHook_2",
+			"exportName" : "PolyHook_2-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "PolyHook_2::@6890427a1f51a3e7e1df",
+					"index" : 3
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/603899fb80b76890337322255e6aa6fc/PolyHook_2-targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

@@ -1,0 +1,1163 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include"
+		],
+		"files" : 
+		[
+			"asmjit/CMakeLists.txt",
+			"asmtk/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 112,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 513,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 519,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 526,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 195,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 201,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 208,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 208,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 208,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 208,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 208,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 208,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 208,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"asmtk/Debug/asmjit.lib"
+			],
+			"targetId" : "asmjit::@4a2050beb1875c0e9666",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/asmjit",
+			"exportName" : "asmjit-config",
+			"exportTargets" : 
+			[
+				{
+					"id" : "asmjit::@4a2050beb1875c0e9666",
+					"index" : 7
+				}
+			],
+			"paths" : 
+			[
+				"asmtk/CMakeFiles/Export/51e8fad3bd3789d5315a1fbe99c5b64d/asmjit-config.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/asmjit.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/asmjit-scope-begin.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/asmjit-scope-end.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/api-config.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/archtraits.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/archcommons.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/assembler.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/builder.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/codebuffer.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/codeholder.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/compiler.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/compilerdefs.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/constpool.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/cpuinfo.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/emitter.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 21,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/environment.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 22,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/errorhandler.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/formatter.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/func.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 25,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/globals.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 26,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/inst.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/jitallocator.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 28,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/jitruntime.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 29,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/logger.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 30,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/operand.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 31,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/osutils.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 32,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/string.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 33,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/support.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 34,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/target.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 35,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/type.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 36,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/virtmem.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 37,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/zone.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 38,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/zonehash.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 39,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/zonelist.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 40,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/zonestack.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 41,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/zonestring.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 42,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/zonetree.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 43,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/core",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/core/zonevector.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 44,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/armglobals.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 46,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/armoperand.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 47,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/a64assembler.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 48,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/a64builder.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 49,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/a64compiler.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 50,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/a64emitter.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 51,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/a64globals.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 52,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/a64instdb.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/a64operand.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 54,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/arm",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/arm/a64utils.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 55,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/x86.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 56,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/x86",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/x86/x86assembler.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 57,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/x86",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/x86/x86builder.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 58,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/x86",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/x86/x86compiler.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 59,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/x86",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/x86/x86emitter.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 60,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/x86",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/x86/x86globals.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 61,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/x86",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/x86/x86instdb.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 62,
+			"component" : "Unspecified",
+			"destination" : "include/asmjit/x86",
+			"paths" : 
+			[
+				"asmjit/src/asmjit/x86/x86operand.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 63,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"asmtk/Debug/asmtk.lib"
+			],
+			"targetId" : "asmtk::@4a2050beb1875c0e9666",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 64,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/asmtk",
+			"exportName" : "asmtk-config",
+			"exportTargets" : 
+			[
+				{
+					"id" : "asmtk::@4a2050beb1875c0e9666",
+					"index" : 8
+				}
+			],
+			"paths" : 
+			[
+				"asmtk/CMakeFiles/Export/d82acc61b1b534f95d5d81dc840124af/asmtk-config.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 65,
+			"component" : "Unspecified",
+			"destination" : "include/asmtk",
+			"paths" : 
+			[
+				"asmtk/src/asmtk/asmtk.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 66,
+			"component" : "Unspecified",
+			"destination" : "include/asmtk",
+			"paths" : 
+			[
+				"asmtk/src/asmtk/asmparser.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 67,
+			"component" : "Unspecified",
+			"destination" : "include/asmtk",
+			"paths" : 
+			[
+				"asmtk/src/asmtk/asmtokenizer.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 68,
+			"component" : "Unspecified",
+			"destination" : "include/asmtk",
+			"paths" : 
+			[
+				"asmtk/src/asmtk/elfdefs.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 69,
+			"component" : "Unspecified",
+			"destination" : "include/asmtk",
+			"paths" : 
+			[
+				"asmtk/src/asmtk/globals.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 70,
+			"component" : "Unspecified",
+			"destination" : "include/asmtk",
+			"paths" : 
+			[
+				"asmtk/src/asmtk/parserutils.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 71,
+			"component" : "Unspecified",
+			"destination" : "include/asmtk",
+			"paths" : 
+			[
+				"asmtk/src/asmtk/strtod.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "asmtk",
+		"source" : "asmtk"
+	}
+}

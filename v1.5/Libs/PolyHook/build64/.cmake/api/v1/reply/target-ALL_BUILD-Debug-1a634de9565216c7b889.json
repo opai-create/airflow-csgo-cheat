@@ -1,0 +1,36 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"zydis/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Zydis::@2a67baf740bd4b22dbb9"
+		}
+	],
+	"id" : "ALL_BUILD::@2a67baf740bd4b22dbb9",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "zydis",
+		"source" : "zydis"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

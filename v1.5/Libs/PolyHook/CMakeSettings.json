@@ -1,0 +1,88 @@
+{
+  "configurations": [
+    {
+      "name": "x86-Debug",
+      "generator": "Visual Studio 17 2022",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\build32",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "variables": [
+        {
+          "name": "POLYHOOK_BUILD_DLL",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "POLYHOOK_BUILD_STATIC_RUNTIME",
+          "value": "False",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x86-Release",
+      "generator": "Visual Studio 17 2022",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\build32",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "variables": [
+        {
+          "name": "POLYHOOK_BUILD_DLL",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "POLYHOOK_BUILD_STATIC_RUNTIME",
+          "value": "False",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x86-ReleaseWithDebInfo",
+      "generator": "Visual Studio 17 2022",
+      "configurationType": "RelWithDebInfo",
+      "buildRoot": "${projectDir}\\build32",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": []
+    },
+    {
+      "name": "x64-Debug",
+      "generator": "Visual Studio 17 2022 Win64",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\build64",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": []
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Visual Studio 17 2022 Win64",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\build64",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": []
+    },
+    {
+      "name": "x64-ReleaseWithDebInfo",
+      "generator": "Visual Studio 17 2022 Win64",
+      "configurationType": "RelWithDebInfo",
+      "buildRoot": "${projectDir}\\build64",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": []
+    }
+  ]
+}
