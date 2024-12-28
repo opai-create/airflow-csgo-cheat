@@ -395,9 +395,6 @@
     <ClInclude Include="base\tools\threads.h">
       <Filter>base\tools</Filter>
     </ClInclude>
-    <ClInclude Include="base\tools\connection\app_hack.h">
-      <Filter>base\tools\connection</Filter>
-    </ClInclude>
     <ClInclude Include="functions\visuals\esp_share.h">
       <Filter>functions\visuals</Filter>
     </ClInclude>
@@ -672,9 +669,6 @@
     </ClCompile>
     <ClCompile Include="base\tools\threads.cpp">
       <Filter>base\tools</Filter>
-    </ClCompile>
-    <ClCompile Include="base\tools\connection\app_hack.cpp">
-      <Filter>base\tools\connection</Filter>
     </ClCompile>
     <ClCompile Include="functions\visuals\esp_renderer.cpp">
       <Filter>functions\visuals</Filter>

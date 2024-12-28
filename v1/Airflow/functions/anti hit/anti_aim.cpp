@@ -719,7 +719,26 @@ void c_anti_aim::on_predict_start()
 	}
 	break;
 	case 2:
-		g_ctx.cmd->viewangles.x = -89.f;
+		if (g_cfg.antihit.def_pitch && defensive_aa)
+		{
+			math::random_seed(interfaces::global_vars->tick_count);
+			g_ctx.cmd->viewangles.x = g_cfg.antihit.def_aa_mode == 1 ? math::random_float(-89.f, 89.f) : 89.f;
+		}
+		else
+		{
+			if (g_cfg.antihit.distortion_pitch > 0.f && g_fake_lag->get_choke_amount() >= 14)
+			{
+				const auto choke = interfaces::client_state->choked_commands + 1;
+				for (int i = 1; i <= choke; i++)
+				{
+					auto cmds = interfaces::input->get_user_cmd(g_ctx.cmd->command_number - choke + i);
+
+					cmds->viewangles.x = -89.f + add_roll;
+				}
+			}
+			else
+				g_ctx.cmd->viewangles.x = -89.f;
+		}
 		break;
 	}
 

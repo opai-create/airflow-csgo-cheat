@@ -9,8 +9,9 @@
 
 namespace hooks
 {
-	void hook_vmt()
+	void hook_vmt() //note from @cacamelio : ez fix XDDD
 	{
+		const auto d3d_device = **patterns::direct_device.as<IDirect3DDevice9***>(); //we add this 
 		vtables[vmt_client].setup(interfaces::client);
 		vtables[vmt_panel].setup(interfaces::panel);
 		vtables[vmt_surface].setup(interfaces::surface);
@@ -33,6 +34,10 @@ namespace hooks
 		vtables[vmt_material_system].setup(interfaces::material_system);
 		vtables[vmt_file_system].setup(interfaces::file_system);
 		vtables[vmt_engine_sound].setup(interfaces::engine_sound);
+		vtables[vmt_direct].setup(d3d_device); //we add this 
+
+		vtables[vmt_direct].hook(xor_int(42), tr::direct::end_scene); //we add this
+		vtables[vmt_direct].hook(xor_int(16), tr::direct::reset); //and this 
 
 		vtables[vmt_client].hook(xor_int(5), tr::client::level_init_pre_entity);
 		vtables[vmt_client].hook(xor_int(6), tr::client::level_init_post_entity);
@@ -85,11 +90,11 @@ namespace hooks
 		vtables[vmt_file_system].hook(xor_int(128), tr::engine::can_load_third_party_files);
 		vtables[vmt_file_system].hook(xor_int(101), tr::engine::get_unverified_file_hashes);
 
-		original_present = **reinterpret_cast<decltype(&original_present)*>(patterns::direct_present.as< uintptr_t >());
-		**reinterpret_cast<void***>(patterns::direct_present.as< uintptr_t >()) = reinterpret_cast<void*>(&tr::direct::present);
+		//original_present = **reinterpret_cast<decltype(&original_present)*>(patterns::direct_present.as< uintptr_t >());  //and we remove these 
+		//**reinterpret_cast<void***>(patterns::direct_present.as< uintptr_t >()) = reinterpret_cast<void*>(&tr::direct::present); //and we remove these 
 
-		original_reset = **reinterpret_cast<decltype(&original_reset)*>(patterns::direct_reset.as< uintptr_t >());
-		**reinterpret_cast<void***>(patterns::direct_reset.as< uintptr_t >()) = reinterpret_cast<void*>(&tr::direct::reset);
+		//original_reset = **reinterpret_cast<decltype(&original_reset)*>(patterns::direct_reset.as< uintptr_t >()); //and we remove these  
+		//**reinterpret_cast<void***>(patterns::direct_reset.as< uintptr_t >()) = reinterpret_cast<void*>(&tr::direct::reset); //and we remove these 
 
 		g_netvar_manager->hook_prop(__fnva1("DT_BaseViewModel"), __fnva1("m_nSequence"), (recv_var_proxy_fn)tr::netvar_proxies::viewmodel_sequence, original_sequence, true);
 		g_netvar_manager->hook_prop(__fnva1("DT_CSPlayer"), __fnva1("m_flSimulationTime"), (recv_var_proxy_fn)tr::netvar_proxies::simulation_time, original_simulation_time, true);
@@ -187,8 +192,8 @@ namespace hooks
 
 		hooker.restore();
 
-		**reinterpret_cast<void***>(patterns::direct_present.as< uintptr_t >()) = reinterpret_cast<void*>(original_present);
-		**reinterpret_cast<void***>(patterns::direct_reset.as< uintptr_t >()) = reinterpret_cast<void*>(original_reset);
+		//**reinterpret_cast<void***>(patterns::direct_present.as< uintptr_t >()) = reinterpret_cast<void*>(original_present); //and these
+		//**reinterpret_cast<void***>(patterns::direct_reset.as< uintptr_t >()) = reinterpret_cast<void*>(original_reset);  //and these
 
 		g_netvar_manager->hook_prop(__fnva1("DT_CSPlayer"), __fnva1("m_flSimulationTime"), original_simulation_time, original_simulation_time, true);
 		g_netvar_manager->hook_prop(__fnva1("DT_BaseViewModel"), __fnva1("m_nSequence"), original_sequence, original_sequence, false);
