@@ -2,7 +2,7 @@ my discord : https://discord.gg/CWEp8bQrWc
 
 ## Status :
 * Airflow v1 : fully fixed
-* Airflow v1.5 : fixing soon
+* Airflow v1.5 : fully fixed
 * Airflow v1 (2018) : didnt check yet 
 
 # Overview
@@ -26,4 +26,8 @@ You may use **Debug / Release | x86** build options for it.
 
 ## Screenshot of Airlfow v1 :
 ![image](https://github.com/user-attachments/assets/61ed2c57-9914-4ba5-81e6-d6a9fb931219)
+
+## Screenshot of Airflow v1.5 :
+![image](https://github.com/user-attachments/assets/a78d9045-6479-4bf7-b6a5-b01f953a29c6)
+
 
