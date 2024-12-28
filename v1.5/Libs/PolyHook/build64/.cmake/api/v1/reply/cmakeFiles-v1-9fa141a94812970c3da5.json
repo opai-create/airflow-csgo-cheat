@@ -941,8 +941,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64",
-		"source" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook"
+		"build" : "D:/v1.5/v1.5/Libs/PolyHook/build64",
+		"source" : "D:/v1.5/v1.5/Libs/PolyHook"
 	},
 	"version" : 
 	{

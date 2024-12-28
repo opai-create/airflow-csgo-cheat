@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D3687FAC-A081-3E49-BF6E-488E50AC1DE8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Zydis</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/v1.5/v1.5\Libs\PolyHook\zydis\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Zydis.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Zydis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:/v1.5/v1.5\Libs\PolyHook\zydis\include;D:/v1.5/v1.5\Libs\PolyHook\zydis;D:/v1.5/v1.5\Libs\PolyHook\zydis\src;D:/v1.5/v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:/v1.5/v1.5\Libs\PolyHook\zydis\dependencies\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ZYDIS_EXPORTS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ZYDIS_EXPORTS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:/v1.5/v1.5\Libs\PolyHook\zydis\include;D:/v1.5/v1.5\Libs\PolyHook\zydis;D:/v1.5/v1.5\Libs\PolyHook\zydis\src;D:/v1.5/v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:/v1.5/v1.5\Libs\PolyHook\zydis\dependencies\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:/v1.5/v1.5\Libs\PolyHook\zydis\include;D:/v1.5/v1.5\Libs\PolyHook\zydis;D:/v1.5/v1.5\Libs\PolyHook\zydis\src;D:/v1.5/v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:/v1.5/v1.5\Libs\PolyHook\zydis\dependencies\zycore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/v1.5/v1.5/Libs/PolyHook/zydis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -S -B --check-stamp-file D:/v1.5/v1.5/Libs/PolyHook/zydis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\exportheader.cmake.in;D:/v1.5/v1.5\Libs\PolyHook\zydis\cmake\zydis-config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/v1.5/v1.5\Libs\PolyHook\zydis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\MetaInfo.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Mnemonic.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Register.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\SharedTypes.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\ShortString.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Status.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Utils.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Zydis.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\SharedData.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\String.h" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\MetaInfo.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\Mnemonic.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\Register.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\SharedData.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\String.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\Utils.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\Zydis.c" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Decoder.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\DecoderTypes.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\DecoderData.h" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\Decoder.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\DecoderData.c" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Formatter.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\FormatterBuffer.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\FormatterATT.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\FormatterBase.h" />
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\FormatterIntel.h" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\Formatter.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\FormatterBuffer.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\FormatterATT.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\FormatterBase.c" />
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\src\FormatterIntel.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/v1.5/v1.5\Libs\PolyHook\ZERO_CHECK.vcxproj">
+      <Project>{88AD6D21-1BE3-3361-AED9-F84450C1C9FA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:/v1.5/v1.5\Libs\PolyHook\zydis\dependencies\zycore\Zycore.vcxproj">
+      <Project>{56833A53-63C7-3CF8-837F-28AB864E610F}</Project>
+      <Name>Zycore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

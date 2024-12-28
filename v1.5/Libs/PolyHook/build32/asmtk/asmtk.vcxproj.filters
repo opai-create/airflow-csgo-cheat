@@ -1,45 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmparser.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmparser.cpp">
       <Filter>src\asmtk</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtokenizer.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtokenizer.cpp">
       <Filter>src\asmtk</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtk.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtk.h">
       <Filter>src\asmtk</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmparser.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmparser.h">
       <Filter>src\asmtk</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtokenizer.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtokenizer.h">
       <Filter>src\asmtk</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\elfdefs.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\src\asmtk\elfdefs.h">
       <Filter>src\asmtk</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\globals.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\src\asmtk\globals.h">
       <Filter>src\asmtk</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\parserutils.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\src\asmtk\parserutils.h">
       <Filter>src\asmtk</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src\asmtk\strtod.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\src\asmtk\strtod.h">
       <Filter>src\asmtk</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\CMakeLists.txt" />
+    <CustomBuild Include="D:\v1.5\v1.5\Libs\PolyHook\asmtk\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{E0CB2763-9237-393E-ACF6-CCF76AA579DA}</UniqueIdentifier>
+      <UniqueIdentifier>{9D54390A-A16A-31A4-8FBE-20FE81FCAA4E}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\asmtk">
-      <UniqueIdentifier>{C5084BD8-92F2-33A3-ABFF-4021A96BABEA}</UniqueIdentifier>
+      <UniqueIdentifier>{C016A7ED-4184-3DCA-932E-B690F217B334}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

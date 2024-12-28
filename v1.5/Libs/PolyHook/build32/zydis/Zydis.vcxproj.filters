@@ -1,114 +1,114 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\MetaInfo.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\MetaInfo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\Mnemonic.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Mnemonic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\Register.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Register.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\SharedData.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\SharedData.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\String.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\String.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\Utils.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Utils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\Zydis.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Zydis.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\Decoder.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Decoder.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\DecoderData.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\DecoderData.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\Formatter.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Formatter.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\FormatterBuffer.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\FormatterBuffer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\FormatterATT.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\FormatterATT.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\FormatterBase.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\FormatterBase.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\src\FormatterIntel.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\src\FormatterIntel.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\MetaInfo.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\MetaInfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Mnemonic.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Mnemonic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Register.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Register.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\SharedTypes.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\SharedTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\ShortString.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\ShortString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Status.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Status.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Utils.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Zydis.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Zydis.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\SharedData.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\SharedData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\String.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\String.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Decoder.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Decoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\DecoderTypes.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\DecoderTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\DecoderData.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\DecoderData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Formatter.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Formatter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\FormatterBuffer.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\FormatterBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\FormatterATT.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\FormatterATT.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\FormatterBase.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\FormatterBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\FormatterIntel.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\include\Zydis\Internal\FormatterIntel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\CMakeLists.txt" />
+    <CustomBuild Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{7479AEB2-FE76-3F7C-8676-1317E368594D}</UniqueIdentifier>
+      <UniqueIdentifier>{890068E7-FA39-35AF-846D-AC9E1E25BC13}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4ACC0F4D-62F4-3F67-883B-044A9484E889}</UniqueIdentifier>
+      <UniqueIdentifier>{7B952A08-8929-3192-AB5D-009A8C3B8C94}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

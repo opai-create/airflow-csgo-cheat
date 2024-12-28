@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\CMakeLists.txt" />
+    <CustomBuild Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

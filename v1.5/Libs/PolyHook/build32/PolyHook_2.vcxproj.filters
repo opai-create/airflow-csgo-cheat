@@ -1,79 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\MemProtector.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\MemProtector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\MemAccessor.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\MemAccessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\TestEffectTracker.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\TestEffectTracker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\StackCanary.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\StackCanary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\FBAllocator.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\FBAllocator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\RangeAllocator.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\RangeAllocator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\ErrorLog.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\ErrorLog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\UID.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\UID.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\Misc.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\Misc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\PolyHookOs.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\PolyHookOs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\ZydisDisassembler.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\ZydisDisassembler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\ADetour.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\ADetour.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\x64Detour.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\x64Detour.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\x86Detour.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\x86Detour.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\ILCallback.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\ILCallback.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\AVehHook.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\AVehHook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\BreakPointHook.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\BreakPointHook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\HWBreakPointHook.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\HWBreakPointHook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\EatHook.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\EatHook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\IatHook.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\IatHook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\VTableSwapHook.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\VTableSwapHook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\VFuncSwapHook.cpp">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\VFuncSwapHook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\CMakeLists.txt" />
+    <CustomBuild Include="D:\v1.5\v1.5\Libs\PolyHook\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4ACC0F4D-62F4-3F67-883B-044A9484E889}</UniqueIdentifier>
+      <UniqueIdentifier>{7B952A08-8929-3192-AB5D-009A8C3B8C94}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

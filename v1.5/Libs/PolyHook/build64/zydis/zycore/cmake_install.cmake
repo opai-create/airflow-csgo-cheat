@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/dependencies/zycore
+# Install script for directory: D:/v1.5/v1.5/Libs/PolyHook/zydis/dependencies/zycore
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "D:/v1.5/v1.5/Libs/PolyHook/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

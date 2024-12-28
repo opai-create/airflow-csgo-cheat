@@ -1,10 +1,10 @@
 # CMake generation dependency list for this directory.
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/CMakeLists.txt
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/PolyHook_2-config.cmake.in
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CMakeCCompiler.cmake
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CMakeCXXCompiler.cmake
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CMakeRCCompiler.cmake
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CMakeSystem.cmake
+D:/v1.5/v1.5/Libs/PolyHook/CMakeLists.txt
+D:/v1.5/v1.5/Libs/PolyHook/PolyHook_2-config.cmake.in
+D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CMakeCCompiler.cmake
+D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CMakeCXXCompiler.cmake
+D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CMakeRCCompiler.cmake
+D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CMakeSystem.cmake
 D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in
 D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeCCompilerABI.c
 D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeCInformation.cmake

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/v1.5/v1.5/Libs/PolyHook/asmtk/CMakeLists.txt
+  asmparser.cpp
+  asmtokenizer.cpp
+  asmtk.vcxproj -> D:\v1.5\v1.5\Libs\PolyHook\build32\asmtk\Release\asmtk.lib

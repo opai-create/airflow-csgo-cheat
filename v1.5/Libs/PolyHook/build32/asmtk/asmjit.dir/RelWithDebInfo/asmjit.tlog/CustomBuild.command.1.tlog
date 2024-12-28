@@ -1,0 +1,10 @@
+^D:\V1.5\V1.5\LIBS\POLYHOOK\ASMTK\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/v1.5/v1.5/Libs/PolyHook -BD:/v1.5/v1.5/Libs/PolyHook/build32 --check-stamp-file D:/v1.5/v1.5/Libs/PolyHook/build32/asmtk/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

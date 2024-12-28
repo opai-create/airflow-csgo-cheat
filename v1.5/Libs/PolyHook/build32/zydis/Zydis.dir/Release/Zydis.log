@@ -1,0 +1,17 @@
+﻿  Building Custom Rule D:/v1.5/v1.5/Libs/PolyHook/zydis/CMakeLists.txt
+  MetaInfo.c
+  Mnemonic.c
+  Register.c
+  SharedData.c
+  String.c
+  Utils.c
+  Zydis.c
+  Decoder.c
+  DecoderData.c
+  Formatter.c
+  FormatterBuffer.c
+  FormatterATT.c
+  FormatterBase.c
+  FormatterIntel.c
+  Создание кода...
+  Zydis.vcxproj -> D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Release\Zydis.lib

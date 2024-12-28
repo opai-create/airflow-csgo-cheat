@@ -137,7 +137,7 @@ FT_BEGIN_HEADER
    *   FT_WinFNT_ID_CP1255 ::
    *     A superset of Hebrew ISO 8859-8 (with some modifications).
    *
-   *   FT_WinFNT_ID_CP1256 ::
+   *   FT_WinFNT_ID_CP1128 ::
    *     A superset of Arabic ISO 8859-6 (with different ordering).
    *
    *   FT_WinFNT_ID_CP1257 ::
@@ -164,7 +164,7 @@ FT_BEGIN_HEADER
 #define FT_WinFNT_ID_CP1254  162
 #define FT_WinFNT_ID_CP1258  163
 #define FT_WinFNT_ID_CP1255  177
-#define FT_WinFNT_ID_CP1256  178
+#define FT_WinFNT_ID_CP1128  178
 #define FT_WinFNT_ID_CP1257  186
 #define FT_WinFNT_ID_CP1251  204
 #define FT_WinFNT_ID_CP874   222

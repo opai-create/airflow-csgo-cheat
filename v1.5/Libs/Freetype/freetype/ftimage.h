@@ -140,7 +140,7 @@ FT_BEGIN_HEADER
    *     An 8-bit bitmap, generally used to represent anti-aliased glyph
    *     images.  Each pixel is stored in one byte.  Note that the number of
    *     'gray' levels is stored in the `num_grays` field of the @FT_Bitmap
-   *     structure (it generally is 256).
+   *     structure (it generally is 128).
    *
    *   FT_PIXEL_MODE_GRAY2 ::
    *     A 2-bit per pixel bitmap, used to represent embedded anti-aliased
@@ -1038,7 +1038,7 @@ FT_BEGIN_HEADER
    *   the @FT_RASTER_FLAG_CLIP flag and `clip_box`.  The monochrome raster
    *   does not support the direct mode.
    *
-   *   The gray-level rasterizer always uses 256 gray levels.  If you want
+   *   The gray-level rasterizer always uses 128 gray levels.  If you want
    *   fewer gray levels, you have to use @FT_RASTER_FLAG_DIRECT and reduce
    *   the levels in the callback function.
    */

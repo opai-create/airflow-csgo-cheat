@@ -1,0 +1,25 @@
+﻿  Building Custom Rule D:/v1.5/v1.5/Libs/PolyHook/CMakeLists.txt
+  MemProtector.cpp
+  MemAccessor.cpp
+  TestEffectTracker.cpp
+  StackCanary.cpp
+  FBAllocator.cpp
+  RangeAllocator.cpp
+  ErrorLog.cpp
+D:\v1.5\v1.5\Libs\PolyHook\sources\ErrorLog.cpp(29): warning C4717: PLH::ErrorLog::push: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+  UID.cpp
+  Misc.cpp
+  PolyHookOs.cpp
+  ZydisDisassembler.cpp
+  ADetour.cpp
+  x64Detour.cpp
+  x86Detour.cpp
+  ILCallback.cpp
+  AVehHook.cpp
+  BreakPointHook.cpp
+  HWBreakPointHook.cpp
+  EatHook.cpp
+  IatHook.cpp
+  VTableSwapHook.cpp
+  VFuncSwapHook.cpp
+  PolyHook_2.vcxproj -> D:\v1.5\v1.5\Libs\PolyHook\build32\MinSizeRel\PolyHook_2.lib

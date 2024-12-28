@@ -1,0 +1,13 @@
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Memory.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Memory.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Process.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Process.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Synchronization.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Synchronization.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Terminal.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Terminal.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Thread.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Thread.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Allocator.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Allocator.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\ArgParse.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\ArgParse.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Bitset.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Bitset.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Format.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Format.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\List.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\List.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\String.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\String.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Vector.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Vector.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Zycore.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\RelWithDebInfo\Zycore.obj

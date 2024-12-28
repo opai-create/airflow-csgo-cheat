@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/asmjit"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/asmjit"
 		},
 		{
 			"name" : "ASMJIT_EMBED",
@@ -155,7 +155,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/asmtk"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/asmtk"
 		},
 		{
 			"name" : "ASMTK_EMBED",
@@ -219,7 +219,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/build64"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -611,7 +611,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/pkgRedirects"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -875,7 +875,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/out/install/x64-Debug"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/out/install/x64-Debug"
 		},
 		{
 			"name" : "CMAKE_INSTALL_RUNSTATEDIR",
@@ -1715,7 +1715,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/build64"
 		},
 		{
 			"name" : "PolyHook_2_IS_TOP_LEVEL",
@@ -1739,7 +1739,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook"
 		},
 		{
 			"name" : "ZYAN_DEV_MODE",
@@ -1955,7 +1955,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/dependencies/zycore"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/zydis/dependencies/zycore"
 		},
 		{
 			"name" : "Zycore_BINARY_DIR",
@@ -1967,7 +1967,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/dependencies/zycore"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/dependencies/zycore"
 		},
 		{
 			"name" : "Zycore_IS_TOP_LEVEL",
@@ -1991,7 +1991,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/dependencies/zycore"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/zydis/dependencies/zycore"
 		},
 		{
 			"name" : "Zydis_BINARY_DIR",
@@ -2003,7 +2003,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis"
 		},
 		{
 			"name" : "Zydis_IS_TOP_LEVEL",
@@ -2039,7 +2039,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/zydis"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
@@ -2051,7 +2051,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/out/install/x64-Debug"
+			"value" : "D:/v1.5/v1.5/Libs/PolyHook/out/install/x64-Debug"
 		},
 		{
 			"name" : "asmtk_LIB_DEPENDS",

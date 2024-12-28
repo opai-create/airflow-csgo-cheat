@@ -2,9 +2,11 @@
 #include "legacy ui/legacy_str.h"
 #include "features.hpp"
 
+/*
 #ifndef _DEBUG
 #include <VirtualizerSDK.h>
 #endif
+*/
 
 #ifdef _DEBUG
 FILE* stream = NULL;
