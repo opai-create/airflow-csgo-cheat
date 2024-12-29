@@ -1,114 +1,114 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Memory.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Memory.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Process.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Process.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Synchronization.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Synchronization.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Terminal.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Terminal.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Thread.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Thread.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Allocator.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Allocator.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\ArgParse.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\ArgParse.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Bitset.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Bitset.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Format.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Format.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\List.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\List.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\String.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\String.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Vector.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Vector.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Zycore.c">
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Zycore.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Memory.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Memory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Process.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Process.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Synchronization.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Synchronization.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Terminal.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Terminal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Thread.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\API\Thread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Allocator.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Allocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\ArgParse.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\ArgParse.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Bitset.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Bitset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Comparison.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Comparison.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Defines.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Defines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Format.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Format.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\LibC.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\LibC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\List.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Object.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Status.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Status.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\String.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\String.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Types.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Vector.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Vector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Zycore.h">
+    <ClInclude Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include\Zycore\Zycore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\CMakeLists.txt" />
+    <CustomBuild Include="D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{7479AEB2-FE76-3F7C-8676-1317E368594D}</UniqueIdentifier>
+      <UniqueIdentifier>{890068E7-FA39-35AF-846D-AC9E1E25BC13}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4ACC0F4D-62F4-3F67-883B-044A9484E889}</UniqueIdentifier>
+      <UniqueIdentifier>{7B952A08-8929-3192-AB5D-009A8C3B8C94}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

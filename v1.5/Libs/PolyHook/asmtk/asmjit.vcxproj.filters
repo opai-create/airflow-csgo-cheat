@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\archtraits.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\assembler.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\builder.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\codeholder.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\codewriter.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\compiler.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\constpool.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\cpuinfo.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\emithelper.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\emitter.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\emitterutils.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\environment.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\errorhandler.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\formatter.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\func.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\funcargscontext.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\globals.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\inst.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\jitallocator.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\jitruntime.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\logger.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\operand.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\osutils.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\ralocal.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\rapass.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\rastack.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\string.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\support.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\target.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\type.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\virtmem.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zone.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonehash.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonelist.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonestack.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonetree.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonevector.cpp">
+      <Filter>src\asmjit\core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\armformatter.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64assembler.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64builder.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64compiler.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64emithelper.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64formatter.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64func.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64instapi.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64instdb.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64operand.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64rapass.cpp">
+      <Filter>src\asmjit\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86assembler.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86builder.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86compiler.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86emithelper.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86formatter.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86func.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86instdb.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86instapi.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86operand.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86rapass.cpp">
+      <Filter>src\asmjit\x86</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\asmjit.h">
+      <Filter>src\asmjit</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\asmjit-scope-begin.h">
+      <Filter>src\asmjit</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\asmjit-scope-end.h">
+      <Filter>src\asmjit</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core.h">
+      <Filter>src\asmjit</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\api-build_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\api-config.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\archtraits.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\archcommons.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\assembler.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\builder.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\codebuffer.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\codeholder.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\codewriter_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\compiler.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\compilerdefs.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\constpool.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\cpuinfo.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\emithelper_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\emitter.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\emitterutils_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\environment.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\errorhandler.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\formatter.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\func.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\funcargscontext_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\globals.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\inst.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\jitallocator.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\jitruntime.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\logger.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\misc_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\operand.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\osutils.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\raassignment_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\rabuilders_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\radefs_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\ralocal_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\rapass_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\rastack_p.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\string.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\support.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\target.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\type.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\virtmem.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zone.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonehash.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonelist.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonestack.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonestring.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonetree.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\core\zonevector.h">
+      <Filter>src\asmjit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm.h">
+      <Filter>src\asmjit</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\armformatter_p.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\armglobals.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\armoperand.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64archtraits_p.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64assembler.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64builder.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64compiler.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64emithelper_p.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64emitter.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64formatter_p.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64func_p.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64globals.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64instapi_p.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64instdb.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64operand.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64rapass_p.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\arm\a64utils.h">
+      <Filter>src\asmjit\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86.h">
+      <Filter>src\asmjit</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86archtraits_p.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86assembler.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86builder.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86compiler.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86emithelper_p.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86emitter.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86formatter_p.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86func_p.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86globals.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86instdb.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86instdb_p.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86instapi_p.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86operand.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit\x86\x86rapass_p.h">
+      <Filter>src\asmjit\x86</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="D:/v1.5/v1.5\Libs\PolyHook\asmjit\src\asmjit.natvis">
+      <Filter>src</Filter>
+    </Natvis>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{B84EBFA7-94DA-32D3-BC03-1EFDE48ABB76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\asmjit">
+      <UniqueIdentifier>{BD0EED77-7932-3D7D-AE8C-9A362068ADC5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\asmjit\arm">
+      <UniqueIdentifier>{30365A48-A306-3FAD-9B54-750B1B1E2EB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\asmjit\core">
+      <UniqueIdentifier>{14C489EF-BDF9-3D73-9B56-6F359A64F38C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\asmjit\x86">
+      <UniqueIdentifier>{9C3D08D6-6AE0-377E-A0C0-D3D7C014ACE6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

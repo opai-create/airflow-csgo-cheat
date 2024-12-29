@@ -126,7 +126,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/asmjit/src"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/asmjit/src"
 				}
 			],
 			"language" : "CXX",
@@ -167,7 +167,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/out/install/x64-Debug"
+			"path" : "D:/v1.5/v1.5/Libs/PolyHook/out/install/x64-Debug"
 		}
 	},
 	"name" : "asmtk",

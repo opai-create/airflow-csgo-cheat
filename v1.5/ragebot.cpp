@@ -13,10 +13,12 @@
 #include "resolver.hpp"
 #include "ragebot.hpp"
 
+/*
 #ifndef _DEBUG
 #include <VirtualizerSDK.h>
 #endif
-
+*/
+	
 void draw_hitbox__(c_cs_player* player, matrix3x4_t* bones, int idx, int idx2, bool dur = false)
 {
 	auto studio_model = HACKS->model_info->get_studio_model(player->get_model());

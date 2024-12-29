@@ -11,9 +11,11 @@
 #include <d3d9.h>
 #include <d3dx9.h>
 
+/*
 #ifndef _DEBUG
 #include <VirtualizerSDK.h>
 #endif // !_DEBUG
+*/
 
 #define add_texture_to_memory D3DXCreateTextureFromFileInMemory
 

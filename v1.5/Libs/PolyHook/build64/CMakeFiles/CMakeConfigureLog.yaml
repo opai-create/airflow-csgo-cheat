@@ -69,7 +69,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CompilerIdC/CompilerIdC.exe
+        D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
@@ -122,7 +122,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CompilerIdCXX/CompilerIdCXX.exe
+        D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/3.26.0-msvc3/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -133,8 +133,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh"
-      binary: "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh"
+      source: "D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh"
+      binary: "D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -143,7 +143,7 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh
+        Change Dir: D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh
         
         Run Build Command(s):D:/Software/Visual Studio/IDE/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e9e1e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.6.3+07e294721 for .NET Framework
         Сборка начата 18.09.2023 13:22:14.
@@ -162,7 +162,7 @@ events:
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
           cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e9e1e.dir\\Debug\\\\" /Fd"cmTC_e9e1e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Software\\Visual Studio\\IDE\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
         Link:
-          D:\\Software\\Visual Studio\\IDE\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-alptrh\\Debug\\cmTC_e9e1e.exe" /INCREMENTAL /ILK:"cmTC_e9e1e.dir\\Debug\\cmTC_e9e1e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh/Debug/cmTC_e9e1e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh/Debug/cmTC_e9e1e.lib" /MACHINE:X64  /machine:x64 cmTC_e9e1e.dir\\Debug\\CMakeCCompilerABI.obj
+          D:\\Software\\Visual Studio\\IDE\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-alptrh\\Debug\\cmTC_e9e1e.exe" /INCREMENTAL /ILK:"cmTC_e9e1e.dir\\Debug\\cmTC_e9e1e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh/Debug/cmTC_e9e1e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-alptrh/Debug/cmTC_e9e1e.lib" /MACHINE:X64  /machine:x64 cmTC_e9e1e.dir\\Debug\\CMakeCCompilerABI.obj
           cmTC_e9e1e.vcxproj -> C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-alptrh\\Debug\\cmTC_e9e1e.exe
         FinalizeBuildStatus:
           Файл "cmTC_e9e1e.dir\\Debug\\cmTC_e9e1e.tlog\\unsuccessfulbuild" удаляется.
@@ -185,8 +185,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o"
-      binary: "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o"
+      source: "D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o"
+      binary: "D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -195,7 +195,7 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o
+        Change Dir: D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o
         
         Run Build Command(s):D:/Software/Visual Studio/IDE/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2ea89.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.6.3+07e294721 for .NET Framework
         Сборка начата 18.09.2023 13:22:15.
@@ -214,7 +214,7 @@ events:
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
           cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2ea89.dir\\Debug\\\\" /Fd"cmTC_2ea89.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Software\\Visual Studio\\IDE\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          D:\\Software\\Visual Studio\\IDE\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-nuao3o\\Debug\\cmTC_2ea89.exe" /INCREMENTAL /ILK:"cmTC_2ea89.dir\\Debug\\cmTC_2ea89.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o/Debug/cmTC_2ea89.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o/Debug/cmTC_2ea89.lib" /MACHINE:X64  /machine:x64 cmTC_2ea89.dir\\Debug\\CMakeCXXCompilerABI.obj
+          D:\\Software\\Visual Studio\\IDE\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-nuao3o\\Debug\\cmTC_2ea89.exe" /INCREMENTAL /ILK:"cmTC_2ea89.dir\\Debug\\cmTC_2ea89.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o/Debug/cmTC_2ea89.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-nuao3o/Debug/cmTC_2ea89.lib" /MACHINE:X64  /machine:x64 cmTC_2ea89.dir\\Debug\\CMakeCXXCompilerABI.obj
           cmTC_2ea89.vcxproj -> C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-nuao3o\\Debug\\cmTC_2ea89.exe
         FinalizeBuildStatus:
           Файл "cmTC_2ea89.dir\\Debug\\cmTC_2ea89.tlog\\unsuccessfulbuild" удаляется.
@@ -240,8 +240,8 @@ events:
     checks:
       - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
     directories:
-      source: "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-y96p78"
-      binary: "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-y96p78"
+      source: "D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-y96p78"
+      binary: "D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-y96p78"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -249,7 +249,7 @@ events:
       variable: "COMPILER_HAS_DEPRECATED_ATTR"
       cached: true
       stdout: |
-        Change Dir: C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-y96p78
+        Change Dir: D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-y96p78
         
         Run Build Command(s):D:/Software/Visual Studio/IDE/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_36614.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.6.3+07e294721 for .NET Framework
         Сборка начата 18.09.2023 13:22:17.
@@ -304,8 +304,8 @@ events:
     checks:
       - "Performing Test COMPILER_HAS_DEPRECATED"
     directories:
-      source: "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe"
-      binary: "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe"
+      source: "D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe"
+      binary: "D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -313,7 +313,7 @@ events:
       variable: "COMPILER_HAS_DEPRECATED"
       cached: true
       stdout: |
-        Change Dir: C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe
+        Change Dir: D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe
         
         Run Build Command(s):D:/Software/Visual Studio/IDE/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_353ce.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && MSBuild version 17.6.3+07e294721 for .NET Framework
         Сборка начата 18.09.2023 13:22:18.
@@ -332,7 +332,7 @@ events:
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
           cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_353ce.dir\\Debug\\\\" /Fd"cmTC_353ce.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-qzznqe\\src.cxx"
         Link:
-          D:\\Software\\Visual Studio\\IDE\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-qzznqe\\Debug\\cmTC_353ce.exe" /INCREMENTAL /ILK:"cmTC_353ce.dir\\Debug\\cmTC_353ce.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe/Debug/cmTC_353ce.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe/Debug/cmTC_353ce.lib" /MACHINE:X64  /machine:x64 cmTC_353ce.dir\\Debug\\src.obj
+          D:\\Software\\Visual Studio\\IDE\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-qzznqe\\Debug\\cmTC_353ce.exe" /INCREMENTAL /ILK:"cmTC_353ce.dir\\Debug\\cmTC_353ce.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe/Debug/cmTC_353ce.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/v1.5/v1.5/Libs/PolyHook/build64/CMakeFiles/CMakeScratch/TryCompile-qzznqe/Debug/cmTC_353ce.lib" /MACHINE:X64  /machine:x64 cmTC_353ce.dir\\Debug\\src.obj
           cmTC_353ce.vcxproj -> C:\\Users\\admin\\Downloads\\v1.5-master\\v1.5\\Libs\\PolyHook\\build64\\CMakeFiles\\CMakeScratch\\TryCompile-qzznqe\\Debug\\cmTC_353ce.exe
         FinalizeBuildStatus:
           Файл "cmTC_353ce.dir\\Debug\\cmTC_353ce.tlog\\unsuccessfulbuild" удаляется.

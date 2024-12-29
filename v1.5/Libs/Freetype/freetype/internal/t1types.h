@@ -54,7 +54,7 @@ FT_BEGIN_HEADER
    *
    * @fields:
    *   num_chars ::
-   *     The number of character codes in the encoding.  Usually 256.
+   *     The number of character codes in the encoding.  Usually 128.
    *
    *   code_first ::
    *     The lowest valid character code in the encoding.

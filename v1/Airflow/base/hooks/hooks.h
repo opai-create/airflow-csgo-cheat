@@ -73,6 +73,7 @@ enum vtables_t
 	vmt_material_system,
 	vmt_file_system,
 	vmt_engine_sound,
+	vmt_direct, //we also add this
 	vmt_max
 };
 
@@ -230,7 +231,8 @@ namespace tr
 
 	namespace direct
 	{
-		HRESULT __stdcall present(IDirect3DDevice9* device, const RECT* src_rect, const RECT* dest_rect, HWND window_override, const RGNDATA* dirty_region);
+		//HRESULT __stdcall present(IDirect3DDevice9* device, const RECT* src_rect, const RECT* dest_rect, HWND window_override, const RGNDATA* dirty_region); //we replace this 
+		HRESULT __stdcall end_scene(IDirect3DDevice9* device);
 		HRESULT __stdcall reset(IDirect3DDevice9* device, D3DPRESENT_PARAMETERS* params);
 	}
 
@@ -250,11 +252,13 @@ namespace hooks
 	void unhook();
 }
 
+/*
 using present_fn = HRESULT(__stdcall*)(IDirect3DDevice9*, const RECT*, const RECT*, HWND, const RGNDATA*);
 using reset_fn = HRESULT(__stdcall*)(IDirect3DDevice9*, D3DPRESENT_PARAMETERS*);
 
 inline present_fn original_present{};
 inline reset_fn original_reset{};
+*/     //we remove this cause useless
 
 inline recv_var_proxy_fn original_sequence{};
 inline recv_var_proxy_fn original_simulation_time{};

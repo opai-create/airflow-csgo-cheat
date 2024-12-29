@@ -110,23 +110,23 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/include"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/zydis/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/src"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/zydis/src"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/dependencies/zycore/include"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/zydis/dependencies/zycore/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/dependencies/zycore"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/dependencies/zycore"
 				}
 			],
 			"language" : "C",
@@ -171,7 +171,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/out/install/x64-Debug"
+			"path" : "D:/v1.5/v1.5/Libs/PolyHook/out/install/x64-Debug"
 		}
 	},
 	"name" : "Zydis",

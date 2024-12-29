@@ -87,8 +87,8 @@ FT_BEGIN_HEADER
     FT_ULong    offset;
 
     FT_UInt     count;
-    FT_UShort   sids [256];  /* avoid dynamic allocations */
-    FT_UShort   codes[256];
+    FT_UShort   sids [128];  /* avoid dynamic allocations */
+    FT_UShort   codes[128];
 
   } CFF_EncodingRec, *CFF_Encoding;
 
@@ -331,7 +331,7 @@ FT_BEGIN_HEADER
   } CFF_SubFontRec;
 
 
-#define CFF_MAX_CID_FONTS  256
+#define CFF_MAX_CID_FONTS  128
 
 
   typedef struct  CFF_FontRec_

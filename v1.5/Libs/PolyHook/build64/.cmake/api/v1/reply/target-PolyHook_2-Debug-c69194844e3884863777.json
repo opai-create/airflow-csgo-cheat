@@ -164,31 +164,31 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/include"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/zydis/include"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/dependencies/zycore/include"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/zydis/dependencies/zycore/include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/dependencies/zycore"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/dependencies/zycore"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/asmjit/src"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/asmjit/src"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/asmtk/src"
+					"path" : "D:/v1.5/v1.5/Libs/PolyHook/asmtk/src"
 				}
 			],
 			"language" : "CXX",
@@ -261,7 +261,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/out/install/x64-Debug"
+			"path" : "D:/v1.5/v1.5/Libs/PolyHook/out/install/x64-Debug"
 		}
 	},
 	"name" : "PolyHook_2",

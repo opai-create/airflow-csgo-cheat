@@ -8,17 +8,44 @@
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{55A3B160-7621-39C6-A16B-2D596E1583B3}</ProjectGuid>
+    <ProjectGuid>{D8BF5964-9F04-3F56-AC77-ECED5B303E13}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>Win32</Platform>
     <ProjectName>PolyHook_2</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
@@ -32,14 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\v1.5\v1.5\Libs\PolyHook\build32\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PolyHook_2.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PolyHook_2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\v1.5\v1.5\Libs\PolyHook\build32\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PolyHook_2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PolyHook_2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\v1.5\v1.5\Libs\PolyHook\build32\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">PolyHook_2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">PolyHook_2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\v1.5\v1.5\Libs\PolyHook\build32\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">PolyHook_2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">PolyHook_2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\zydis;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmjit\src;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
@@ -49,7 +88,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
@@ -58,10 +97,112 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ASMJIT_STATIC;ASMTK_STATIC;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\zydis;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmjit\src;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\include;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\zydis;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmjit\src;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASMJIT_STATIC;ASMTK_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASMJIT_STATIC;ASMTK_STATIC;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASMJIT_STATIC;ASMTK_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASMJIT_STATIC;ASMTK_STATIC;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASMJIT_STATIC;ASMTK_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASMJIT_STATIC;ASMTK_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\v1.5\v1.5\Libs\PolyHook;D:\v1.5\v1.5\Libs\PolyHook\zydis\include;D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\include;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore;D:\v1.5\v1.5\Libs\PolyHook\asmjit\src;D:\v1.5\v1.5\Libs\PolyHook\asmtk\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -73,11 +214,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\CMakeLists.txt">
+    <CustomBuild Include="D:\v1.5\v1.5\Libs\PolyHook\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/v1.5/v1.5/Libs/PolyHook/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook -BC:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build32 --check-stamp-file C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/v1.5/v1.5/Libs/PolyHook -BD:/v1.5/v1.5/Libs/PolyHook/build32 --check-stamp-file D:/v1.5/v1.5/Libs/PolyHook/build32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -85,56 +226,95 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\PolyHook_2-config.cmake.in;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\CMakeFiles\3.26.0-msvc3\CMakeCCompiler.cmake;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\CMakeFiles\3.26.0-msvc3\CMakeCXXCompiler.cmake;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\CMakeFiles\3.26.0-msvc3\CMakeRCCompiler.cmake;C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\CMakeFiles\3.26.0-msvc3\CMakeSystem.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCCompiler.cmake.in;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCCompilerABI.c;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXCompiler.cmake.in;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXCompilerABI.cpp;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeCompilerIdDetection.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCXXCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompileFeatures.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerABI.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineCompilerId.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineRCCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeDetermineSystem.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeFindBinUtils.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeParseLibraryArchitecture.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCCompiler.cmake.in;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystem.cmake.in;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestCCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestCXXCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestCompilerCommon.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CMakeTestRCCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\CompilerId\VS-10.vcxproj.in;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Internal\FeatureTesting.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-Determine-CXX.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\v1.5\v1.5\Libs\PolyHook\PolyHook_2-config.cmake.in;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeCCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeCXXCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeRCCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/v1.5/v1.5/Libs/PolyHook/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/v1.5/v1.5/Libs/PolyHook -BD:/v1.5/v1.5/Libs/PolyHook/build32 --check-stamp-file D:/v1.5/v1.5/Libs/PolyHook/build32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\v1.5\v1.5\Libs\PolyHook\PolyHook_2-config.cmake.in;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeCCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeCXXCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeRCCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/v1.5/v1.5/Libs/PolyHook/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/v1.5/v1.5/Libs/PolyHook -BD:/v1.5/v1.5/Libs/PolyHook/build32 --check-stamp-file D:/v1.5/v1.5/Libs/PolyHook/build32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\v1.5\v1.5\Libs\PolyHook\PolyHook_2-config.cmake.in;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeCCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeCXXCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeRCCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/v1.5/v1.5/Libs/PolyHook/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/v1.5/v1.5/Libs/PolyHook -BD:/v1.5/v1.5/Libs/PolyHook/build32 --check-stamp-file D:/v1.5/v1.5/Libs/PolyHook/build32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\v1.5\v1.5\Libs\PolyHook\PolyHook_2-config.cmake.in;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeCCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeCXXCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeRCCompiler.cmake;D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\3.27.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\v1.5\v1.5\Libs\PolyHook\build32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\MemProtector.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\MemAccessor.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\TestEffectTracker.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\StackCanary.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\FBAllocator.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\RangeAllocator.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\ErrorLog.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\UID.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\Misc.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\PolyHookOs.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\ZydisDisassembler.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\ADetour.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\x64Detour.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\x86Detour.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\ILCallback.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\AVehHook.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\BreakPointHook.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\HWBreakPointHook.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\EatHook.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\IatHook.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\VTableSwapHook.cpp" />
-    <ClCompile Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\sources\VFuncSwapHook.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\MemProtector.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\MemAccessor.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\TestEffectTracker.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\StackCanary.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\FBAllocator.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\RangeAllocator.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\ErrorLog.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\UID.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\Misc.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\PolyHookOs.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\ZydisDisassembler.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\ADetour.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\x64Detour.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\x86Detour.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\ILCallback.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\AVehHook.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\BreakPointHook.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\HWBreakPointHook.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\EatHook.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\IatHook.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\VTableSwapHook.cpp" />
+    <ClCompile Include="D:\v1.5\v1.5\Libs\PolyHook\sources\VFuncSwapHook.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\ZERO_CHECK.vcxproj">
-      <Project>{BE57978B-D6C8-32D0-A229-D73A4834D1AC}</Project>
+    <ProjectReference Include="D:\v1.5\v1.5\Libs\PolyHook\build32\ZERO_CHECK.vcxproj">
+      <Project>{615CECE0-4D31-354F-8040-060484157ADA}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.vcxproj">
-      <Project>{5382B2D1-B343-3D02-B55A-BAAA43342EF4}</Project>
+    <ProjectReference Include="D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.vcxproj">
+      <Project>{D3A1DA58-CFA8-30D7-9537-8ECBAAC923BD}</Project>
       <Name>Zycore</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\zydis\Zydis.vcxproj">
-      <Project>{E9A99098-86EC-3C71-ADE6-BC90F14A101C}</Project>
+    <ProjectReference Include="D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.vcxproj">
+      <Project>{28C1DFC6-779A-377B-8A3E-8AE4A966351D}</Project>
       <Name>Zydis</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\asmtk\asmjit.vcxproj">
-      <Project>{B7BD5729-C94A-3CE5-AE93-E082461126FA}</Project>
+    <ProjectReference Include="D:\v1.5\v1.5\Libs\PolyHook\build32\asmtk\asmjit.vcxproj">
+      <Project>{0262D479-720C-3ED7-B278-ED84198B9A2B}</Project>
       <Name>asmjit</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\admin\Downloads\v1.5-master\v1.5\Libs\PolyHook\build32\asmtk\asmtk.vcxproj">
-      <Project>{24A10F5F-CF8E-322A-875C-79FA5A2E4418}</Project>
+    <ProjectReference Include="D:\v1.5\v1.5\Libs\PolyHook\build32\asmtk\asmtk.vcxproj">
+      <Project>{ED5532AA-A70B-3B9E-8238-4EFFAD4C6471}</Project>
       <Name>asmtk</Name>
     </ProjectReference>
   </ItemGroup>

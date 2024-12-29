@@ -52,7 +52,7 @@
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook -BC:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/PolyHook_2.sln
+"D:\Software\Visual Studio\IDE\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/v1.5/v1.5/Libs/PolyHook -BD:/v1.5/v1.5/Libs/PolyHook/build64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/v1.5/v1.5/Libs/PolyHook/build64/PolyHook_2.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

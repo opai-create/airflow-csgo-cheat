@@ -1,6 +1,6 @@
 # CMake generation dependency list for this directory.
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/asmjit/CMakeLists.txt
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/asmtk/CMakeLists.txt
+D:/v1.5/v1.5/Libs/PolyHook/asmjit/CMakeLists.txt
+D:/v1.5/v1.5/Libs/PolyHook/asmtk/CMakeLists.txt
 D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
 D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake
 D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake

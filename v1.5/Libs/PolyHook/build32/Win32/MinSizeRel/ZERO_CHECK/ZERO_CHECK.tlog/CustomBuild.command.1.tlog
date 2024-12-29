@@ -1,0 +1,10 @@
+^D:\V1.5\V1.5\LIBS\POLYHOOK\BUILD32\CMAKEFILES\D7EE34092AA812BC1C400FAF47B5DCDA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/v1.5/v1.5/Libs/PolyHook -BD:/v1.5/v1.5/Libs/PolyHook/build32 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/v1.5/v1.5/Libs/PolyHook/build32/PolyHook_2.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

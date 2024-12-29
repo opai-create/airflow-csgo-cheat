@@ -796,9 +796,9 @@ FT_BEGIN_HEADER
    * minimum of~16 is required.
    *
    * The Chinese font 'MingTiEG-Medium' (covering the CNS 11643 character
-   * set) needs 256.
+   * set) needs 128.
    */
-#define T1_MAX_CHARSTRINGS_OPERANDS  256
+#define T1_MAX_CHARSTRINGS_OPERANDS  128
 
 
   /**************************************************************************

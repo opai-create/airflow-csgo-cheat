@@ -1,11 +1,13 @@
 # CMake generation dependency list for this directory.
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/CMakeLists.txt
-C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/cmake/zydis-config.cmake.in
-D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
-D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake
-D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake
-D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake
-D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/GNUInstallDirs.cmake
-D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/GenerateExportHeader.cmake
-D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake
-D:/Software/Visual Studio/IDE/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/exportheader.cmake.in
+C:/Program Files/CMake/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/GenerateExportHeader.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-3.27/Modules/exportheader.cmake.in
+D:/v1.5/v1.5/Libs/PolyHook/zydis/CMakeLists.txt
+D:/v1.5/v1.5/Libs/PolyHook/zydis/cmake/zydis-config.cmake.in

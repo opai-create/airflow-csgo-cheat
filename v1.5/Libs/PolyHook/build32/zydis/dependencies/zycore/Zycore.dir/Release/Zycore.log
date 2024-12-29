@@ -1,0 +1,16 @@
+﻿  Building Custom Rule D:/v1.5/v1.5/Libs/PolyHook/zydis/dependencies/zycore/CMakeLists.txt
+  Memory.c
+  Process.c
+  Synchronization.c
+  Terminal.c
+  Thread.c
+  Allocator.c
+  ArgParse.c
+  Bitset.c
+  Format.c
+  List.c
+  String.c
+  Vector.c
+  Zycore.c
+  Создание кода...
+  Zycore.vcxproj -> D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Release\Zycore.lib

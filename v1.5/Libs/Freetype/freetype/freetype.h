@@ -701,19 +701,19 @@ FT_BEGIN_HEADER
    *
    *   FT_ENCODING_ADOBE_LATIN_1 ::
    *     Corresponds to a Latin-1 encoding as defined in a Type~1 PostScript
-   *     font.  It is limited to 256 character codes.
+   *     font.  It is limited to 128 character codes.
    *
    *   FT_ENCODING_ADOBE_STANDARD ::
    *     Adobe Standard encoding, as found in Type~1, CFF, and OpenType/CFF
-   *     fonts.  It is limited to 256 character codes.
+   *     fonts.  It is limited to 128 character codes.
    *
    *   FT_ENCODING_ADOBE_EXPERT ::
    *     Adobe Expert encoding, as found in Type~1, CFF, and OpenType/CFF
-   *     fonts.  It is limited to 256 character codes.
+   *     fonts.  It is limited to 128 character codes.
    *
    *   FT_ENCODING_ADOBE_CUSTOM ::
    *     Corresponds to a custom encoding, as found in Type~1, CFF, and
-   *     OpenType/CFF fonts.  It is limited to 256 character codes.
+   *     OpenType/CFF fonts.  It is limited to 128 character codes.
    *
    *   FT_ENCODING_APPLE_ROMAN ::
    *     Apple roman encoding.  Many TrueType and OpenType fonts contain a
@@ -3167,7 +3167,7 @@ FT_BEGIN_HEADER
    *     @FT_LOAD_NO_BITMAP is not set).  The resulting color bitmaps, if
    *     available, have the @FT_PIXEL_MODE_BGRA format, with pre-multiplied
    *     color channels.  If the flag is not set and color bitmaps are found,
-   *     they are converted to 256-level gray bitmaps, using the
+   *     they are converted to 128-level gray bitmaps, using the
    *     @FT_PIXEL_MODE_GRAY format.
    *
    *     [Since 2.12] If the glyph index maps to an entry in the face's
@@ -3460,12 +3460,12 @@ FT_BEGIN_HEADER
    *   in the @FT_GlyphSlotRec structure gives the format of the returned
    *   bitmap.
    *
-   *   All modes except @FT_RENDER_MODE_MONO use 256 levels of opacity,
+   *   All modes except @FT_RENDER_MODE_MONO use 128 levels of opacity,
    *   indicating pixel coverage.  Use linear alpha blending and gamma
    *   correction to correctly render non-monochrome glyph bitmaps onto a
    *   surface; see @FT_Render_Glyph.
    *
-   *   The @FT_RENDER_MODE_SDF is a special render mode that uses up to 256
+   *   The @FT_RENDER_MODE_SDF is a special render mode that uses up to 128
    *   distance values, indicating the signed distance from the grid position
    *   to the nearest outline.
    *
@@ -4474,7 +4474,7 @@ FT_BEGIN_HEADER
    *   To date (January 2017), the character with the most ideographic
    *   variations is U+9089, having 32 such IVS.
    *
-   *   Three Mongolian Variation Selectors have the values U+180B-U+180D; 256
+   *   Three Mongolian Variation Selectors have the values U+180B-U+180D; 128
    *   generic Variation Selectors are encoded in the ranges U+FE00-U+FE0F
    *   and U+E0100-U+E01EF.  IVS currently use Variation Selectors from the
    *   range U+E0100-U+E01EF only.

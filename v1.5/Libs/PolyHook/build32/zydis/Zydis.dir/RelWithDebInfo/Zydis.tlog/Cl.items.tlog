@@ -1,0 +1,14 @@
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\MetaInfo.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\MetaInfo.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Mnemonic.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\Mnemonic.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Register.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\Register.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\SharedData.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\SharedData.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\String.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\String.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Utils.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\Utils.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Zydis.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\Zydis.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Decoder.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\Decoder.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\DecoderData.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\DecoderData.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\Formatter.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\Formatter.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\FormatterBuffer.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\FormatterBuffer.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\FormatterATT.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\FormatterATT.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\FormatterBase.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\FormatterBase.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\src\FormatterIntel.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\Zydis.dir\RelWithDebInfo\FormatterIntel.obj

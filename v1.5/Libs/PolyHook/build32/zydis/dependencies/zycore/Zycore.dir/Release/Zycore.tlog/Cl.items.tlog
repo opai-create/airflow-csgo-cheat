@@ -1,0 +1,13 @@
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Memory.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Memory.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Process.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Process.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Synchronization.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Synchronization.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Terminal.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Terminal.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Thread.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Thread.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Allocator.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Allocator.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\ArgParse.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\ArgParse.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Bitset.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Bitset.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Format.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Format.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\List.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\List.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\String.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\String.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Vector.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Vector.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Zycore.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\Release\Zycore.obj

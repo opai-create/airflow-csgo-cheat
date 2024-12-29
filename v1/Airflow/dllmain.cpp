@@ -13,9 +13,11 @@
 #include "base/tools/threads.h"
 #include "base/tools/cheat_info.h"
 
-#ifndef _DEBUG
-#include "base/tools/connection/app_hack.h"
-#endif
+//#ifndef _DEBUG
+//#include "base/tools/connection/app_hack.h"
+//#endif
+
+//note from @cacamelio : ez fix !1!!1!!!1!
 
 #include "functions/features.h"
 #include "functions/config_system.h"
@@ -234,6 +236,7 @@ namespace cheat
 		RegisterHotKey(g_ctx.window, 100, 0, VK_LMENU);
 		RegisterHotKey(g_ctx.window, 100, 0, VK_RMENU);
 
+/*
 #ifndef _DEBUG
 		g_cheat_info->user_token = (const char*)g_cheat_info->reserved;
 
@@ -252,6 +255,7 @@ namespace cheat
 				g_cheat_info->user_avatar = decoded;
 		}
 #endif
+		*/                                   //note from @cacamelio : ez fix again !!!!
 
 		force_create_console;
 		debug_text("WELCOME TO DEBUG MODE. TIMESTAMP: %s:%s\n", __DATE__, __TIME__);

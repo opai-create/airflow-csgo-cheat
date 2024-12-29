@@ -451,7 +451,7 @@ FT_BEGIN_HEADER
    *   It will use the raster corresponding to the default glyph format.
    *
    *   The value of the `num_grays` field in `abitmap` is ignored.  If you
-   *   select the gray-level rasterizer, and you want less than 256 gray
+   *   select the gray-level rasterizer, and you want less than 128 gray
    *   levels, you have to use @FT_Outline_Render directly.
    */
   FT_EXPORT( FT_Error )

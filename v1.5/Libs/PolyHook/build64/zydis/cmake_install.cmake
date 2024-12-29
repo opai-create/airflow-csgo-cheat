@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis
+# Install script for directory: D:/v1.5/v1.5/Libs/PolyHook/zydis
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "D:/v1.5/v1.5/Libs/PolyHook/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,14 +34,14 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/zydis" TYPE FILE FILES
-    "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/zydis-config.cmake"
-    "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/zydis-config-version.cmake"
+    "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/zydis-config.cmake"
+    "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/zydis-config-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/Debug/Zydis.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/Debug/Zydis.lib")
   endif()
 endif()
 
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/zydis/zydis-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/zydis/zydis-targets.cmake"
-         "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/CMakeFiles/Export/c520ad4c175752a05a118ad881557759/zydis-targets.cmake")
+         "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/CMakeFiles/Export/c520ad4c175752a05a118ad881557759/zydis-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/zydis/zydis-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -62,18 +62,18 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/zydis" TYPE FILE FILES "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/CMakeFiles/Export/c520ad4c175752a05a118ad881557759/zydis-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/zydis" TYPE FILE FILES "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/CMakeFiles/Export/c520ad4c175752a05a118ad881557759/zydis-targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/zydis" TYPE FILE FILES "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/CMakeFiles/Export/c520ad4c175752a05a118ad881557759/zydis-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/zydis" TYPE FILE FILES "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/CMakeFiles/Export/c520ad4c175752a05a118ad881557759/zydis-targets-debug.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/build64/zydis/ZydisExportConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "D:/v1.5/v1.5/Libs/PolyHook/build64/zydis/ZydisExportConfig.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/admin/Downloads/v1.5-master/v1.5/Libs/PolyHook/zydis/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "D:/v1.5/v1.5/Libs/PolyHook/zydis/include/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

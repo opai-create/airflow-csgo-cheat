@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\src\asmtk\asmparser.cpp">
+      <Filter>src\asmtk</Filter>
+    </ClCompile>
+    <ClCompile Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtokenizer.cpp">
+      <Filter>src\asmtk</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtk.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\src\asmtk\asmparser.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\src\asmtk\asmtokenizer.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\src\asmtk\elfdefs.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\src\asmtk\globals.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\src\asmtk\parserutils.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+    <ClInclude Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\src\asmtk\strtod.h">
+      <Filter>src\asmtk</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:/v1.5/v1.5\Libs\PolyHook\asmtk\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{B84EBFA7-94DA-32D3-BC03-1EFDE48ABB76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\asmtk">
+      <UniqueIdentifier>{F10F71E8-C10B-30FD-AB50-9B0CC313000A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

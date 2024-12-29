@@ -1,0 +1,13 @@
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Memory.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Memory.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Process.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Process.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Synchronization.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Synchronization.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Terminal.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Terminal.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\API\Thread.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Thread.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Allocator.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Allocator.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\ArgParse.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\ArgParse.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Bitset.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Bitset.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Format.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Format.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\List.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\List.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\String.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\String.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Vector.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Vector.obj
+D:\v1.5\v1.5\Libs\PolyHook\zydis\dependencies\zycore\src\Zycore.c;D:\v1.5\v1.5\Libs\PolyHook\build32\zydis\dependencies\zycore\Zycore.dir\MinSizeRel\Zycore.obj
