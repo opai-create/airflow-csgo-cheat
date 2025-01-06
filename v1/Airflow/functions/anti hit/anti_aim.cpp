@@ -726,17 +726,6 @@ void c_anti_aim::on_predict_start()
 		}
 		else
 		{
-			if (g_cfg.antihit.distortion_pitch > 0.f && g_fake_lag->get_choke_amount() >= 14)
-			{
-				const auto choke = interfaces::client_state->choked_commands + 1;
-				for (int i = 1; i <= choke; i++)
-				{
-					auto cmds = interfaces::input->get_user_cmd(g_ctx.cmd->command_number - choke + i);
-
-					cmds->viewangles.x = -89.f + add_roll;
-				}
-			}
-			else
 				g_ctx.cmd->viewangles.x = -89.f;
 		}
 		break;
